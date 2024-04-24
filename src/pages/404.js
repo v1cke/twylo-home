@@ -11,5 +11,5 @@ export default function Custom404() {
     >
       404 - Page Not Found!
     </h1>
-  );
+  )
 }

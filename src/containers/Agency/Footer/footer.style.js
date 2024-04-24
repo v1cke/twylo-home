@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
-import FooterImage from 'common/assets/image/agency/footer-bg.png';
+import styled from 'styled-components'
+import { themeGet } from '@styled-system/theme-get'
+import FooterImage from 'common/assets/image/agency/footer-bg.png'
 
 const FooterWrapper = styled.section`
   padding: 80px 0;
@@ -16,9 +16,9 @@ const FooterWrapper = styled.section`
   @media (max-width: 767px) {
     padding-bottom: 10px;
   }
-`;
+`
 
-const List = styled.ul``;
+const List = styled.ul``
 
 const ListItem = styled.li`
   a {
@@ -33,8 +33,8 @@ const ListItem = styled.li`
       color: ${themeGet('colors.quoteText', '#343d48')};
     }
   }
-`;
+`
 
-export { List, ListItem };
+export { List, ListItem }
 
-export default FooterWrapper;
+export default FooterWrapper

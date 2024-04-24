@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const CopyrightWrapper = styled.div`
   ul {
@@ -31,6 +31,6 @@ const CopyrightWrapper = styled.div`
     font-size: 16px;
     margin: 30px 0 0;
   }
-`;
+`
 
-export default CopyrightWrapper;
+export default CopyrightWrapper

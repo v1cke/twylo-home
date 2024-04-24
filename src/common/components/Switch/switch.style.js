@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
-import { lightenColor } from '../lightenDarken';
-import { base } from '../base';
+import styled from 'styled-components'
+import { themeGet } from '@styled-system/theme-get'
+import { lightenColor } from '../lightenDarken'
+import { base } from '../base'
 
 const SwitchStyle = styled.div`
   /* Switch default style */
@@ -181,7 +181,8 @@ const SwitchStyle = styled.div`
           );
           left: 0;
           background-color: ${themeGet('colors.white', '#ffffff')};
-          box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),
+          box-shadow:
+            0px 1px 5px 0px rgba(0, 0, 0, 0.2),
             0px 2px 2px 0px rgba(0, 0, 0, 0.14),
             0px 3px 1px -2px rgba(0, 0, 0, 0.12);
         }
@@ -190,11 +191,11 @@ const SwitchStyle = styled.div`
   }
 
   ${base}
-`;
+`
 
 // prop types can also be added from the style functions
-SwitchStyle.propTypes = {};
+SwitchStyle.propTypes = {}
 
-SwitchStyle.displayName = 'SwitchStyle';
+SwitchStyle.displayName = 'SwitchStyle'
 
-export default SwitchStyle;
+export default SwitchStyle

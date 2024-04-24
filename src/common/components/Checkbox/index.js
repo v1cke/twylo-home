@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import useToggle from '../useToggle';
-import CheckBoxStyle from './checkbox.style';
+import React from 'react'
+import PropTypes from 'prop-types'
+import useToggle from '../useToggle'
+import CheckBoxStyle from './checkbox.style'
 
 const CheckBox = ({
   className,
@@ -16,32 +16,32 @@ const CheckBox = ({
   ...props
 }) => {
   // use toggle hooks
-  const [toggleValue, toggleHandler] = useToggle(isChecked);
+  const [toggleValue, toggleHandler] = useToggle(isChecked)
 
   // Add all classs to an array
-  const addAllClasses = ['reusecore__checkbox'];
+  const addAllClasses = ['reusecore__checkbox']
 
   // Add label position class
   if (labelPosition) {
-    addAllClasses.push(`label_${labelPosition}`);
+    addAllClasses.push(`label_${labelPosition}`)
   }
 
   // isMaterial prop checking
   if (isMaterial) {
-    addAllClasses.push('is-material');
+    addAllClasses.push('is-material')
   }
 
   // className prop checking
   if (className) {
-    addAllClasses.push(className);
+    addAllClasses.push(className)
   }
 
   // label control
   const LabelField = labelText && (
     <span className="reusecore__field-label">{labelText}</span>
-  );
+  )
 
-  const position = labelPosition || 'right';
+  const position = labelPosition || 'right'
 
   return (
     <CheckBoxStyle className={addAllClasses.join(' ')} {...props}>
@@ -60,8 +60,8 @@ const CheckBox = ({
         <div />
       </label>
     </CheckBoxStyle>
-  );
-};
+  )
+}
 
 CheckBox.propTypes = {
   /** ClassName of the Checkbox */
@@ -89,7 +89,7 @@ CheckBox.propTypes = {
 
   /** disabled of the checkbox field */
   disabled: PropTypes.bool,
-};
+}
 
 /** Checkbox default proptype */
 CheckBox.defaultProps = {
@@ -97,5 +97,5 @@ CheckBox.defaultProps = {
   labelText: 'Checkbox label',
   labelPosition: 'right',
   disabled: false,
-};
-export default CheckBox;
+}
+export default CheckBox

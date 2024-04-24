@@ -1,7 +1,7 @@
-import Image from 'next/image';
+import Image from 'next/image'
 
 const NextImage = ({ ...props }) => {
-  return <Image {...props} />;
-};
+  return <Image {...props} />
+}
 
-export default NextImage;
+export default NextImage

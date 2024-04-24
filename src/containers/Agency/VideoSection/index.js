@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import Box from 'common/components/Box';
-import Text from 'common/components/Text';
-import Heading from 'common/components/Heading';
-import Button from 'common/components/Button';
-import NextImage from 'common/components/NextImage';
-import Container from 'common/components/UI/Container';
-import VideoSectionWrapper from './videoSection.style';
+import React, { useState } from 'react'
+import PropTypes from 'prop-types'
+import Box from 'common/components/Box'
+import Text from 'common/components/Text'
+import Heading from 'common/components/Heading'
+import Button from 'common/components/Button'
+import NextImage from 'common/components/NextImage'
+import Container from 'common/components/UI/Container'
+import VideoSectionWrapper from './videoSection.style'
 
-import PreviewImage from 'common/assets/image/agency/preview-image.jpg';
-import { Modal } from '@nextui-org/react';
+import PreviewImage from 'common/assets/image/agency/preview-image.jpg'
+import { Modal } from '@nextui-org/react'
 
 const VideoSection = ({
   sectionHeader,
@@ -17,11 +17,11 @@ const VideoSection = ({
   buttonStyle,
   sectionSubTitle,
 }) => {
-  const [openModal, setModal] = useState(false);
-  const handler = () => setModal(true);
+  const [openModal, setModal] = useState(false)
+  const handler = () => setModal(true)
   const closeHandler = () => {
-    setModal(false);
-  };
+    setModal(false)
+  }
 
   return (
     <VideoSectionWrapper id="videoSection">
@@ -44,7 +44,7 @@ const VideoSection = ({
 
         <Modal
           blur
-          width='850px'
+          width="850px"
           aria-labelledby="Search Panel"
           open={openModal}
           onClose={closeHandler}
@@ -55,13 +55,21 @@ const VideoSection = ({
           }}
         >
           <div style={{ margin: 'auto' }}>
-            <iframe width="850" height="505" src="https://www.youtube.com/embed/hW98BFnVCm8" title="Cartsy - Super Fast WooCommerce Theme" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe
+              width="850"
+              height="505"
+              src="https://www.youtube.com/embed/hW98BFnVCm8"
+              title="Cartsy - Super Fast WooCommerce Theme"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
           </div>
         </Modal>
       </Container>
     </VideoSectionWrapper>
-  );
-};
+  )
+}
 
 // VideoSection style props
 VideoSection.propTypes = {
@@ -72,7 +80,7 @@ VideoSection.propTypes = {
   sectionSubTitle: PropTypes.object,
   memberName: PropTypes.object,
   designation: PropTypes.object,
-};
+}
 
 // VideoSection default style
 VideoSection.defaultProps = {
@@ -107,6 +115,6 @@ VideoSection.defaultProps = {
     color: '#ec4444',
     fontSize: '71px',
   },
-};
+}
 
-export default VideoSection;
+export default VideoSection

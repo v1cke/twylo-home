@@ -1,17 +1,26 @@
-import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
-import RcDrawer from 'rc-drawer';
-import motionProps from './motion';
-import 'rc-drawer/assets/index.css';
+import React, { Fragment } from 'react'
+import PropTypes from 'prop-types'
+import RcDrawer from 'rc-drawer'
+import motionProps from './motion'
+import 'rc-drawer/assets/index.css'
 
-const Drawer = ({ className, children, closeButton, closeButtonStyle, drawerHandler, toggleHandler, open, ...props }) => {
+const Drawer = ({
+  className,
+  children,
+  closeButton,
+  closeButtonStyle,
+  drawerHandler,
+  toggleHandler,
+  open,
+  ...props
+}) => {
   // Add all classs to an array
-  const addAllClasses = ['reusecore__drawer'];
+  const addAllClasses = ['reusecore__drawer']
   // const addAllClasses = ['rc-drawer-content-wrapper'];
 
   // className prop checking
   if (className) {
-    addAllClasses.push(className);
+    addAllClasses.push(className)
   }
 
   return (
@@ -22,19 +31,30 @@ const Drawer = ({ className, children, closeButton, closeButtonStyle, drawerHand
         className={addAllClasses.join(' ')}
         {...props} // Motion
         {...motionProps}
-        
       >
-        <div className="reusecore-drawer__close" onClick={toggleHandler} style={closeButtonStyle} role="button" tabIndex="0">
+        <div
+          className="reusecore-drawer__close"
+          onClick={toggleHandler}
+          style={closeButtonStyle}
+          role="button"
+          tabIndex="0"
+        >
           {closeButton}
         </div>
         {children}
       </RcDrawer>
-      <div className="reusecore-drawer__handler" style={{ display: 'inline-block' }} onClick={toggleHandler} role="button" tabIndex="0">
+      <div
+        className="reusecore-drawer__handler"
+        style={{ display: 'inline-block' }}
+        onClick={toggleHandler}
+        role="button"
+        tabIndex="0"
+      >
         {drawerHandler}
       </div>
     </Fragment>
-  );
-};
+  )
+}
 
 Drawer.propTypes = {
   /** ClassName of the Drawer */
@@ -52,12 +72,12 @@ Drawer.propTypes = {
   /** drawerHandler could be button, icon, string or any component */
   // drawerHandler: PropTypes.element.isRequired
   drawerHandler: PropTypes.element,
-};
+}
 
 Drawer.defaultProps = {
   width: '300px',
   handler: false,
   level: null,
-};
+}
 
-export default Drawer;
+export default Drawer

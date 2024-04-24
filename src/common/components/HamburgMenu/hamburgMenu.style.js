@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 import {
   width,
   height,
@@ -7,7 +7,7 @@ import {
   border,
   boxShadow,
   borderRadius,
-} from 'styled-system';
+} from 'styled-system'
 
 const HamburgMenuWrapper = styled.button`
   border: 0;
@@ -67,8 +67,8 @@ const HamburgMenuWrapper = styled.button`
       }
     }
   }
-`;
+`
 
-HamburgMenuWrapper.displayName = 'HamburgMenuWrapper';
+HamburgMenuWrapper.displayName = 'HamburgMenuWrapper'
 
-export default HamburgMenuWrapper;
+export default HamburgMenuWrapper

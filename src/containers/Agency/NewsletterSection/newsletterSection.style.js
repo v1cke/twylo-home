@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const NewsletterSectionWrapper = styled.section`
   padding: 80px 0;
@@ -6,7 +6,7 @@ const NewsletterSectionWrapper = styled.section`
   @media (max-width: 990px) {
     padding: 40px 0 60px 0;
   }
-`;
+`
 
 const NewsletterForm = styled.div`
   display: flex;
@@ -56,8 +56,8 @@ const NewsletterForm = styled.div`
       box-shadow: 0px 9px 20px -5px rgba(16, 172, 132, 0.57);
     }
   }
-`;
+`
 
-export { NewsletterForm };
+export { NewsletterForm }
 
-export default NewsletterSectionWrapper;
+export default NewsletterSectionWrapper

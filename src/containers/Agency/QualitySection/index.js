@@ -1,18 +1,18 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Fade from 'react-reveal/Fade';
-import Box from 'common/components/Box';
-import Text from 'common/components/Text';
-import Heading from 'common/components/Heading';
-import Card from 'common/components/Card';
-import NextImage from 'common/components/NextImage';
-import FeatureBlock from 'common/components/FeatureBlock';
-import Container from 'common/components/UI/Container';
-import QualitySectionWrapper from './qualitySection.style';
+import React from 'react'
+import PropTypes from 'prop-types'
+import Fade from 'react-reveal/Fade'
+import Box from 'common/components/Box'
+import Text from 'common/components/Text'
+import Heading from 'common/components/Heading'
+import Card from 'common/components/Card'
+import NextImage from 'common/components/NextImage'
+import FeatureBlock from 'common/components/FeatureBlock'
+import Container from 'common/components/UI/Container'
+import QualitySectionWrapper from './qualitySection.style'
 
-import data from 'common/data/Agency';
+import data from 'common/data/Agency'
 
-import FeatureImage from 'common/assets/image/agency/surface-studio.png';
+import FeatureImage from 'common/assets/image/agency/surface-studio.png'
 
 const QualitySection = ({
   row,
@@ -81,8 +81,8 @@ const QualitySection = ({
         </Box>
       </Container>
     </QualitySectionWrapper>
-  );
-};
+  )
+}
 
 QualitySection.propTypes = {
   row: PropTypes.object,
@@ -91,7 +91,7 @@ QualitySection.propTypes = {
   title: PropTypes.object,
   description: PropTypes.object,
   button: PropTypes.object,
-};
+}
 
 QualitySection.defaultProps = {
   // Quality section row default style
@@ -177,6 +177,6 @@ QualitySection.defaultProps = {
     lineHeight: '1.84',
     color: '#343d48cc',
   },
-};
+}
 
-export default QualitySection;
+export default QualitySection

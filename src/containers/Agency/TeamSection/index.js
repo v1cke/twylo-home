@@ -1,13 +1,13 @@
-import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
-import Box from 'common/components/Box';
-import Text from 'common/components/Text';
-import Heading from 'common/components/Heading';
-import NextImage from 'common/components/NextImage';
-import FeatureBlock from 'common/components/FeatureBlock';
-import data from 'common/data/Agency';
-import Container from 'common/components/UI/Container';
-import TeamSectionWrapper, { SocialLinks } from './teamSection.style';
+import React, { Fragment } from 'react'
+import PropTypes from 'prop-types'
+import Box from 'common/components/Box'
+import Text from 'common/components/Text'
+import Heading from 'common/components/Heading'
+import NextImage from 'common/components/NextImage'
+import FeatureBlock from 'common/components/FeatureBlock'
+import data from 'common/data/Agency'
+import Container from 'common/components/UI/Container'
+import TeamSectionWrapper, { SocialLinks } from './teamSection.style'
 
 const TeamSection = ({
   row,
@@ -65,8 +65,8 @@ const TeamSection = ({
         </Box>
       </Container>
     </TeamSectionWrapper>
-  );
-};
+  )
+}
 
 // TeamSection style props
 TeamSection.propTypes = {
@@ -77,7 +77,7 @@ TeamSection.propTypes = {
   sectionSubTitle: PropTypes.object,
   memberName: PropTypes.object,
   designation: PropTypes.object,
-};
+}
 
 // TeamSection default style
 TeamSection.defaultProps = {
@@ -140,6 +140,6 @@ TeamSection.defaultProps = {
     color: 'rgba(15, 33, 55, 0.6)',
     mb: 0,
   },
-};
+}
 
-export default TeamSection;
+export default TeamSection

@@ -1,7 +1,7 @@
-import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
-import ButtonStyle from './button.style';
-import Loader from '../Loader';
+import React, { Fragment } from 'react'
+import PropTypes from 'prop-types'
+import ButtonStyle from './button.style'
+import Loader from '../Loader'
 
 const Button = ({
   type,
@@ -18,21 +18,21 @@ const Button = ({
   ...props
 }) => {
   // Add all classs to an array
-  const addAllClasses = ['reusecore__button'];
+  const addAllClasses = ['reusecore__button']
 
   // isLoading prop checking
   if (isLoading) {
-    addAllClasses.push('is-loading');
+    addAllClasses.push('is-loading')
   }
 
   // isMaterial prop checking
   if (isMaterial) {
-    addAllClasses.push('is-material');
+    addAllClasses.push('is-material')
   }
 
   // className prop checking
   if (className) {
-    addAllClasses.push(className);
+    addAllClasses.push(className)
   }
 
   // Checking button loading state
@@ -43,10 +43,10 @@ const Button = ({
       </Fragment>
     ) : (
       icon && <span className="btn-icon">{icon}</span>
-    );
+    )
 
   // set icon position
-  const position = iconPosition || 'right';
+  const position = iconPosition || 'right'
 
   return (
     <ButtonStyle
@@ -62,8 +62,8 @@ const Button = ({
       {title && <span className="btn-text">{title}</span>}
       {position === 'right' && buttonIcon}
     </ButtonStyle>
-  );
-};
+  )
+}
 
 Button.propTypes = {
   /** ClassName of the button */
@@ -113,13 +113,13 @@ Button.propTypes = {
    * Gets called when the user clicks on the button
    */
   onClick: PropTypes.func,
-};
+}
 
 Button.defaultProps = {
   disabled: false,
   isMaterial: false,
   isLoading: false,
   type: 'button',
-};
+}
 
-export default Button;
+export default Button

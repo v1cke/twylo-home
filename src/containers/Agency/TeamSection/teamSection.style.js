@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const TeamSectionWrapper = styled.section`
   padding: 80px 0;
@@ -15,7 +15,7 @@ const TeamSectionWrapper = styled.section`
       align-items: center; */
     }
   }
-`;
+`
 
 const SocialLinks = styled.div`
   margin-top: 12px;
@@ -59,7 +59,7 @@ const SocialLinks = styled.div`
       }
     }
   }
-`;
+`
 
-export { SocialLinks };
-export default TeamSectionWrapper;
+export { SocialLinks }
+export default TeamSectionWrapper

@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled from 'styled-components'
+import { themeGet } from '@styled-system/theme-get'
 
 const InputField = styled.div`
   position: relative;
@@ -177,7 +177,7 @@ const InputField = styled.div`
       }
     }
   }
-`;
+`
 
 const EyeButton = styled.button`
   width: 43px;
@@ -233,8 +233,8 @@ const EyeButton = styled.button`
       }
     }
   }
-`;
+`
 
-export { EyeButton };
+export { EyeButton }
 
-export default InputField;
+export default InputField

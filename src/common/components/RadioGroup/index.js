@@ -1,23 +1,23 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import ComponentWrapper from './radioGroup.style';
+import React, { useState } from 'react'
+import PropTypes from 'prop-types'
+import ComponentWrapper from './radioGroup.style'
 
 const RadioGroup = ({ className, name, value, items, onUpdate }) => {
-  const [state, setState] = useState({ value: value });
+  const [state, setState] = useState({ value: value })
 
   const onChange = (e) => {
-    const currentValue = e.target.value;
+    const currentValue = e.target.value
     setState({
       ...state,
       value: currentValue,
-    });
-    onUpdate(e.target.value);
-  };
+    })
+    onUpdate(e.target.value)
+  }
 
-  const addAllClasses = ['radio_group'];
+  const addAllClasses = ['radio_group']
 
   if (className) {
-    addAllClasses.push(className);
+    addAllClasses.push(className)
   }
 
   return (
@@ -48,8 +48,8 @@ const RadioGroup = ({ className, name, value, items, onUpdate }) => {
         </label>
       ))}
     </ComponentWrapper>
-  );
-};
+  )
+}
 
 RadioGroup.propTypes = {
   /** className of the RadioGroup. */
@@ -64,11 +64,11 @@ RadioGroup.propTypes = {
   items: PropTypes.array,
   /** This prop contain active radio field value.*/
   onUpdate: PropTypes.func,
-};
+}
 
 /** RadioGroup default type. */
 RadioGroup.defaultProps = {
   onUpdate: () => {},
-};
+}
 
-export default RadioGroup;
+export default RadioGroup

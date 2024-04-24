@@ -1,4 +1,4 @@
-import colors from './colors';
+import colors from './colors'
 export const agencyTheme = {
   breakpoints: ['480px', '768px', '990px', '1220px'],
   space: [0, 5, 10, 15, 20, 25, 30, 40, 56, 71, 91],
@@ -123,4 +123,4 @@ export const agencyTheme = {
       justifyContent: 'center',
     },
   },
-};
+}

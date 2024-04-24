@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled from 'styled-components'
+import { themeGet } from '@styled-system/theme-get'
 
 const TestimonialSectionWrapper = styled.section`
   margin: 80px 0 0;
@@ -40,7 +40,7 @@ const TestimonialSectionWrapper = styled.section`
       text-align: center;
     }
   }
-`;
+`
 
 const TextWrapper = styled.div`
   max-width: 504px;
@@ -65,15 +65,15 @@ const TextWrapper = styled.div`
     left: 0;
     z-index: -1;
   }
-`;
+`
 
 const ImageWrapper = styled.div`
   flex-grow: 1;
   @media only screen and (max-width: 767px) {
     display: none;
   }
-`;
+`
 
-export { TextWrapper, ImageWrapper };
+export { TextWrapper, ImageWrapper }
 
-export default TestimonialSectionWrapper;
+export default TestimonialSectionWrapper

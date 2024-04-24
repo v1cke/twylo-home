@@ -16,9 +16,9 @@ import {
   alignSelf,
   color,
   compose,
-} from 'styled-system';
+} from 'styled-system'
 
-export const themed = (key) => (props) => props.theme[key];
+export const themed = (key) => (props) => props.theme[key]
 
 export const base = compose(
   () => ({ boxSizing: 'border-box' }),
@@ -36,8 +36,8 @@ export const base = compose(
   alignSelf,
   borders,
   borderColor,
-  display
-);
+  display,
+)
 
 base.propTypes = {
   ...display.propTypes,
@@ -51,4 +51,4 @@ base.propTypes = {
   ...flex.propTypes,
   ...order.propTypes,
   ...alignSelf.propTypes,
-};
+}

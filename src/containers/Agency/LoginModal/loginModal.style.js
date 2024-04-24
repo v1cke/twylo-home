@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled from 'styled-components'
+import { themeGet } from '@styled-system/theme-get'
 
 const LoginModalWrapper = styled.div`
   width: 80%;
@@ -99,7 +99,8 @@ const LoginModalWrapper = styled.div`
           height: 0;
         }
         .rc-tabs-ink-bar-animated {
-          transition: transform 0.3s cubic-bezier(0.35, 0, 0.25, 1),
+          transition:
+            transform 0.3s cubic-bezier(0.35, 0, 0.25, 1),
             left 0.3s cubic-bezier(0.35, 0, 0.25, 1),
             top 0.3s cubic-bezier(0.35, 0, 0.25, 1),
             height 0.3s cubic-bezier(0.35, 0, 0.25, 1),
@@ -161,6 +162,6 @@ const LoginModalWrapper = styled.div`
       }
     }
   }
-`;
+`
 
-export default LoginModalWrapper;
+export default LoginModalWrapper

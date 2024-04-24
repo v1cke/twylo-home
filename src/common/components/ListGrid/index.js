@@ -1,9 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Box from '../Box';
-import Button from '../Button';
-import Loader from '../Loader';
-import Text from '../Text';
+import React from 'react'
+import PropTypes from 'prop-types'
+import Box from '../Box'
+import Button from '../Button'
+import Loader from '../Loader'
+import Text from '../Text'
 
 const LoadMore = ({
   handleLoadMore,
@@ -35,8 +35,8 @@ const LoadMore = ({
         </Box>
       ) : null}
     </>
-  );
-};
+  )
+}
 
 const ListGrid = ({
   data = [],
@@ -64,13 +64,13 @@ const ListGrid = ({
   paginationWrapperStyle,
   className,
 }) => {
-  const Limit = limit ? Number(limit) : 1;
-  const limits = [];
+  const Limit = limit ? Number(limit) : 1
+  const limits = []
   for (let i = 0; i < Limit; i++) {
-    limits.push(i);
+    limits.push(i)
   }
   // const grabPostNumber = data.length;
-  let showButton = postCount < totalPost;
+  let showButton = postCount < totalPost
 
   return (
     <>
@@ -116,8 +116,8 @@ const ListGrid = ({
         <Box {...paginationWrapperStyle}>{paginationComponent}</Box>
       )}
     </>
-  );
-};
+  )
+}
 
 ListGrid.propTypes = {
   data: PropTypes.array.isRequired,
@@ -143,7 +143,7 @@ ListGrid.propTypes = {
   loadMoreWrapperStyle: PropTypes.object,
   loadMoreStyle: PropTypes.object,
   paginationWrapperStyle: PropTypes.object,
-};
+}
 
 ListGrid.defaultProps = {
   componentWrapperStyle: {
@@ -161,6 +161,6 @@ ListGrid.defaultProps = {
     justifyContent: 'center',
     mt: '1rem',
   },
-};
+}
 
-export default ListGrid;
+export default ListGrid

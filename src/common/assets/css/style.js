@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
 
 const ResetCSS = createGlobalStyle`
   ::selection {
@@ -134,5 +134,5 @@ const ResetCSS = createGlobalStyle`
       margin: auto;
     }
   }
-`;
-export default ResetCSS;
+`
+export default ResetCSS

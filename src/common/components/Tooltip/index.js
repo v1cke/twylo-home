@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+import React, { useState } from 'react'
+import PropTypes from 'prop-types'
 import {
   TooltipStyle,
   TriggerStyle,
   BubbleSize,
   BubbleStyle,
-} from './tooltip.style';
+} from './tooltip.style'
 
 const Tooltip = ({
   className,
@@ -21,25 +21,25 @@ const Tooltip = ({
   // tooltip local state
   const [state, setState] = useState({
     open: false,
-  });
+  })
 
   // Add all classs to an array
-  const addAllClasses = ['reusecore__tooltip'];
+  const addAllClasses = ['reusecore__tooltip']
 
   // className prop checking
   if (className) {
-    addAllClasses.push(className);
+    addAllClasses.push(className)
   }
 
   // hide tooltip on mouse leave
   const hideTooltip = () => {
-    setState({ open: false });
-  };
+    setState({ open: false })
+  }
 
   // show tooltip on mouse over
   const showTooltip = () => {
-    setState({ open: true });
-  };
+    setState({ open: true })
+  }
 
   return (
     <TooltipStyle
@@ -66,8 +66,8 @@ const Tooltip = ({
         {children}
       </TriggerStyle>
     </TooltipStyle>
-  );
-};
+  )
+}
 
 Tooltip.propTypes = {
   /** ClassName of the Tooltip */
@@ -88,11 +88,11 @@ Tooltip.propTypes = {
 
   /** Set tooltip position left || right || top || bottom. */
   position: PropTypes.oneOf(['left', 'right', 'top', 'bottom']),
-};
+}
 
 /** Tooltip default proptype */
 Tooltip.defaultProps = {
   isChecked: false,
-};
+}
 
-export default Tooltip;
+export default Tooltip

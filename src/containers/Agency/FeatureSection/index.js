@@ -1,12 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Box from 'common/components/Box';
-import Text from 'common/components/Text';
-import Heading from 'common/components/Heading';
-import FeatureBlock from 'common/components/FeatureBlock';
-import data from 'common/data/Agency';
-import Container from 'common/components/UI/Container';
-import FeatureSectionWrapper from './featureSection.style';
+import React from 'react'
+import PropTypes from 'prop-types'
+import Box from 'common/components/Box'
+import Text from 'common/components/Text'
+import Heading from 'common/components/Heading'
+import FeatureBlock from 'common/components/FeatureBlock'
+import data from 'common/data/Agency'
+import Container from 'common/components/UI/Container'
+import FeatureSectionWrapper from './featureSection.style'
 
 const FeatureSection = ({
   row,
@@ -48,8 +48,8 @@ const FeatureSection = ({
         </Box>
       </Container>
     </FeatureSectionWrapper>
-  );
-};
+  )
+}
 
 // FeatureSection style props
 FeatureSection.propTypes = {
@@ -60,7 +60,7 @@ FeatureSection.propTypes = {
   sectionSubTitle: PropTypes.object,
   featureTitle: PropTypes.object,
   featureDescription: PropTypes.object,
-};
+}
 
 // FeatureSection default style
 FeatureSection.defaultProps = {
@@ -137,6 +137,6 @@ FeatureSection.defaultProps = {
     lineHeight: '1.75',
     color: '#343d48cc',
   },
-};
+}
 
-export default FeatureSection;
+export default FeatureSection

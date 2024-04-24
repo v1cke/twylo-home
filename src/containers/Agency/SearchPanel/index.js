@@ -1,11 +1,11 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Text from 'common/components/Text';
-import Heading from 'common/components/Heading';
-import Input from 'common/components/Input';
-import { Icon } from 'react-icons-kit';
-import { iosSearchStrong } from 'react-icons-kit/ionicons/iosSearchStrong';
-import SearchPanelWrapper from './searchPanel.style';
+import React from 'react'
+import PropTypes from 'prop-types'
+import Text from 'common/components/Text'
+import Heading from 'common/components/Heading'
+import Input from 'common/components/Input'
+import { Icon } from 'react-icons-kit'
+import { iosSearchStrong } from 'react-icons-kit/ionicons/iosSearchStrong'
+import SearchPanelWrapper from './searchPanel.style'
 
 const SearchPanel = ({ titleStyle, hintStyle }) => {
   return (
@@ -19,14 +19,14 @@ const SearchPanel = ({ titleStyle, hintStyle }) => {
       />
       <Text content="Example: “App Template” “Application”" {...hintStyle} />
     </SearchPanelWrapper>
-  );
-};
+  )
+}
 
 // SearchPanel style props
 SearchPanel.propTypes = {
   titleStyle: PropTypes.object,
   hintTextStyle: PropTypes.object,
-};
+}
 
 // SearchPanel default style
 SearchPanel.defaultProps = {
@@ -48,6 +48,6 @@ SearchPanel.defaultProps = {
     ml: ['15px', '30px'],
     mb: '0',
   },
-};
+}
 
-export default SearchPanel;
+export default SearchPanel

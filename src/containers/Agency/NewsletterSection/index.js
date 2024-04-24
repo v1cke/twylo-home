@@ -1,13 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Box from 'common/components/Box';
-import Heading from 'common/components/Heading';
-import Input from 'common/components/Input';
-import Button from 'common/components/Button';
-import Container from 'common/components/UI/Container';
+import React from 'react'
+import PropTypes from 'prop-types'
+import Box from 'common/components/Box'
+import Heading from 'common/components/Heading'
+import Input from 'common/components/Input'
+import Button from 'common/components/Button'
+import Container from 'common/components/UI/Container'
 import NewsletterSectionWrapper, {
   NewsletterForm,
-} from './newsletterSection.style';
+} from './newsletterSection.style'
 
 const NewsletterSection = ({ sectionHeader, sectionTitle, btnStyle }) => {
   return (
@@ -29,15 +29,15 @@ const NewsletterSection = ({ sectionHeader, sectionTitle, btnStyle }) => {
         </Box>
       </Container>
     </NewsletterSectionWrapper>
-  );
-};
+  )
+}
 
 // NewsletterSection style props
 NewsletterSection.propTypes = {
   sectionHeader: PropTypes.object,
   sectionTitle: PropTypes.object,
   sectionSubTitle: PropTypes.object,
-};
+}
 
 // NewsletterSection default style
 NewsletterSection.defaultProps = {
@@ -61,6 +61,6 @@ NewsletterSection.defaultProps = {
     fontSize: '14px',
     fontWeight: '500',
   },
-};
+}
 
-export default NewsletterSection;
+export default NewsletterSection

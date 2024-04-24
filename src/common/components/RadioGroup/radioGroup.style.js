@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const ComponentWrapper = styled.div`
   display: flex;
@@ -33,6 +33,6 @@ const ComponentWrapper = styled.div`
       position: absolute;
     }
   }
-`;
+`
 
-export default ComponentWrapper;
+export default ComponentWrapper

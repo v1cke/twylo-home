@@ -10,7 +10,9 @@
     "serve": "npm run build && firebase emulators:start --only functions,hosting",
     "shell": "npm run build && firebase functions:shell",
     "deploy": "firebase deploy --only functions,hosting",
-    "logs": "firebase functions:log"
+    "logs": "firebase functions:log",
+    "lint": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\"",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\""
   },
   "dependencies": {
     "@glidejs/glide": "^3.6.0",
@@ -65,9 +67,19 @@
     "tsparticles": "^2.9.3"
   },
   "devDependencies": {
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.2.79",
+    "@typescript-eslint/eslint-plugin": "^7.7.1",
+    "@typescript-eslint/parser": "^7.7.1",
     "babel-plugin-styled-components": "^2.0.7",
+    "eslint": "^8.36.0",
+    "eslint-config-next": "^14.2.2",
+    "eslint-config-prettier": "8.7.0",
+    "eslint-plugin-import": "2.27.5",
     "firebase-tools": "^11.16.0",
     "imagemin-optipng": "^8.0.0",
-    "imagemin-svgo": "^10.0.1"
+    "imagemin-svgo": "^10.0.1",
+    "prettier": "3.2.5",
+    "typescript": "^5.4.5"
   }
 }

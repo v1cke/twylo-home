@@ -1,13 +1,13 @@
 /* eslint-disable */
-import React, { useState, useRef } from 'react';
-import PropTypes from 'prop-types';
-import useOnClickOutside from 'common/hooks/useOnClickOutside';
+import React, { useState, useRef } from 'react'
+import PropTypes from 'prop-types'
+import useOnClickOutside from 'common/hooks/useOnClickOutside'
 import ComponentWrapper, {
   Input,
   SelectWrapper,
   CurrentOption,
   Dropdown,
-} from './inputGroup.style';
+} from './inputGroup.style'
 
 const InputGroup = ({
   className,
@@ -24,14 +24,14 @@ const InputGroup = ({
     open: false,
     currency,
     selectedValue,
-  });
+  })
 
   const handleDropdown = () => {
     setState({
       ...state,
       open: !state.open,
-    });
-  };
+    })
+  }
 
   const handleSelectedData = (item) => {
     setState({
@@ -39,16 +39,16 @@ const InputGroup = ({
       open: false,
       currency: item.title,
       selectedValue: item.value,
-    });
-    selectOnUpdate(item.value);
-  };
+    })
+    selectOnUpdate(item.value)
+  }
 
-  const dropdownRef = useRef(null);
-  useOnClickOutside(dropdownRef, () => setState({ ...state, open: false }));
+  const dropdownRef = useRef(null)
+  useOnClickOutside(dropdownRef, () => setState({ ...state, open: false }))
 
-  const addAllClasses = ['input_group'];
+  const addAllClasses = ['input_group']
   if (className) {
-    addAllClasses.push(className);
+    addAllClasses.push(className)
   }
 
   return (
@@ -98,8 +98,8 @@ const InputGroup = ({
         </Dropdown>
       </SelectWrapper>
     </ComponentWrapper>
-  );
-};
+  )
+}
 
 InputGroup.propTypes = {
   /** className of the InputGroup. */
@@ -118,13 +118,13 @@ InputGroup.propTypes = {
   selectOptions: PropTypes.array,
   /** It contain selected data. */
   selectOnUpdate: PropTypes.func,
-};
+}
 
 InputGroup.defaultProps = {
   inputType: 'number',
   selectOptions: [],
   inputOnChange: () => {},
   selectOnUpdate: () => {},
-};
+}
 
-export default InputGroup;
+export default InputGroup

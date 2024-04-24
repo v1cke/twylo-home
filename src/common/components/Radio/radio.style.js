@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
-import { base } from '../base';
+import styled from 'styled-components'
+import { themeGet } from '@styled-system/theme-get'
+import { base } from '../base'
 
 const RadioBoxStyle = styled.div`
   display: inline-flex;
@@ -89,11 +89,11 @@ const RadioBoxStyle = styled.div`
 
   /* support base component props */
   ${base}
-`;
+`
 
 // prop types can also be added from the style functions
-RadioBoxStyle.propTypes = {};
+RadioBoxStyle.propTypes = {}
 
-RadioBoxStyle.displayName = 'RadioBoxStyle';
+RadioBoxStyle.displayName = 'RadioBoxStyle'
 
-export default RadioBoxStyle;
+export default RadioBoxStyle

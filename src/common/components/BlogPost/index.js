@@ -1,14 +1,14 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import NextImage from '../NextImage';
+import React from 'react'
+import PropTypes from 'prop-types'
+import NextImage from '../NextImage'
 
 const BlogPost = ({ className, thumbUrl, title, excerpt, link }) => {
   // Add all classes to an array
-  const addAllClasses = ['blog_post'];
+  const addAllClasses = ['blog_post']
 
   // className prop checking
   if (className) {
-    addAllClasses.push(className);
+    addAllClasses.push(className)
   }
 
   return (
@@ -22,8 +22,8 @@ const BlogPost = ({ className, thumbUrl, title, excerpt, link }) => {
         {link && <div className="learn_more">{link}</div>}
       </div>
     </div>
-  );
-};
+  )
+}
 
 BlogPost.propTypes = {
   className: PropTypes.string,
@@ -31,6 +31,6 @@ BlogPost.propTypes = {
   title: PropTypes.string,
   excerpt: PropTypes.string,
   link: PropTypes.element,
-};
+}
 
-export default BlogPost;
+export default BlogPost

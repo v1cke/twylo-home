@@ -1,9 +1,9 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const ComponentWrapper = styled.div`
   display: flex;
   align-items: flex-start;
-`;
+`
 
 export const Input = styled.input`
   width: calc(100% - 180px);
@@ -29,12 +29,12 @@ export const Input = styled.input`
   &::placeholder {
     color: #616970;
   }
-`;
+`
 
 export const SelectWrapper = styled.div`
   position: relative;
   width: 180px;
-`;
+`
 
 export const CurrentOption = styled.div`
   cursor: pointer;
@@ -61,7 +61,7 @@ export const CurrentOption = styled.div`
       margin-right: 15px;
     }
   }
-`;
+`
 
 export const Dropdown = styled.ul`
   position: absolute;
@@ -106,6 +106,6 @@ export const Dropdown = styled.ul`
       font-weight: 600;
     }
   }
-`;
+`
 
-export default ComponentWrapper;
+export default ComponentWrapper

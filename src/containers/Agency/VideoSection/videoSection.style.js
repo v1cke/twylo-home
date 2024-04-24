@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled from 'styled-components'
+import { themeGet } from '@styled-system/theme-get'
 
 const VideoSectionWrapper = styled.section`
   padding: 80px 0;
@@ -42,6 +42,6 @@ const VideoSectionWrapper = styled.section`
       }
     }
   }
-`;
+`
 
-export default VideoSectionWrapper;
+export default VideoSectionWrapper

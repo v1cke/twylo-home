@@ -1,8 +1,8 @@
-import React, { useReducer } from 'react';
+import React, { useReducer } from 'react'
 
 const initialState = {
   isOpen: false,
-};
+}
 
 function reducer(state, action) {
   switch (action.type) {
@@ -10,18 +10,18 @@ function reducer(state, action) {
       return {
         ...state,
         isOpen: !state.isOpen,
-      };
+      }
     default:
-      return state;
+      return state
   }
 }
-export const DrawerContext = React.createContext({});
+export const DrawerContext = React.createContext({})
 
 export const DrawerProvider = ({ children }) => {
-  const [state, dispatch] = useReducer(reducer, initialState);
+  const [state, dispatch] = useReducer(reducer, initialState)
   return (
     <DrawerContext.Provider value={{ state, dispatch }}>
       {children}
     </DrawerContext.Provider>
-  );
-};
+  )
+}

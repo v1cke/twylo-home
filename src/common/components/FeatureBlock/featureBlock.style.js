@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 import {
   color,
   width,
@@ -17,7 +17,7 @@ import {
   overflow,
   fontSize,
   textAlign,
-} from 'styled-system';
+} from 'styled-system'
 
 // FeatureBlock wrapper style
 const FeatureBlockWrapper = styled.div`
@@ -54,7 +54,7 @@ const FeatureBlockWrapper = styled.div`
   ${boxShadow}
   ${borderRadius}
   ${overflow}
-`;
+`
 
 // Icon wrapper style
 const IconWrapper = styled.div`
@@ -72,14 +72,14 @@ const IconWrapper = styled.div`
   ${borderRadius}
   ${overflow}
   ${fontSize}
-`;
+`
 
 // Content wrapper style
 const ContentWrapper = styled.div`
   ${width}
   ${space}
   ${textAlign}
-`;
+`
 
 // Button wrapper style
 const ButtonWrapper = styled.div`
@@ -88,7 +88,7 @@ const ButtonWrapper = styled.div`
   ${alignItems}
   ${flexDirection}
   ${justifyContent}
-`;
+`
 
-export { IconWrapper, ContentWrapper, ButtonWrapper };
-export default FeatureBlockWrapper;
+export { IconWrapper, ContentWrapper, ButtonWrapper }
+export default FeatureBlockWrapper

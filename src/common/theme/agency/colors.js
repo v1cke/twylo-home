@@ -18,6 +18,6 @@ const colors = {
   quoteText: '#343d48',
   textColor: 'rgba(52, 61, 72, 0.8)',
   linkColor: '#2b9eff',
-};
+}
 
-export default colors;
+export default colors

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const SearchPanelWrapper = styled.div`
   max-width: 600px;
@@ -36,6 +36,6 @@ const SearchPanelWrapper = styled.div`
       }
     }
   }
-`;
+`
 
-export default SearchPanelWrapper;
+export default SearchPanelWrapper

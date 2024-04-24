@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const QualitySectionWrapper = styled.section`
   padding: 110px 0 60px;
@@ -118,6 +118,6 @@ const QualitySectionWrapper = styled.section`
       }
     }
   }
-`;
+`
 
-export default QualitySectionWrapper;
+export default QualitySectionWrapper

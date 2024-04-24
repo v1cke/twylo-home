@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled from 'styled-components'
+import { themeGet } from '@styled-system/theme-get'
 
 const AboutUsSectionWrapper = styled.section`
   padding: 80px 0 50px;
@@ -59,6 +59,6 @@ const AboutUsSectionWrapper = styled.section`
       box-shadow: 0px 9px 20px -5px rgba(16, 172, 132, 0.57);
     }
   }
-`;
+`
 
-export default AboutUsSectionWrapper;
+export default AboutUsSectionWrapper

@@ -1,20 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Fade from 'react-reveal/Fade';
-import Box from 'common/components/Box';
-import Text from 'common/components/Text';
-import Heading from 'common/components/Heading';
-import Card from 'common/components/Card';
-import NextImage from 'common/components/NextImage';
-import Button from 'common/components/Button';
-import FeatureBlock from 'common/components/FeatureBlock';
-import AboutUsSectionWrapper from './aboutUsSection.style';
+import React from 'react'
+import PropTypes from 'prop-types'
+import Fade from 'react-reveal/Fade'
+import Box from 'common/components/Box'
+import Text from 'common/components/Text'
+import Heading from 'common/components/Heading'
+import Card from 'common/components/Card'
+import NextImage from 'common/components/NextImage'
+import Button from 'common/components/Button'
+import FeatureBlock from 'common/components/FeatureBlock'
+import AboutUsSectionWrapper from './aboutUsSection.style'
 
-import data from 'common/data/Agency';
+import data from 'common/data/Agency'
 
-import GroupImage1 from 'common/assets/image/agency/group/group-image1.jpg';
-import GroupImage2 from 'common/assets/image/agency/group/group-image2.jpg';
-import GroupImage3 from 'common/assets/image/agency/group/group-image3.jpg';
+import GroupImage1 from 'common/assets/image/agency/group/group-image1.jpg'
+import GroupImage2 from 'common/assets/image/agency/group/group-image2.jpg'
+import GroupImage3 from 'common/assets/image/agency/group/group-image3.jpg'
 
 const AboutUsSection = ({
   row,
@@ -76,8 +76,8 @@ const AboutUsSection = ({
         </Box>
       </Box>
     </AboutUsSectionWrapper>
-  );
-};
+  )
+}
 
 AboutUsSection.propTypes = {
   row: PropTypes.object,
@@ -86,7 +86,7 @@ AboutUsSection.propTypes = {
   title: PropTypes.object,
   description: PropTypes.object,
   btnStyle: PropTypes.object,
-};
+}
 
 AboutUsSection.defaultProps = {
   // About us section row default style
@@ -135,6 +135,6 @@ AboutUsSection.defaultProps = {
     fontSize: '14px',
     fontWeight: '500',
   },
-};
+}
 
-export default AboutUsSection;
+export default AboutUsSection

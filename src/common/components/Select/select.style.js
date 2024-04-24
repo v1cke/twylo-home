@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled from 'styled-components'
+import { themeGet } from '@styled-system/theme-get'
 
 const SelectStyle = styled.div`
   /* Select label default style */
@@ -42,12 +42,12 @@ const SelectStyle = styled.div`
       margin-top: ${themeGet('space.2', '8')}px;
     }
   }
-`;
+`
 
-SelectStyle.displayName = 'SelectStyle';
+SelectStyle.displayName = 'SelectStyle'
 
 SelectStyle.defaultProps = {
   as: 'div',
-};
+}
 
-export default SelectStyle;
+export default SelectStyle

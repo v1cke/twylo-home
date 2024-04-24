@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
-import BannerBG from 'common/assets/image/agency/agency-banner.png';
+import styled from 'styled-components'
+import { themeGet } from '@styled-system/theme-get'
+import BannerBG from 'common/assets/image/agency/agency-banner.png'
 
 const BannerWrapper = styled.section`
   padding-top: 210px;
@@ -51,7 +51,7 @@ const BannerWrapper = styled.section`
       }
     }
   }
-`;
+`
 
 const DiscountLabel = styled.div`
   display: inline-block;
@@ -63,8 +63,8 @@ const DiscountLabel = styled.div`
   @media (max-width: 767px) {
     padding: 7px 10px;
   }
-`;
+`
 
-export { DiscountLabel };
+export { DiscountLabel }
 
-export default BannerWrapper;
+export default BannerWrapper

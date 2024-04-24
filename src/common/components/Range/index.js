@@ -1,34 +1,34 @@
-import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
-import RangeBoxStyle from './range.style';
-import Rheostat from 'rheostat';
-import 'rheostat/initialize';
+import React, { Fragment } from 'react'
+import PropTypes from 'prop-types'
+import RangeBoxStyle from './range.style'
+import Rheostat from 'rheostat'
+import 'rheostat/initialize'
 
 const handleChange = (props) => {
-  console.log(props, 'current range value');
-};
+  console.log(props, 'current range value')
+}
 
 //Main Component
 const RangeBox = ({ className, labelText, labelPosition, type, ...props }) => {
-  const { min, max } = props;
-  let initValue, lastValue;
-  initValue = min ? min : 0;
-  lastValue = max ? max : 100;
+  const { min, max } = props
+  let initValue, lastValue
+  initValue = min ? min : 0
+  lastValue = max ? max : 100
 
   // Add all classs to an array
-  const addAllClasses = ['reusecore__rangebox'];
+  const addAllClasses = ['reusecore__rangebox']
   // Add label position class
   if (labelPosition) {
-    addAllClasses.push(`label_${labelPosition}`);
+    addAllClasses.push(`label_${labelPosition}`)
   }
   // label control
-  const position = labelPosition || 'right';
+  const position = labelPosition || 'right'
   const LabelField = labelText && (
     <span className="reusecore__field-label">{labelText}</span>
-  );
+  )
   // className prop checking
   if (className) {
-    addAllClasses.push(className);
+    addAllClasses.push(className)
   }
 
   return (
@@ -51,8 +51,8 @@ const RangeBox = ({ className, labelText, labelPosition, type, ...props }) => {
         </label>
       </RangeBoxStyle>
     </Fragment>
-  );
-};
+  )
+}
 
 RangeBox.propTypes = {
   /** labelText of the range-box field */
@@ -102,7 +102,7 @@ RangeBox.propTypes = {
 
   // /** vertical of the range-box field */
   // vertical: PropTypes.bool
-};
+}
 
 /** RangeBox default proptype */
 RangeBox.defaultProps = {
@@ -119,5 +119,5 @@ RangeBox.defaultProps = {
   // rangeDefaultValue: [20, 50],
   // dots: true,
   // vertical: false
-};
-export default RangeBox;
+}
+export default RangeBox

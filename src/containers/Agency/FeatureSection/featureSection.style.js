@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled from 'styled-components'
+import { themeGet } from '@styled-system/theme-get'
 
 const FeatureSectionWrapper = styled.section`
   padding: 80px 0;
@@ -140,6 +140,6 @@ const FeatureSectionWrapper = styled.section`
       }
     }
   }
-`;
+`
 
-export default FeatureSectionWrapper;
+export default FeatureSectionWrapper

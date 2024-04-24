@@ -1,8 +1,8 @@
-import styled from 'styled-components';
-import { variant, alignItems, boxShadow } from 'styled-system';
-import { themeGet } from '@styled-system/theme-get';
-import { buttonStyle, colorStyle, sizeStyle } from '../customVariant';
-import { base } from '../base';
+import styled from 'styled-components'
+import { variant, alignItems, boxShadow } from 'styled-system'
+import { themeGet } from '@styled-system/theme-get'
+import { buttonStyle, colorStyle, sizeStyle } from '../customVariant'
+import { base } from '../base'
 
 const ButtonStyle = styled.button`
   /* button default style */
@@ -43,8 +43,10 @@ const ButtonStyle = styled.button`
 
   /* Material style goes here */
   &.is-material {
-    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),
-      0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+    box-shadow:
+      0px 1px 5px 0px rgba(0, 0, 0, 0.2),
+      0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+      0px 3px 1px -2px rgba(0, 0, 0, 0.12);
   }
 
   /* When button on loading stage */
@@ -62,15 +64,15 @@ const ButtonStyle = styled.button`
   ${colorStyle}
   ${sizeStyle}
   ${base}
-`;
+`
 
 // prop types can also be added from the style functions
 ButtonStyle.propTypes = {
   ...alignItems.propTypes,
   ...boxShadow.propTypes,
   ...variant.propTypes,
-};
+}
 
-ButtonStyle.displayName = 'ButtonStyle';
+ButtonStyle.displayName = 'ButtonStyle'
 
-export default ButtonStyle;
+export default ButtonStyle

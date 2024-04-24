@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled from 'styled-components'
+import { themeGet } from '@styled-system/theme-get'
 
 const WorkHistoryWrapper = styled.section`
   padding: 70px 0 80px;
@@ -27,7 +27,7 @@ const WorkHistoryWrapper = styled.section`
       }
     }
   }
-`;
+`
 
 const CounterUpArea = styled.div`
   display: flex;
@@ -111,7 +111,7 @@ const CounterUpArea = styled.div`
       border: 2px dashed ${themeGet('colors.inactiveIcon', '#ebebeb')};
     }
   }
-`;
+`
 
-export { CounterUpArea };
-export default WorkHistoryWrapper;
+export { CounterUpArea }
+export default WorkHistoryWrapper

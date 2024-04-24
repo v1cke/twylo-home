@@ -1,18 +1,18 @@
-import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
-import Box from 'common/components/Box';
-import Text from 'common/components/Text';
-import Heading from 'common/components/Heading';
-import Button from 'common/components/Button';
-import NextImage from 'common/components/NextImage';
-import data from 'common/data/Agency';
-import Container from 'common/components/UI/Container';
-import GlideCarousel from 'common/components/GlideCarousel';
-import GlideSlide from 'common/components/GlideCarousel/glideSlide';
+import React, { Fragment } from 'react'
+import PropTypes from 'prop-types'
+import Box from 'common/components/Box'
+import Text from 'common/components/Text'
+import Heading from 'common/components/Heading'
+import Button from 'common/components/Button'
+import NextImage from 'common/components/NextImage'
+import data from 'common/data/Agency'
+import Container from 'common/components/UI/Container'
+import GlideCarousel from 'common/components/GlideCarousel'
+import GlideSlide from 'common/components/GlideCarousel/glideSlide'
 import TestimonialSectionWrapper, {
   TextWrapper,
   ImageWrapper,
-} from './testimonialSection.style';
+} from './testimonialSection.style'
 
 const TestimonialSection = ({
   sectionHeader,
@@ -30,7 +30,7 @@ const TestimonialSection = ({
     autoplay: 5000,
     perView: 1,
     animationDuration: 700,
-  };
+  }
 
   return (
     <TestimonialSectionWrapper id="testimonialSection">
@@ -79,8 +79,8 @@ const TestimonialSection = ({
         </GlideCarousel>
       </Container>
     </TestimonialSectionWrapper>
-  );
-};
+  )
+}
 
 // TestimonialSection style props
 TestimonialSection.propTypes = {
@@ -94,7 +94,7 @@ TestimonialSection.propTypes = {
   nameStyle: PropTypes.object,
   commentStyle: PropTypes.object,
   designationStyle: PropTypes.object,
-};
+}
 
 // TestimonialSection default style
 TestimonialSection.defaultProps = {
@@ -163,6 +163,6 @@ TestimonialSection.defaultProps = {
     fontSize: '16px',
     color: '#343d484d',
   },
-};
+}
 
-export default TestimonialSection;
+export default TestimonialSection

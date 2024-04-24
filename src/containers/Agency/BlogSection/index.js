@@ -1,14 +1,14 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Box from "common/components/Box";
-import Text from "common/components/Text";
-import Heading from "common/components/Heading";
-import Link from "common/components/Link";
-import NextImage from "common/components/NextImage";
-import FeatureBlock from "common/components/FeatureBlock";
-import data from "common/data/Agency";
-import Container from "common/components/UI/Container";
-import BlogSectionWrapper from "./blogSection.style";
+import React from 'react'
+import PropTypes from 'prop-types'
+import Box from 'common/components/Box'
+import Text from 'common/components/Text'
+import Heading from 'common/components/Heading'
+import Link from 'common/components/Link'
+import NextImage from 'common/components/NextImage'
+import FeatureBlock from 'common/components/FeatureBlock'
+import data from 'common/data/Agency'
+import Container from 'common/components/UI/Container'
+import BlogSectionWrapper from './blogSection.style'
 
 const BlogSection = ({
   row,
@@ -53,8 +53,8 @@ const BlogSection = ({
         </Box>
       </Container>
     </BlogSectionWrapper>
-  );
-};
+  )
+}
 
 // BlogSection style props
 BlogSection.propTypes = {
@@ -65,57 +65,57 @@ BlogSection.propTypes = {
   sectionSubTitle: PropTypes.object,
   blogTitle: PropTypes.object,
   blogMeta: PropTypes.object,
-};
+}
 
 // BlogSection default style
 BlogSection.defaultProps = {
   // section header default style
   sectionHeader: {
-    mb: ["40px", "56px"],
+    mb: ['40px', '56px'],
   },
   // sub section default style
   sectionSubTitle: {
-    as: "span",
-    display: "block",
-    textAlign: "center",
-    fontSize: "14px",
-    letterSpacing: "0.15em",
-    fontWeight: "700",
-    color: "#10ac84",
-    mb: "10px",
+    as: 'span',
+    display: 'block',
+    textAlign: 'center',
+    fontSize: '14px',
+    letterSpacing: '0.15em',
+    fontWeight: '700',
+    color: '#10ac84',
+    mb: '10px',
   },
   // section title default style
   sectionTitle: {
-    textAlign: "center",
-    fontSize: ["20px", "24px"],
-    fontWeight: "400",
-    color: "#0f2137",
-    letterSpacing: "-0.025em",
-    mb: "0",
+    textAlign: 'center',
+    fontSize: ['20px', '24px'],
+    fontWeight: '400',
+    color: '#0f2137',
+    letterSpacing: '-0.025em',
+    mb: '0',
   },
   // Blog post row default style
   row: {
     flexBox: true,
-    flexWrap: "wrap",
-    ml: "-12px",
-    mr: "-12px",
+    flexWrap: 'wrap',
+    ml: '-12px',
+    mr: '-12px',
   },
   // Blog post title default style
   blogTitle: {
-    fontSize: ["20px", "24px"],
-    fontWeight: "400",
-    color: "#ffffff",
-    lineHeight: "1.5",
-    mb: "10px",
-    letterSpacing: "-0.020em",
+    fontSize: ['20px', '24px'],
+    fontWeight: '400',
+    color: '#ffffff',
+    lineHeight: '1.5',
+    mb: '10px',
+    letterSpacing: '-0.020em',
   },
   // Blog post description default style
   blogMeta: {
-    fontSize: "16px",
-    lineHeight: "1",
-    color: "rgba(255, 255, 255, 0.5)",
+    fontSize: '16px',
+    lineHeight: '1',
+    color: 'rgba(255, 255, 255, 0.5)',
     mb: 0,
   },
-};
+}
 
-export default BlogSection;
+export default BlogSection

@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
-import { base } from '../base';
+import styled from 'styled-components'
+import { themeGet } from '@styled-system/theme-get'
+import { base } from '../base'
 
 const CheckBoxStyle = styled.div`
   display: inline-flex;
@@ -86,11 +86,11 @@ const CheckBoxStyle = styled.div`
 
   /* support base component props */
   ${base}
-`;
+`
 
 // prop types can also be added from the style functions
-CheckBoxStyle.propTypes = {};
+CheckBoxStyle.propTypes = {}
 
-CheckBoxStyle.displayName = 'CheckBoxStyle';
+CheckBoxStyle.displayName = 'CheckBoxStyle'
 
-export default CheckBoxStyle;
+export default CheckBoxStyle

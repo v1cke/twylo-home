@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from 'styled-components'
 
 const ContainerWrapper = styled.div`
   margin-left: auto;
@@ -45,6 +45,6 @@ const ContainerWrapper = styled.div`
         padding-right: 30px;
       `};
   }
-`;
+`
 
-export default ContainerWrapper;
+export default ContainerWrapper

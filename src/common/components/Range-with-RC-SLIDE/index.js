@@ -1,16 +1,16 @@
-import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
-import Slider from 'rc-slider';
-import Tooltip from 'rc-tooltip';
-import 'rc-slider/assets/index.css';
-import RangeBoxStyle from './range.style';
+import React, { Fragment } from 'react'
+import PropTypes from 'prop-types'
+import Slider from 'rc-slider'
+import Tooltip from 'rc-tooltip'
+import 'rc-slider/assets/index.css'
+import RangeBoxStyle from './range.style'
 
-const createSliderWithTooltip = Slider.createSliderWithTooltip;
-const Range = createSliderWithTooltip(Slider.Range);
-const Handle = Slider.Handle;
+const createSliderWithTooltip = Slider.createSliderWithTooltip
+const Range = createSliderWithTooltip(Slider.Range)
+const Handle = Slider.Handle
 
 const toolTipHandleFunc = (props) => {
-  const { value, dragging, index, ...restProps } = props;
+  const { value, dragging, index, ...restProps } = props
   return (
     <Tooltip
       prefixCls="reusecore__rc_slider_tooltip rc-slider-tooltip"
@@ -21,8 +21,8 @@ const toolTipHandleFunc = (props) => {
     >
       <Handle value={value} {...restProps} />
     </Tooltip>
-  );
-};
+  )
+}
 
 const SliderBox = (props) => {
   const {
@@ -35,7 +35,7 @@ const SliderBox = (props) => {
     disabled,
     handleChangefunc,
     ...others
-  } = props;
+  } = props
   return (
     <Slider
       dots={dots}
@@ -49,8 +49,8 @@ const SliderBox = (props) => {
       vertical={vertical}
       {...others}
     />
-  );
-};
+  )
+}
 
 const RangeBox = (props) => {
   const {
@@ -65,15 +65,15 @@ const RangeBox = (props) => {
     disabled,
     handleChangefunc,
     ...others
-  } = props;
+  } = props
   const defaultThresholdInit =
-    rangeDefaultValue && rangeDefaultValue[0] ? rangeDefaultValue[0] : 0;
+    rangeDefaultValue && rangeDefaultValue[0] ? rangeDefaultValue[0] : 0
   const defaultThresholdLast =
-    rangeDefaultValue && rangeDefaultValue[1] ? rangeDefaultValue[1] : 0;
+    rangeDefaultValue && rangeDefaultValue[1] ? rangeDefaultValue[1] : 0
   const toolTipConfig = {
     placement,
     prefixCls: 'reusecore__rc_slider_tooltip rc-slider-tooltip',
-  };
+  }
   return (
     <Range
       dots={dots}
@@ -88,24 +88,24 @@ const RangeBox = (props) => {
       vertical={vertical}
       {...others}
     />
-  );
-};
+  )
+}
 
 export default ({ className, labelText, labelPosition, type, ...props }) => {
   // Add all classs to an array
-  const addAllClasses = ['reusecore__rangebox'];
+  const addAllClasses = ['reusecore__rangebox']
   // Add label position class
   if (labelPosition) {
-    addAllClasses.push(`label_${labelPosition}`);
+    addAllClasses.push(`label_${labelPosition}`)
   }
   // label control
-  const position = labelPosition || 'right';
+  const position = labelPosition || 'right'
   const LabelField = labelText && (
     <span className="reusecore__field-label">{labelText}</span>
-  );
+  )
   // className prop checking
   if (className) {
-    addAllClasses.push(className);
+    addAllClasses.push(className)
   }
   return (
     <Fragment>
@@ -123,8 +123,8 @@ export default ({ className, labelText, labelPosition, type, ...props }) => {
         </label>
       </RangeBoxStyle>
     </Fragment>
-  );
-};
+  )
+}
 
 RangeBox.propTypes = {
   /** ClassName of the range-box */
@@ -177,7 +177,7 @@ RangeBox.propTypes = {
 
   /** vertical of the range-box field */
   vertical: PropTypes.bool,
-};
+}
 
 /** RangeBox default proptype */
 RangeBox.defaultProps = {
@@ -195,4 +195,4 @@ RangeBox.defaultProps = {
   rangeDefaultValue: [0, 50],
   dots: true,
   vertical: false,
-};
+}

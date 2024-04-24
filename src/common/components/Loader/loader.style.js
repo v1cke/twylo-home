@@ -1,8 +1,8 @@
-import styled from 'styled-components';
-import { variant } from 'styled-system';
-import { colorStyle } from '../customVariant';
-import { AnimSpinner } from '../Animation';
-import { base } from '../base';
+import styled from 'styled-components'
+import { variant } from 'styled-system'
+import { colorStyle } from '../customVariant'
+import { AnimSpinner } from '../Animation'
+import { base } from '../base'
 
 const LoaderStyle = styled.span`
   /* loader default style */
@@ -22,13 +22,13 @@ const LoaderStyle = styled.span`
   /* Style system custome color variant */
   ${colorStyle}
   ${base}
-`;
+`
 
 // prop types can also be added from the style functions
 LoaderStyle.propTypes = {
   ...variant.propTypes,
-};
+}
 
-LoaderStyle.displayName = 'LoaderStyle';
+LoaderStyle.displayName = 'LoaderStyle'
 
-export default LoaderStyle;
+export default LoaderStyle

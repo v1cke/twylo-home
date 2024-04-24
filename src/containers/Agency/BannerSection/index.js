@@ -1,13 +1,13 @@
-import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
-import Box from 'common/components/Box';
-import Text from 'common/components/Text';
-import Heading from 'common/components/Heading';
-import Button from 'common/components/Button';
-import FeatureBlock from 'common/components/FeatureBlock';
-import Container from 'common/components/UI/Container';
-import Particles from '../../Agency/Particle';
-import BannerWrapper, { DiscountLabel } from './bannerSection.style';
+import React, { Fragment } from 'react'
+import PropTypes from 'prop-types'
+import Box from 'common/components/Box'
+import Text from 'common/components/Text'
+import Heading from 'common/components/Heading'
+import Button from 'common/components/Button'
+import FeatureBlock from 'common/components/FeatureBlock'
+import Container from 'common/components/UI/Container'
+import Particles from '../../Agency/Particle'
+import BannerWrapper, { DiscountLabel } from './bannerSection.style'
 
 const BannerSection = ({
   row,
@@ -29,7 +29,7 @@ const BannerSection = ({
         {...outlineBtnStyle}
       />
     </Fragment>
-  );
+  )
   return (
     <BannerWrapper>
       <Particles />
@@ -59,8 +59,8 @@ const BannerSection = ({
         </Box>
       </Container>
     </BannerWrapper>
-  );
-};
+  )
+}
 
 BannerSection.propTypes = {
   title: PropTypes.object,
@@ -70,7 +70,7 @@ BannerSection.propTypes = {
   discountText: PropTypes.object,
   discountAmount: PropTypes.object,
   outlineBtnStyle: PropTypes.object,
-};
+}
 
 BannerSection.defaultProps = {
   row: {
@@ -124,6 +124,6 @@ BannerSection.defaultProps = {
     mb: 0,
     as: 'span',
   },
-};
+}
 
-export default BannerSection;
+export default BannerSection

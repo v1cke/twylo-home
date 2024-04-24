@@ -1,8 +1,8 @@
-import React from "react";
-import Link from "next/link";
-import Text from "common/components/Text";
-import CopyrightWrapper from "./copyrightSection.style";
-import data from "common/data/Agency/";
+import React from 'react'
+import Link from 'next/link'
+import Text from 'common/components/Text'
+import CopyrightWrapper from './copyrightSection.style'
+import data from 'common/data/Agency/'
 
 const CopyrightSection = () => {
   return (
@@ -20,7 +20,7 @@ const CopyrightSection = () => {
       </ul>
       <Text content="Copyrights 2019 @RedQ Inc" />
     </CopyrightWrapper>
-  );
-};
+  )
+}
 
-export default CopyrightSection;
+export default CopyrightSection

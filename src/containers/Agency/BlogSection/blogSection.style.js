@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const BlogSectionWrapper = styled.section`
   padding: 80px 0;
@@ -100,6 +100,6 @@ const BlogSectionWrapper = styled.section`
       }
     }
   }
-`;
+`
 
-export default BlogSectionWrapper;
+export default BlogSectionWrapper

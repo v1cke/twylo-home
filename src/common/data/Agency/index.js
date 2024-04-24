@@ -1,11 +1,11 @@
-import BlogImage1 from '../../assets/image/agency/blog/blog-img1.png';
-import BlogImage2 from '../../assets/image/agency/blog/blog-img2.png';
-import BlogImage3 from '../../assets/image/agency/blog/blog-img3.png';
-import Member1 from '../../assets/image/agency/team/member-1.jpg';
-import Member2 from '../../assets/image/agency/team/member-2.jpg';
-import Member3 from '../../assets/image/agency/team/member-3.jpg';
-import Denny from '../../assets/image/agency/client/denny.png';
-import Menny from '../../assets/image/agency/client/menny.png';
+import BlogImage1 from '../../assets/image/agency/blog/blog-img1.png'
+import BlogImage2 from '../../assets/image/agency/blog/blog-img2.png'
+import BlogImage3 from '../../assets/image/agency/blog/blog-img3.png'
+import Member1 from '../../assets/image/agency/team/member-1.jpg'
+import Member2 from '../../assets/image/agency/team/member-2.jpg'
+import Member3 from '../../assets/image/agency/team/member-3.jpg'
+import Denny from '../../assets/image/agency/client/denny.png'
+import Menny from '../../assets/image/agency/client/menny.png'
 
 const data = {
   menuItems: [
@@ -459,5 +459,5 @@ const data = {
       link: '#5',
     },
   ],
-};
-export default data;
+}
+export default data

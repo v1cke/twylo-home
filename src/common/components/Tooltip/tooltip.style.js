@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 import {
   fontSize,
   fontWeight,
@@ -12,7 +12,7 @@ import {
   height,
   maxHeight,
   minHeight,
-} from 'styled-system';
+} from 'styled-system'
 
 const TooltipStyle = styled.span`
   /* Tooltip default style */
@@ -87,7 +87,7 @@ const TooltipStyle = styled.span`
       left: 0;
     }
   }
-`;
+`
 
 const TriggerStyle = styled.span`
   display: inline-block;
@@ -96,7 +96,7 @@ const TriggerStyle = styled.span`
   ${fontWeight}
   ${color}
   ${space}
-`;
+`
 
 const BubbleSize = styled.div`
   min-width: 120px;
@@ -113,7 +113,7 @@ const BubbleSize = styled.div`
   ${minHeight}
   ${maxHeight}
   ${height}
-`;
+`
 
 const BubbleStyle = styled.div`
   background-color: ${(props) =>
@@ -130,8 +130,8 @@ const BubbleStyle = styled.div`
   ${fontSize}
   ${color}
   ${borderRadius}
-`;
+`
 
-TooltipStyle.displayName = 'TooltipStyle';
+TooltipStyle.displayName = 'TooltipStyle'
 
-export { TooltipStyle, TriggerStyle, BubbleSize, BubbleStyle };
+export { TooltipStyle, TriggerStyle, BubbleSize, BubbleStyle }

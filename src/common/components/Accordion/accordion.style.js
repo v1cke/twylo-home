@@ -1,12 +1,12 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes } from 'styled-components'
 import {
   AccordionItemHeading,
   AccordionItemButton,
   Accordion,
   AccordionItem,
   AccordionItemPanel,
-} from 'react-accessible-accordion';
-import 'react-accessible-accordion/dist/fancy-example.css';
+} from 'react-accessible-accordion'
+import 'react-accessible-accordion/dist/fancy-example.css'
 
 const fadeIn = keyframes`
   0% {
@@ -15,17 +15,17 @@ const fadeIn = keyframes`
   100% {
     opacity: 1;
   }
-`;
+`
 
-export const AccordionWrapper = styled(Accordion)``;
+export const AccordionWrapper = styled(Accordion)``
 
-export const AccordionItemWrapper = styled(AccordionItem)``;
+export const AccordionItemWrapper = styled(AccordionItem)``
 
-export const OpenIcon = styled.div``;
+export const OpenIcon = styled.div``
 
 export const CloseIcon = styled.div`
   opacity: 0;
-`;
+`
 
 export const AccordionTitleWrapper = styled(AccordionItemHeading)`
   > div {
@@ -50,14 +50,14 @@ export const AccordionTitleWrapper = styled(AccordionItemHeading)`
   * {
     flex-grow: 1;
   }
-`;
-export const AccordionItemButtonWrapper = styled(AccordionItemButton)``;
+`
+export const AccordionItemButtonWrapper = styled(AccordionItemButton)``
 export const AccordionBodyWrapper = styled(AccordionItemPanel)`
   animation: 0.35s ${fadeIn} ease-in;
   &.accordion__body--hidden {
     animation: 0.35s ${fadeIn} ease-in;
   }
-`;
+`
 
 export const IconWrapper = styled.div`
   margin-left: 30px;
@@ -72,4 +72,4 @@ export const IconWrapper = styled.div`
     transform: translateY(-50%);
     transition: 0.25s ease-in-out;
   }
-`;
+`

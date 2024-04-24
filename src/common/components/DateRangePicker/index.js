@@ -1,32 +1,32 @@
-import React, { Fragment, Component } from 'react';
-import PropTypes from 'prop-types';
-import { DateRangePicker } from 'react-dates';
-import 'react-dates/lib/css/_datepicker.css';
-import DateRangePickerStyle from './daterangepicker.style';
-import moment from 'moment';
+import React, { Fragment, Component } from 'react'
+import PropTypes from 'prop-types'
+import { DateRangePicker } from 'react-dates'
+import 'react-dates/lib/css/_datepicker.css'
+import DateRangePickerStyle from './daterangepicker.style'
+import moment from 'moment'
 
 class DateRangePickerBox extends Component {
   constructor(props) {
-    super(props);
-    const { item } = this.props;
+    super(props)
+    const { item } = this.props
     let date,
       startDate,
-      endDate = null;
-    const separator = item && item.separator ? item.separator : '-';
-    const dateFormat = item && item.format ? item.format : 'llll';
+      endDate = null
+    const separator = item && item.separator ? item.separator : '-'
+    const dateFormat = item && item.format ? item.format : 'llll'
     if (date) {
-      const dates = date.split(` ${separator} `);
-      startDate = moment(dates[0], dateFormat);
-      endDate = moment(dates[1], dateFormat);
+      const dates = date.split(` ${separator} `)
+      startDate = moment(dates[0], dateFormat)
+      endDate = moment(dates[1], dateFormat)
     }
     this.state = {
       focusedInput: null,
       startDate,
       endDate,
       dateFormat,
-    };
-    this.onDateChangeFunc = this.onDateChangeFunc.bind(this);
-    this.onFocusChangeFunc = this.onFocusChangeFunc.bind(this);
+    }
+    this.onDateChangeFunc = this.onDateChangeFunc.bind(this)
+    this.onFocusChangeFunc = this.onFocusChangeFunc.bind(this)
   }
 
   onDateChangeFunc = ({ startDate, endDate }) => {
@@ -51,15 +51,15 @@ class DateRangePickerBox extends Component {
     //   );
     // }
     // ********* Date passing will be END here.... *********
-    this.setState({ startDate, endDate });
-  };
+    this.setState({ startDate, endDate })
+  }
 
   onFocusChangeFunc = (focusedInput) => {
-    return this.setState({ focusedInput });
-  };
+    return this.setState({ focusedInput })
+  }
 
   render() {
-    const { focusedInput, startDate, endDate } = this.state;
+    const { focusedInput, startDate, endDate } = this.state
     const {
       className,
       labelText,
@@ -77,22 +77,22 @@ class DateRangePickerBox extends Component {
       withPortal,
       withFullScreenPortal,
       ...props
-    } = this.props;
+    } = this.props
 
     // Add all classs to an array **************
-    const addAllClasses = ['reusecore__DatePicker'];
+    const addAllClasses = ['reusecore__DatePicker']
     // Add label position class **************
     if (labelPosition) {
-      addAllClasses.push(`label_${labelPosition}`);
+      addAllClasses.push(`label_${labelPosition}`)
     }
     // label control **************
-    const position = labelPosition || 'right';
+    const position = labelPosition || 'right'
     const LabelField = labelText && (
       <span className="reusecore__field-label">{labelText}</span>
-    );
+    )
     // className prop checking **************
     if (className) {
-      addAllClasses.push(className);
+      addAllClasses.push(className)
     }
 
     // DatePicker Props List
@@ -114,7 +114,7 @@ class DateRangePickerBox extends Component {
       onFocusChange: this.onFocusChangeFunc,
       onDatesChange: this.onDateChangeFunc,
       ...props,
-    };
+    }
     // if (item && item.locale) {
     //   moment.locale(item.locale);
     // } else {
@@ -145,7 +145,7 @@ class DateRangePickerBox extends Component {
           </label>
         </DateRangePickerStyle>
       </Fragment>
-    );
+    )
   }
 }
 
@@ -180,11 +180,11 @@ DateRangePickerBox.propTypes = {
   withPortal: PropTypes.bool,
   /** withFullScreenPortal of the date-picker field */
   withFullScreenPortal: PropTypes.bool,
-};
+}
 
 /** RangeBox default proptype */
 DateRangePickerBox.defaultProps = {
   labelText: 'ReuseCore DateRangePickerBox',
   labelPosition: 'top',
-};
-export default DateRangePickerBox;
+}
+export default DateRangePickerBox

@@ -1,9 +1,9 @@
-import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
-import Box from 'common/components/Box';
-import Text from 'common/components/Text';
-import Heading from 'common/components/Heading';
-import Container from 'common/components/UI/Container';
+import React, { Fragment } from 'react'
+import PropTypes from 'prop-types'
+import Box from 'common/components/Box'
+import Text from 'common/components/Text'
+import Heading from 'common/components/Heading'
+import Container from 'common/components/UI/Container'
 import {
   Accordion,
   AccordionItem,
@@ -12,13 +12,13 @@ import {
   IconWrapper,
   OpenIcon,
   CloseIcon,
-} from 'common/components/Accordion';
-import { Icon } from 'react-icons-kit';
-import { plus } from 'react-icons-kit/entypo/plus';
-import { minus } from 'react-icons-kit/entypo/minus';
-import FaqSectionWrapper from './faqSection.style';
+} from 'common/components/Accordion'
+import { Icon } from 'react-icons-kit'
+import { plus } from 'react-icons-kit/entypo/plus'
+import { minus } from 'react-icons-kit/entypo/minus'
+import FaqSectionWrapper from './faqSection.style'
 
-import data from 'common/data/Agency';
+import data from 'common/data/Agency'
 
 const FaqSection = ({
   sectionHeader,
@@ -67,8 +67,8 @@ const FaqSection = ({
         </Box>
       </Container>
     </FaqSectionWrapper>
-  );
-};
+  )
+}
 
 // FaqSection style props
 FaqSection.propTypes = {
@@ -77,7 +77,7 @@ FaqSection.propTypes = {
   col: PropTypes.object,
   sectionTitle: PropTypes.object,
   sectionSubTitle: PropTypes.object,
-};
+}
 
 // FaqSection default style
 FaqSection.defaultProps = {
@@ -120,6 +120,6 @@ FaqSection.defaultProps = {
     lineHeight: '1.75',
     mb: '0',
   },
-};
+}
 
-export default FaqSection;
+export default FaqSection

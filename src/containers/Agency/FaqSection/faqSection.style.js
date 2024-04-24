@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled from 'styled-components'
+import { themeGet } from '@styled-system/theme-get'
 const FaqSectionWrapper = styled.section`
   padding: 80px 0;
   overflow: hidden;
@@ -33,6 +33,6 @@ const FaqSectionWrapper = styled.section`
       }
     }
   }
-`;
+`
 
-export default FaqSectionWrapper;
+export default FaqSectionWrapper

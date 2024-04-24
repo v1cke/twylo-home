@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const Container = styled.div`
   margin-left: auto;
@@ -22,6 +22,6 @@ const Container = styled.div`
   @media (min-width: 1200px) {
     max-width: 1170px;
   }
-`;
+`
 
-export { Container };
+export { Container }

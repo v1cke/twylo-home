@@ -1,7 +1,7 @@
 /* eslint-disable */
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import InputField, { EyeButton } from './input.style';
+import React, { useState } from 'react'
+import PropTypes from 'prop-types'
+import InputField, { EyeButton } from './input.style'
 const Input = ({
   label,
   value,
@@ -21,83 +21,83 @@ const Input = ({
     toggle: false,
     focus: false,
     value: '',
-  });
+  })
 
   // toggle function
   const handleToggle = () => {
     setState({
       ...state,
       toggle: !state.toggle,
-    });
-  };
+    })
+  }
 
   // add focus class
   const handleOnFocus = (event) => {
     setState({
       ...state,
       focus: true,
-    });
-    onFocus(event);
-  };
+    })
+    onFocus(event)
+  }
 
   // remove focus class
   const handleOnBlur = (event) => {
     setState({
       ...state,
       focus: false,
-    });
-    onBlur(event);
-  };
+    })
+    onBlur(event)
+  }
 
   // handle input value
   const handleOnChange = (event) => {
     setState({
       ...state,
       value: event.target.value,
-    });
-    onChange(event.target.value);
-  };
+    })
+    onChange(event.target.value)
+  }
 
   // get input focus class
   const getInputFocusClass = () => {
     if (state.focus === true || state.value !== '') {
-      return 'is-focus';
+      return 'is-focus'
     } else {
-      return '';
+      return ''
     }
-  };
+  }
 
   // init variable
-  let inputElement, htmlFor;
+  let inputElement, htmlFor
 
   // Add all classs to an array
-  const addAllClasses = ['reusecore__input'];
+  const addAllClasses = ['reusecore__input']
 
   // Add is-material class
   if (isMaterial) {
-    addAllClasses.push('is-material');
+    addAllClasses.push('is-material')
   }
 
   // Add icon position class if input element has icon
   if (icon && iconPosition) {
-    addAllClasses.push(`icon-${iconPosition}`);
+    addAllClasses.push(`icon-${iconPosition}`)
   }
 
   // Add new class
   if (className) {
-    addAllClasses.push(className);
+    addAllClasses.push(className)
   }
 
   // if lable is not empty
   if (label) {
-    htmlFor = label.replace(/\s+/g, '_').toLowerCase();
+    htmlFor = label.replace(/\s+/g, '_').toLowerCase()
   }
 
   // Label position
-  const LabelPosition = isMaterial === true ? 'bottom' : 'top';
+  const LabelPosition = isMaterial === true ? 'bottom' : 'top'
 
   // Label field
-  const LabelField = label && <label htmlFor={htmlFor}>{label}</label>;
+  const LabelField = label && <label htmlFor={htmlFor}>{label}</label>
 
   // Input type check
   switch (inputType) {
@@ -112,8 +112,8 @@ const Input = ({
           onBlur={handleOnBlur}
           onFocus={handleOnFocus}
         />
-      );
-      break;
+      )
+      break
 
     case 'password':
       inputElement = (
@@ -137,8 +137,8 @@ const Input = ({
             </EyeButton>
           )}
         </div>
-      );
-      break;
+      )
+      break
 
     default:
       inputElement = (
@@ -155,7 +155,7 @@ const Input = ({
           />
           {icon && <span className="input-icon">{icon}</span>}
         </div>
-      );
+      )
   }
 
   return (
@@ -167,8 +167,8 @@ const Input = ({
       {isMaterial && <span className="highlight" />}
       {LabelPosition === 'bottom' && LabelField}
     </InputField>
-  );
-};
+  )
+}
 
 /** Inout prop type checking. */
 Input.propTypes = {
@@ -221,7 +221,7 @@ Input.propTypes = {
    * You can pull out the new value by accessing `event.target.value`.
    */
   onChange: PropTypes.func,
-};
+}
 
 /** Inout default type. */
 Input.defaultProps = {
@@ -231,6 +231,6 @@ Input.defaultProps = {
   onBlur: () => {},
   onFocus: () => {},
   onChange: () => {},
-};
+}
 
-export default Input;
+export default Input

@@ -1,6 +1,13 @@
-import styled, { createGlobalStyle } from 'styled-components';
-import { width, height, color, space, boxShadow, borderRadius } from 'styled-system';
-import { themeGet } from '@styled-system/theme-get';
+import styled, { createGlobalStyle } from 'styled-components'
+import {
+  width,
+  height,
+  color,
+  space,
+  boxShadow,
+  borderRadius,
+} from 'styled-system'
+import { themeGet } from '@styled-system/theme-get'
 
 /* agency global style */
 const GlobalStyle = createGlobalStyle`
@@ -167,7 +174,7 @@ const GlobalStyle = createGlobalStyle`
   .reuseModalHolder.login-modal .innerRndComponent{
     overflow-y: auto;
   }
-`;
+`
 
 /* agency wrapper style */
 const AgencyWrapper = styled.div`
@@ -215,9 +222,9 @@ const AgencyWrapper = styled.div`
   ${space}
   ${boxShadow}
   ${borderRadius}
-`;
+`
 
-GlobalStyle.displayName = 'GlobalStyle';
-AgencyWrapper.displayName = 'AgencyWrapper';
+GlobalStyle.displayName = 'GlobalStyle'
+AgencyWrapper.displayName = 'AgencyWrapper'
 
-export { GlobalStyle, AgencyWrapper };
+export { GlobalStyle, AgencyWrapper }

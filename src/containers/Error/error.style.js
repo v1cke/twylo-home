@@ -1,12 +1,12 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const ErrorWrapper = styled.div`
   padding: 80px 15px;
   height: 100vh;
   display: flex;
   align-items: center;
-`;
-export default ErrorWrapper;
+`
+export default ErrorWrapper
 
 export const ErrorContent = styled.div`
   width: 450px;
@@ -20,7 +20,7 @@ export const ErrorContent = styled.div`
       margin-right: auto;
     }
   }
-`;
+`
 
 export const ButtonWrapper = styled.div`
   font-family: 'roboto';
@@ -28,4 +28,4 @@ export const ButtonWrapper = styled.div`
   > * {
     margin: 0 8px;
   }
-`;
+`

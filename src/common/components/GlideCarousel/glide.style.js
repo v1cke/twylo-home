@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 import {
   width,
   height,
@@ -16,14 +16,14 @@ import {
   alignItems,
   justifyContent,
   flexWrap,
-} from 'styled-system';
+} from 'styled-system'
 
 // Glide wrapper style
 const GlideWrapper = styled.div`
   ${width}
   ${height}
   ${space}
-`;
+`
 
 // Glide slide wrapper style
 const GlideSlideWrapper = styled.li`
@@ -32,7 +32,7 @@ const GlideSlideWrapper = styled.li`
   ${borders}
   ${boxShadow}
   ${borderRadius}
-`;
+`
 
 // Button wrapper style
 const ButtonWrapper = styled.div`
@@ -48,7 +48,7 @@ const ButtonWrapper = styled.div`
   ${left}
   ${right}
   ${bottom}
-`;
+`
 
 // ButtonControlWrapper style
 const ButtonControlWrapper = styled.div`
@@ -61,7 +61,7 @@ const ButtonControlWrapper = styled.div`
   ${left}
   ${right}
   ${bottom}
-`;
+`
 
 // BulletControlWrapper style
 const BulletControlWrapper = styled.div`
@@ -70,7 +70,7 @@ const BulletControlWrapper = styled.div`
   ${alignItems}
   ${justifyContent}
   ${flexWrap}
-`;
+`
 
 // BulletButton style
 const BulletButton = styled.button`
@@ -97,13 +97,13 @@ const BulletButton = styled.button`
   ${borderRadius}
   ${width}
   ${height}
-`;
+`
 
 // default button style
 const DefaultBtn = styled.button`
   cursor: pointer;
   margin: 10px 3px;
-`;
+`
 
 export {
   GlideSlideWrapper,
@@ -112,5 +112,5 @@ export {
   BulletControlWrapper,
   BulletButton,
   DefaultBtn,
-};
-export default GlideWrapper;
+}
+export default GlideWrapper
