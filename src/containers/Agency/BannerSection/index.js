@@ -8,6 +8,7 @@ import FeatureBlock from 'common/components/FeatureBlock'
 import Container from 'common/components/UI/Container'
 import Particles from '../../Agency/Particle'
 import BannerWrapper, { DiscountLabel } from './bannerSection.style'
+import ParticlesComponent from '../BackgroundCanvas'
 
 const BannerSection = ({
   row,
@@ -33,7 +34,9 @@ const BannerSection = ({
   return (
     <BannerWrapper>
       <Particles />
-      <Container>
+      <Container >
+        <ParticlesComponent />
+
         <Box className="row" {...row}>
           <Box className="col" {...col}>
             <DiscountLabel>

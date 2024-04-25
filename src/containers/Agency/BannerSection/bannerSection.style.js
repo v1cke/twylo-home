@@ -5,7 +5,7 @@ import BannerBG from 'common/assets/image/agency/agency-banner.png'
 const BannerWrapper = styled.section`
   padding-top: 210px;
   padding-bottom: 160px;
-  background-image: url(${BannerBG?.src});
+  // background-image: url(${BannerBG?.src});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
