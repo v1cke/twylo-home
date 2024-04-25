@@ -7,8 +7,7 @@ import Button from 'common/components/Button'
 import NextImage from 'common/components/NextImage'
 import Container from 'common/components/UI/Container'
 import VideoSectionWrapper from './videoSection.style'
-
-import PreviewImage from 'common/assets/image/agency/preview-image.jpg'
+import twylo from '../../../../public/images/twylo_screen.png'
 import { Modal } from '@nextui-org/react'
 
 const VideoSection = ({
@@ -27,11 +26,14 @@ const VideoSection = ({
     <VideoSectionWrapper id="videoSection">
       <Container>
         <Box {...sectionHeader}>
-          <Text content="HOW WE WORK" {...sectionSubTitle} />
-          <Heading content="Take a look how we enjoy work" {...sectionTitle} />
+          <Text content="WIE WIR ARBEITEN" {...sectionSubTitle} />
+          <Heading
+            content="Ein typischer Tag im twylo office..."
+            {...sectionTitle}
+          />
         </Box>
         <Box className="figure">
-          <NextImage src={PreviewImage} alt="Video Preview Image" />
+          <NextImage src={twylo} alt="Twylo Image Video" />
           <Box className="fig__caption">
             <Button
               {...buttonStyle}
@@ -57,11 +59,12 @@ const VideoSection = ({
           <div style={{ margin: 'auto' }}>
             <iframe
               width="850"
-              height="505"
-              src="https://www.youtube.com/embed/hW98BFnVCm8"
-              title="Cartsy - Super Fast WooCommerce Theme"
+              height="450"
+              src="https://www.youtube.com/embed/iz2R3HGMWHE?si=leCyAn3hytE6G1JK"
+              title="Software Developing Company"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
             ></iframe>
           </div>

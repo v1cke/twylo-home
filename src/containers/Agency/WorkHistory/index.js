@@ -20,37 +20,37 @@ const WorkHistory = ({ row, col, cardStyle, title, description, btnStyle }) => {
             <FeatureBlock
               title={
                 <Heading
-                  content="Working With Knowledge, Passion, Heart & Soul "
+                  content="Arbeiten mit Erfahrung, Leidenschaft und Herz"
                   {...title}
                 />
               }
               description={
                 <Text
-                  content="We have worked with some leading agencies around the globe and their appreciation is our main strength ."
+                  content="Wir haben verschiedene berufliche Backgrounds, aber sind aufgrund unserer Leidenschaft zur IT hier..."
                   {...description}
                 />
               }
-              button={<Button title="WORK HISTORY" {...btnStyle} />}
+              button={<Button title="PROJEKTE" {...btnStyle} />}
             />
           </Box>
           <Box className="col" {...col}>
             <CounterUpArea>
               <Card className="card" {...cardStyle}>
-                <h3>20</h3>
-                <Text content="Companies Engaged" />
+                <h3>15</h3>
+                <Text content="irgendwas" />
               </Card>
               <Card className="card" {...cardStyle}>
-                <h3>199</h3>
-                <Text content="Happy Customers" />
+                <h3>15</h3>
+                <Text content="Glückliche Kunden" />
               </Card>
               <Card className="card" {...cardStyle}>
-                <h3>300+</h3>
-                <Text content="Project Complete" />
+                <h3>30+</h3>
+                <Text content="fertiggestellte Projekt" />
               </Card>
               <Card className="card" {...cardStyle}>
-                <Text content="& Much More" />
+                <Text content="& Vieles mehr" />
                 <Link legacyBehavior href="#1">
-                  <a>View work history</a>
+                  <a>Geschichte ansehen</a>
                 </Link>
               </Card>
             </CounterUpArea>

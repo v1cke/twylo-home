@@ -23,10 +23,7 @@ const BlogSection = ({
       <Container>
         <Box {...sectionHeader}>
           <Text content="PORTFOLIO" {...sectionSubTitle} />
-          <Heading
-            content="Meet our work experience from customers"
-            {...sectionTitle}
-          />
+          <Heading content="Auszüge unserer Projekte" {...sectionTitle} />
         </Box>
         <Box className="row" {...row}>
           {data.blog.map((post, index) => (

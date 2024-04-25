@@ -19,10 +19,12 @@ import QualitySection from 'containers/Agency/QualitySection'
 import Footer from 'containers/Agency/Footer'
 import { DrawerProvider } from 'common/contexts/DrawerContext'
 import FaqSection from 'containers/Agency/FaqSection'
+// import MouseTrail from 'containers/Agency/MouseTrail'
 
 export const Agency = () => {
   return (
     <ThemeProvider theme={agencyTheme}>
+      {/* <MouseTrail /> */}
       <Fragment>
         {/* Start agency head section */}
         <Head>
@@ -51,9 +53,9 @@ export const Agency = () => {
           <AboutUsSection />
           <WorkHistory />
           <BlogSection />
-          <QualitySection />
+          {/* <QualitySection /> */}
           <VideoSection />
-          <TestimonialSection />
+          {/* <TestimonialSection /> */}
           <TeamSection />
           <FaqSection />
           <NewsletterSection />

@@ -9,12 +9,10 @@ import NextImage from 'common/components/NextImage'
 import Button from 'common/components/Button'
 import FeatureBlock from 'common/components/FeatureBlock'
 import AboutUsSectionWrapper from './aboutUsSection.style'
-
 import data from 'common/data/Agency'
-
-import GroupImage1 from 'common/assets/image/agency/group/group-image1.jpg'
-import GroupImage2 from 'common/assets/image/agency/group/group-image2.jpg'
-import GroupImage3 from 'common/assets/image/agency/group/group-image3.jpg'
+import HumanAI from '../../../../public/images/humanai2.png'
+import SmartPhone from '../../../../public/images/smartphonedigital.jpg'
+import Codehacker from '../../../../public/images/codehacker.jpg'
 
 const AboutUsSection = ({
   row,
@@ -32,15 +30,33 @@ const AboutUsSection = ({
           <Card className="group-gallery">
             <Box className="col1">
               <Fade top delay={30}>
-                <NextImage src={GroupImage1} alt="Feature Image" />
+                <NextImage
+                  src={HumanAI}
+                  alt="Human&AI"
+                  style={{
+                    borderBottomRightRadius: 25,
+                    borderTopRightRadius: 25,
+                  }}
+                />
               </Fade>
               <Fade left delay={60}>
-                <NextImage src={GroupImage3} alt="Feature Image" />
+                <NextImage
+                  src={SmartPhone}
+                  alt="Digital World"
+                  style={{
+                    borderBottomRightRadius: 25,
+                    borderTopRightRadius: 25,
+                  }}
+                />
               </Fade>
             </Box>
             <Box className="col2">
               <Fade bottom delay={90}>
-                <NextImage src={GroupImage2} alt="Feature Image" />
+                <NextImage
+                  src={Codehacker}
+                  alt="Code Hacker"
+                  style={{ borderRadius: 25 }}
+                />
               </Fade>
             </Box>
           </Card>
@@ -50,13 +66,13 @@ const AboutUsSection = ({
             <FeatureBlock
               title={
                 <Heading
-                  content="Great Responsive & Strong Competitive People"
+                  content="Ein Auge für Design und moderne Anforderungen an KI und Cyber-Security"
                   {...title}
                 />
               }
               description={
                 <Text
-                  content="Some hardworking People are Working Day and Night to provide you highly scalable product . "
+                  content="9 to 5 war gestern! Wir bieten Support, wann immer er benötigt wird!"
                   {...description}
                 />
               }
@@ -71,7 +87,7 @@ const AboutUsSection = ({
                 title={<Heading content={feature.title} {...featureTitle} />}
               />
             ))}
-            <Button title="DISCOVER ITEM" {...btnStyle} />
+            <Button title="INFORMATIONEN" {...btnStyle} />
           </Box>
         </Box>
       </Box>

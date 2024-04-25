@@ -1,6 +1,9 @@
-import BlogImage1 from '../../assets/image/agency/blog/blog-img1.png'
-import BlogImage2 from '../../assets/image/agency/blog/blog-img2.png'
-import BlogImage3 from '../../assets/image/agency/blog/blog-img3.png'
+import Ref1 from '../../../../public/images/wee_screenshot.png'
+import Ref2 from '../../../../public/images/tc_screenshot.png'
+import Ref3 from '../../../../public/images/sl_screenshot.png'
+import Daniel from '../../../../public/images/sl_screenshot.png'
+import Viktor from '../../../../public/images/ViKCeo.png'
+import Tony from '../../../../public/images/TonyDev.png'
 import Member1 from '../../assets/image/agency/team/member-1.jpg'
 import Member2 from '../../assets/image/agency/team/member-2.jpg'
 import Member3 from '../../assets/image/agency/team/member-3.jpg'
@@ -10,12 +13,12 @@ import Menny from '../../assets/image/agency/client/menny.png'
 const data = {
   menuItems: [
     {
-      label: 'Feature',
+      label: 'Leistungen',
       path: '#featureSection',
       offset: '80',
     },
     {
-      label: 'Work History',
+      label: 'Geschichte',
       path: '#workHistorySection',
       offset: '67',
     },
@@ -24,18 +27,18 @@ const data = {
       path: '#blogSection',
       offset: '67',
     },
+    // {
+    //   label: 'Quality feature',
+    //   path: '#qualitySection',
+    //   offset: '67',
+    // },
     {
-      label: 'Quality feature',
-      path: '#qualitySection',
-      offset: '67',
-    },
-    {
-      label: 'Testimonial',
+      label: 'Kundenmeinungen',
       path: '#testimonialSection',
       offset: '100',
     },
     {
-      label: 'Team Member',
+      label: 'Team',
       path: '#teamSection',
       offset: '67',
     },
@@ -48,22 +51,27 @@ const data = {
   aboutus: [
     {
       id: 1,
-      title: 'Amazing communication experience.',
+      title: 'Hervorragende Kommunikationsfähigkeiten',
       icon: 'flaticon-next',
     },
     {
       id: 2,
-      title: 'Best designing experience with trending tools and sizes.',
+      title: 'Anwendung modernster Design-Tools',
       icon: 'flaticon-next',
     },
     {
       id: 3,
-      title: 'Training and communication method remotely.',
+      title: 'Cyber-Security Maßnahmen',
       icon: 'flaticon-next',
     },
     {
       id: 4,
-      title: '24/7 Hour onine supports.',
+      title: 'KI-Anwendungen zur Optimierung Ihrer Arbeitsabläufe',
+      icon: 'flaticon-next',
+    },
+    {
+      id: 5,
+      title: 'Digitale Telefonanlagen mit nativer Smartphone-Anbindung',
       icon: 'flaticon-next',
     },
   ],
@@ -71,133 +79,134 @@ const data = {
     {
       id: 1,
       icon: 'flaticon-flask',
-      title: 'Search Optimization',
+      title: 'Suchmaschinenoptimierung (SEO)',
       description:
-        'By using Search Engine Optimization, You will get more Clients',
+        'Durch Nutzung von Suchmaschinenoptimierung erhalten Sie mehr Kunden.',
     },
     {
       id: 2,
       icon: 'flaticon-pencil-case',
       title: 'Ui/UX Design',
       description:
-        'We provide the best UI/UX Design by following the latest trends of the market .',
+        'Wir bieten das beste UI/UX Design, indem wir den neuesten Trends des Marktes folgen.',
     },
     {
       id: 3,
       icon: 'flaticon-ruler',
-      title: 'Wireframing Task',
+      title: 'Cyber-Security',
       description:
-        'We respect our customer opinions and deals with them with perfect wireframing ',
+        'Anwendung modernster Sicherheits-Mechanismen zum Schutz vor Cyber-Angriffen.',
     },
     {
       id: 4,
       icon: 'flaticon-startup',
-      title: 'Business Solutions',
+      title: 'Flexible Stack',
       description:
-        'We are commited to provide proper business solutions with reasonable pricing',
+        'Software-Entwicklung verändert sich stetig. Daher erweitern auch wir unser Tech-Stack stetig.',
     },
     {
       id: 5,
       icon: 'flaticon-briefing',
-      title: 'Business Analysis',
+      title: 'Digitale Telefonanlage',
       description:
-        'A day to day report about your ongoing business for proper understanding',
+        'Festnetz und Mobilfunk perfekt vereint und mit KI-Funktionen optimiert.',
     },
     {
       id: 6,
       icon: 'flaticon-creative',
-      title: 'Content Management',
+      title: 'KI-unterstütze Software',
       description:
-        'Proper Content Management is important to find out the real clients for your agencies',
+        'KI-unterstützte Software für eine maximale Effiziens Ihrer Arbeitsabläufe.',
     },
   ],
   qualityFeature: [
     {
       id: 1,
       icon: 'flaticon-flask',
-      title: 'Search Optimization',
+      title: 'Cyber-Security',
       description:
-        'By using Search Engine Optimization, You will get more Clients.',
+        'Anwendung modernster Sicherheits-Mechanismen zum Schutz vor Cyber-Angriffen.',
     },
     {
       id: 2,
       icon: 'flaticon-pencil-case',
-      title: 'Wireframing Task',
+      title: 'Flexible Stack',
       description:
-        'We respect our customer opinions and deals with them with perfect wireframing.',
+        'Software-Entwicklung verändert sich stetig und wir passen unser Know How daran an.',
     },
     {
       id: 3,
       icon: 'flaticon-ruler',
       title: 'Ui/Ux Design',
       description:
-        'We provide the best UI/UX Design by following the latest trends of the market .',
+        'Design und Bedienfreundlichkeit entscheiden über den Erfolg einer Internetseite, daher liegt hier unser besonderer Augenmerk.',
     },
     {
       id: 4,
       icon: 'flaticon-briefing',
-      title: 'Content Writting',
+      title: 'Digitale Telefonanlage',
       description:
-        'Proper Content Management is important to find out the real clients for your agencies .',
+        'Festnetz und Mobilfunk perfekt vereint und mit KI-Funktionen optimiert.',
     },
   ],
   blog: [
     {
       id: 1,
-      title: 'Real home corporation',
-      thumbnail_url: BlogImage1,
-      date: 'November 02, 2018',
-      postLink: '#1',
+      title: 'Weser Ems Eisenbahn',
+      thumbnail_url: Ref1,
+      date: 'September 2023',
+      postLink: 'https://www.wee.gmbh',
     },
     {
       id: 2,
-      title: 'Sheltech developer ltd.',
-      thumbnail_url: BlogImage2,
-      date: 'November 12, 2018',
-      postLink: '#2',
+      title: 'Traincrew',
+      thumbnail_url: Ref2,
+      date: 'August 2023',
+      postLink: 'https://www.traincrew.de',
     },
     {
       id: 3,
-      title: 'Alt architecture co.',
-      thumbnail_url: BlogImage3,
-      date: 'December 09, 2018',
-      postLink: '#3',
+      title: 'Schnellimbiss Schmeckt Lecker',
+      thumbnail_url: Ref3,
+      date: 'Januar 2024',
+      postLink: 'https://www.schmeckt-lecker.net',
     },
   ],
   teamMember: [
     {
       id: 1,
-      name: 'Jessica Fanddy',
-      thumbnail_url: Member1,
-      designation: 'Co Founder',
+      name: 'Daniel Wulfing',
+      thumbnail_url: Viktor,
+      designation: 'Founder / Developer',
       social_links: [
         {
           id: 1,
           icon: 'flaticon-facebook-logo',
+          url: 'https://de-de.facebook.com/people/Daniel-Wulfing/pfbid02Ba1n4Pt5PDjCnEMmcDrKJ5kWMUoBs6641SWAsfJ2CTtDfk67L4nvUBs3myDf2Da5l/',
+        },
+        {
+          id: 1,
+          icon: 'flaticon-x',
           url: '#',
         },
         {
           id: 1,
-          icon: 'flaticon-twitter-logo-silhouette',
-          url: '#',
+
+          icon: 'flaticon-linkedin-logo-silhouette',
+          url: 'https://www.linkedin.com/in/daniel-wulfing-522150178/?originalSubdomain=de',
         },
         {
           id: 1,
-          icon: 'flaticon-instagram',
-          url: '#',
-        },
-        {
-          id: 1,
-          icon: 'flaticon-dribble-logo',
-          url: '#',
+          icon: 'flaticon-xing-logo',
+          url: 'https://www.xing.com/profile/Daniel_Wulfing',
         },
       ],
     },
     {
       id: 2,
-      name: 'Devid Justingul',
-      thumbnail_url: Member2,
-      designation: 'Senior Ui/UX Designer',
+      name: 'Viktor Grünwald',
+      thumbnail_url: Viktor,
+      designation: 'CEO / Developer',
       social_links: [
         {
           id: 1,
@@ -223,9 +232,9 @@ const data = {
     },
     {
       id: 3,
-      name: 'Handdy Albuzz',
-      thumbnail_url: Member3,
-      designation: 'Article Writer',
+      name: 'Tony Schroeder',
+      thumbnail_url: Tony,
+      designation: 'Developer / Ui-UX Designer',
       social_links: [
         {
           id: 1,

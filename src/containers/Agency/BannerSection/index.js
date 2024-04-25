@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import Box from 'common/components/Box'
 import Text from 'common/components/Text'
@@ -6,7 +6,7 @@ import Heading from 'common/components/Heading'
 import Button from 'common/components/Button'
 import FeatureBlock from 'common/components/FeatureBlock'
 import Container from 'common/components/UI/Container'
-import Particles from '../../Agency/Particle'
+// import Particles from '../../Agency/Particle'
 import BannerWrapper, { DiscountLabel } from './bannerSection.style'
 import ParticlesComponent from '../BackgroundCanvas'
 
@@ -20,23 +20,38 @@ const BannerSection = ({
   discountAmount,
   outlineBtnStyle,
 }) => {
-  const ButtonGroup = () => (
-    <Fragment>
-      <Button title="LEARN MORE" {...btnStyle} />
-      <Button
-        title="WATCH WORKS"
-        variant="textButton"
-        icon={<i className="flaticon-next" />}
-        {...outlineBtnStyle}
-      />
-    </Fragment>
-  )
+  const [activeHeading, setActiveHeading] = useState(0)
+
+  const headings = [
+    'Innovativ.',
+    'Kundenorientiert.',
+    'Agil.',
+    'Technisch versiert.',
+    'Transparent.',
+    'Teamorientiert.',
+    'Qualitätsbewusst.',
+    'Lernbereit.',
+    'Anpassungsfähig.',
+    'Nachhaltig.',
+  ]
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveHeading(
+        (currentHeading) => (currentHeading + 1) % headings.length,
+      )
+    }, 5000)
+
+    // Cleanup-Funktion, um den Timer bei unmounting zu löschen
+    return () => clearInterval(timer)
+  }, [])
+
   return (
     <BannerWrapper>
-      <Particles />
-      <Container >
-        <ParticlesComponent />
+      {/* <Particles /> */}
 
+      <Container>
+        <ParticlesComponent />
         <Box className="row" {...row}>
           <Box className="col" {...col}>
             <DiscountLabel>
@@ -45,10 +60,10 @@ const BannerSection = ({
             </DiscountLabel>
             <FeatureBlock
               title={
-                <Heading
-                  content="Mit unserem Wissen und Leidenschaft und ihrem Herz und Seele "
-                  {...title}
-                />
+                <div style={{ display: 'flex', whiteSpace: 'nowrap' }}>
+                  <Heading content="Wir sind&nbsp;" {...title} />
+                  <Heading content={headings[activeHeading]} {...title} />
+                </div>
               }
               description={
                 <Text
@@ -56,7 +71,17 @@ const BannerSection = ({
                   {...description}
                 />
               }
-              button={<ButtonGroup />}
+              button={
+                <Fragment>
+                  <Button title="LEARN MORE" {...btnStyle} />
+                  <Button
+                    title="WATCH WORKS"
+                    variant="textButton"
+                    icon={<i className="flaticon-next" />}
+                    {...outlineBtnStyle}
+                  />
+                </Fragment>
+              }
             />
           </Box>
         </Box>

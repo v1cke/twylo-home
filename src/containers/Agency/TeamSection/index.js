@@ -8,6 +8,7 @@ import FeatureBlock from 'common/components/FeatureBlock'
 import data from 'common/data/Agency'
 import Container from 'common/components/UI/Container'
 import TeamSectionWrapper, { SocialLinks } from './teamSection.style'
+import { height } from 'styled-system'
 
 const TeamSection = ({
   row,
@@ -37,6 +38,7 @@ const TeamSection = ({
                 className="team__member"
                 icon={
                   <NextImage
+                    style={{ objectFit: 'cover', height: 500 }}
                     src={member.thumbnail_url}
                     alt={`Team member photo ${member.id}`}
                     className="member__photo"

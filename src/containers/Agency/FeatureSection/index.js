@@ -24,9 +24,9 @@ const FeatureSection = ({
     <FeatureSectionWrapper id="featureSection">
       <Container>
         <Box {...sectionHeader}>
-          <Text content="OUR SERVICES" {...sectionSubTitle} />
+          <Text content="Leistungen" {...sectionSubTitle} />
           <Heading
-            content="Featured Service that We Provide"
+            content="Leistungen auf die wir spezialisiert sind"
             {...sectionTitle}
           />
         </Box>

@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { themeGet } from '@styled-system/theme-get'
 import BannerBG from 'common/assets/image/agency/agency-banner.png'
+// import HumanAI from '../../../../public/images/humanai.jpg'
 
 const BannerWrapper = styled.section`
   padding-top: 210px;
