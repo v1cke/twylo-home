@@ -12,7 +12,8 @@ import SearchPanel from '../SearchPanel'
 import LoginModal from '../LoginModal'
 import CopyrightSection from '../CopyrightsSection'
 
-import LogoImage from 'common/assets/image/agency/logo.png'
+// import LogoImage from 'common/assets/image/agency/logo.png'
+const LogoImage = '/logo.png'
 
 import { DrawerContext } from 'common/contexts/DrawerContext'
 
@@ -41,12 +42,16 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
   return (
     <NavbarWrapper {...navbarStyle}>
       <Container>
-        <Logo
+        <div style={{ display: 'flex', alignItems: 'center', gap: 20, fontWeight: '600', fontSize: 24, }}>
+
+          <img src={LogoImage} style={logoStyle} /> <span>twylo</span>
+        </div>
+        {/* <Logo
           href="#"
           logoSrc={LogoImage}
           title="Agency"
           logoStyle={logoStyle}
-        />
+        /> */}
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <Button
             variant="textButton"
@@ -120,8 +125,8 @@ Navbar.defaultProps = {
   },
   // Default logo size
   logoStyle: {
-    width: '128px',
-    height: 'auto',
+    width: 'auto',
+    height: '48px',
   },
 }
 

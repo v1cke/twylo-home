@@ -37,19 +37,19 @@ const BannerSection = ({
         <Box className="row" {...row}>
           <Box className="col" {...col}>
             <DiscountLabel>
-              <Text content="25% Discount" {...discountAmount} />
-              <Text content="on every first project budget" {...discountText} />
+              <Text content="25% Aufpreis" {...discountAmount} />
+              <Text content="auf Alles" {...discountText} />
             </DiscountLabel>
             <FeatureBlock
               title={
                 <Heading
-                  content="With Knowledge, Passion, Heart & Soul Agencies"
+                  content="Mit unserem Wissen und Leidenschaft und ihrem Herz und Seele "
                   {...title}
                 />
               }
               description={
                 <Text
-                  content="Agencies around the world are moving to the digital agencies. So, It is high time to introduce your agency digitaly ."
+                  content="Firmen auf der ganzen Welt sind auf dem Weg zu Digitalisierung. Es ist also höchste Zeit. "
                   {...description}
                 />
               }
