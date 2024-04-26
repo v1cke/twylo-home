@@ -9,6 +9,7 @@ import Container from 'common/components/UI/Container'
 // import Particles from '../../Agency/Particle'
 import BannerWrapper, { DiscountLabel } from './bannerSection.style'
 import ParticlesComponent from '../BackgroundCanvas'
+import Fade from 'react-reveal/Fade'
 
 const BannerSection = ({
   row,
@@ -62,7 +63,9 @@ const BannerSection = ({
               title={
                 <div style={{ display: 'flex', whiteSpace: 'nowrap' }}>
                   <Heading content="Wir sind&nbsp;" {...title} />
-                  <Heading content={headings[activeHeading]} {...title} />
+                  <Fade top delay={30}>
+                    <Heading content={headings[activeHeading]} {...title} />
+                  </Fade>
                 </div>
               }
               description={

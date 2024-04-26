@@ -1,9 +1,9 @@
 import Ref1 from '../../../../public/images/wee_screenshot.png'
 import Ref2 from '../../../../public/images/tc_screenshot.png'
 import Ref3 from '../../../../public/images/sl_screenshot.png'
-import Daniel from '../../../../public/images/sl_screenshot.png'
-import Viktor from '../../../../public/images/ViKCeo.png'
-import Tony from '../../../../public/images/TonyDev.png'
+import Daniel from '../../../../public/images/DanielFounder2.png'
+import Viktor from '../../../../public/images/ViKCeo2.png'
+import Tony from '../../../../public/images/TonyDev2.png'
 import Member1 from '../../assets/image/agency/team/member-1.jpg'
 import Member2 from '../../assets/image/agency/team/member-2.jpg'
 import Member3 from '../../assets/image/agency/team/member-3.jpg'
@@ -176,7 +176,7 @@ const data = {
     {
       id: 1,
       name: 'Daniel Wulfing',
-      thumbnail_url: Viktor,
+      thumbnail_url: Daniel,
       designation: 'Founder / Developer',
       social_links: [
         {

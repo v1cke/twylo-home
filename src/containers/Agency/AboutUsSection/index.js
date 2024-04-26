@@ -11,7 +11,7 @@ import FeatureBlock from 'common/components/FeatureBlock'
 import AboutUsSectionWrapper from './aboutUsSection.style'
 import data from 'common/data/Agency'
 import HumanAI from '../../../../public/images/humanai2.png'
-import SmartPhone from '../../../../public/images/smartphonedigital.jpg'
+import SmartPhone from '../../../../public/images/smartphonedigital2.jpg'
 import Codehacker from '../../../../public/images/codehacker.jpg'
 
 const AboutUsSection = ({
