@@ -23,7 +23,12 @@ const VideoSection = ({
   }
 
   return (
-    <VideoSectionWrapper id="videoSection">
+    <VideoSectionWrapper
+      style={{
+        background: 'linear-gradient(to right, transparent, #e0e0e0)',
+      }}
+      id="videoSection"
+    >
       <Container>
         <Box {...sectionHeader}>
           <Text content="WIE WIR ARBEITEN" {...sectionSubTitle} />

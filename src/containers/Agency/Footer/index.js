@@ -22,7 +22,10 @@ const Footer = ({
   textStyle,
 }) => {
   return (
-    <FooterWrapper id="footerSection">
+    <FooterWrapper
+      id="footerSection"
+      style={{ background: 'white', opacity: '0.9' }}
+    >
       <Container>
         <Box className="row" {...row}>
           <Box {...colOne}>

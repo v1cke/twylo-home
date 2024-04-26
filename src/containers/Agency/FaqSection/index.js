@@ -28,11 +28,16 @@ const FaqSection = ({
   descriptionStyle,
 }) => {
   return (
-    <FaqSectionWrapper id="faqSection">
+    <FaqSectionWrapper
+      style={{
+        background: 'linear-gradient(to right, transparent, #e0e0e0)',
+      }}
+      id="faqSection"
+    >
       <Container>
         <Box {...sectionHeader}>
           <Text content="FAQ" {...sectionSubTitle} />
-          <Heading content="Frequently Ask Question" {...sectionTitle} />
+          <Heading content="Häufige Fragen" {...sectionTitle} />
         </Box>
         <Box className="row">
           <Accordion>

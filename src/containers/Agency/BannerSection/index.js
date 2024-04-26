@@ -8,7 +8,6 @@ import FeatureBlock from 'common/components/FeatureBlock'
 import Container from 'common/components/UI/Container'
 // import Particles from '../../Agency/Particle'
 import BannerWrapper, { DiscountLabel } from './bannerSection.style'
-import ParticlesComponent from '../BackgroundCanvas'
 import Fade from 'react-reveal/Fade'
 
 const BannerSection = ({
@@ -22,6 +21,7 @@ const BannerSection = ({
   outlineBtnStyle,
 }) => {
   const [activeHeading, setActiveHeading] = useState(0)
+  const [isFadingOut, setIsFadingOut] = useState(false)
 
   const headings = [
     'Innovativ.',
@@ -38,12 +38,15 @@ const BannerSection = ({
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setActiveHeading(
-        (currentHeading) => (currentHeading + 1) % headings.length,
-      )
-    }, 5000)
+      setIsFadingOut(true)
+      setTimeout(() => {
+        setActiveHeading(
+          (currentHeading) => (currentHeading + 1) % headings.length,
+        )
+        setIsFadingOut(false)
+      }, 3000) // 500ms für das Ausblenden bevor der Text wechselt
+    }, 3500)
 
-    // Cleanup-Funktion, um den Timer bei unmounting zu löschen
     return () => clearInterval(timer)
   }, [])
 
@@ -52,7 +55,6 @@ const BannerSection = ({
       {/* <Particles /> */}
 
       <Container>
-        <ParticlesComponent />
         <Box className="row" {...row}>
           <Box className="col" {...col}>
             <DiscountLabel>
@@ -63,9 +65,23 @@ const BannerSection = ({
               title={
                 <div style={{ display: 'flex', whiteSpace: 'nowrap' }}>
                   <Heading content="Wir sind&nbsp;" {...title} />
-                  <Fade top delay={30}>
-                    <Heading content={headings[activeHeading]} {...title} />
-                  </Fade>
+                  {!isFadingOut ? (
+                    <Fade bottom collapse when={isFadingOut}>
+                      <Heading
+                        content={
+                          headings[
+                            (activeHeading + headings.length - 1) %
+                              headings.length
+                          ]
+                        }
+                        {...title}
+                      />
+                    </Fade>
+                  ) : (
+                    <Fade top collapse when={isFadingOut}>
+                      <Heading content={headings[activeHeading]} {...title} />
+                    </Fade>
+                  )}
                 </div>
               }
               description={
@@ -76,9 +92,9 @@ const BannerSection = ({
               }
               button={
                 <Fragment>
-                  <Button title="LEARN MORE" {...btnStyle} />
+                  <Button title="MEHR VON UNS" {...btnStyle} />
                   <Button
-                    title="WATCH WORKS"
+                    title="PROJEKTE ANSEHEN"
                     variant="textButton"
                     icon={<i className="flaticon-next" />}
                     {...outlineBtnStyle}

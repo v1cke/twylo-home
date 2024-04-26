@@ -30,12 +30,13 @@ const SocialLinks = styled.div`
     border-radius: 3px;
     border: 1px solid rgba(15, 33, 55, 0.26);
     color: #0f2137;
-    padding: 1px 6px;
+    // padding: 1px 6px;
     font-size: 13px;
     display: inline-block;
     transition: all 0.2s ease;
     &:hover,
     &:focus {
+      filter: invert(100%);
       outline: none;
       &.flaticon-facebook-logo {
         color: #ffffff;

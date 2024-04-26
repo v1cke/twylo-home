@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import { themeGet } from '@styled-system/theme-get'
 
 const AboutUsSectionWrapper = styled.section`
-  padding: 80px 0 50px;
   overflow: hidden;
 
   @media (max-width: 990px) {

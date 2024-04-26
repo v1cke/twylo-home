@@ -179,25 +179,24 @@ const data = {
       thumbnail_url: Daniel,
       designation: 'Founder / Developer',
       social_links: [
+        // {
+        //   id: 1,
+        //   icon: 'flaticon-facebook-logo',
+        //   url: 'https://de-de.facebook.com/people/Daniel-Wulfing/pfbid02Ba1n4Pt5PDjCnEMmcDrKJ5kWMUoBs6641SWAsfJ2CTtDfk67L4nvUBs3myDf2Da5l/',
+        // },
+        // {
+        //   id: 1,
+        //   icon: 'flaticon-twitter-logo-silhouette',
+        //   url: '#',
+        // },
         {
           id: 1,
-          icon: 'flaticon-facebook-logo',
-          url: 'https://de-de.facebook.com/people/Daniel-Wulfing/pfbid02Ba1n4Pt5PDjCnEMmcDrKJ5kWMUoBs6641SWAsfJ2CTtDfk67L4nvUBs3myDf2Da5l/',
-        },
-        {
-          id: 1,
-          icon: 'flaticon-x',
-          url: '#',
-        },
-        {
-          id: 1,
-
-          icon: 'flaticon-linkedin-logo-silhouette',
+          icon: 'linkedin',
           url: 'https://www.linkedin.com/in/daniel-wulfing-522150178/?originalSubdomain=de',
         },
         {
-          id: 1,
-          icon: 'flaticon-xing-logo',
+          id: 2,
+          icon: 'xing',
           url: 'https://www.xing.com/profile/Daniel_Wulfing',
         },
       ],
@@ -210,22 +209,12 @@ const data = {
       social_links: [
         {
           id: 1,
-          icon: 'flaticon-facebook-logo',
+          icon: 'linkedin',
           url: '#',
         },
         {
-          id: 1,
-          icon: 'flaticon-twitter-logo-silhouette',
-          url: '#',
-        },
-        {
-          id: 1,
-          icon: 'flaticon-instagram',
-          url: '#',
-        },
-        {
-          id: 1,
-          icon: 'flaticon-dribble-logo',
+          id: 2,
+          icon: 'xing',
           url: '#',
         },
       ],
@@ -238,22 +227,12 @@ const data = {
       social_links: [
         {
           id: 1,
-          icon: 'flaticon-facebook-logo',
+          icon: 'linkedin',
           url: '#',
         },
         {
-          id: 1,
-          icon: 'flaticon-twitter-logo-silhouette',
-          url: '#',
-        },
-        {
-          id: 1,
-          icon: 'flaticon-instagram',
-          url: '#',
-        },
-        {
-          id: 1,
-          icon: 'flaticon-dribble-logo',
+          id: 2,
+          icon: 'xing',
           url: '#',
         },
       ],

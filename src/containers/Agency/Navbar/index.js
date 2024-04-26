@@ -12,7 +12,6 @@ import SearchPanel from '../SearchPanel'
 import LoginModal from '../LoginModal'
 import CopyrightSection from '../CopyrightsSection'
 
-// import LogoImage from 'common/assets/image/agency/logo.png'
 const LogoImage = '/logo.png'
 
 import { DrawerContext } from 'common/contexts/DrawerContext'
@@ -42,16 +41,27 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
   return (
     <NavbarWrapper {...navbarStyle}>
       <Container>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 20, fontWeight: '600', fontSize: 24, }}>
-
-          <img src={LogoImage} style={logoStyle} /> <span>twylo</span>
-        </div>
-        {/* <Logo
+        <a
           href="#"
-          logoSrc={LogoImage}
-          title="Agency"
-          logoStyle={logoStyle}
-        /> */}
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: 20,
+            fontWeight: '600',
+            fontSize: 24,
+            color: '#7367F0',
+          }}
+        >
+          <img src={LogoImage} style={logoStyle} />
+          <span
+            style={{
+              color: '#7367F0',
+            }}
+          >
+            twylo
+          </span>
+        </a>
+
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <Button
             variant="textButton"

@@ -5,7 +5,7 @@ import HamburgMenuWrapper from './hamburgMenu.style'
 const HamburgMenu = ({ className, wrapperStyle, barColor, ...props }) => {
   // Add all classs to an array
   const addAllClasses = ['hamburgMenu__bar']
-
+  console.log('wrapperStyle', wrapperStyle)
   // className prop checking
   if (className) {
     addAllClasses.push(className)

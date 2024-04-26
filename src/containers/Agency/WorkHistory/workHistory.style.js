@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { themeGet } from '@styled-system/theme-get'
 
 const WorkHistoryWrapper = styled.section`
-  padding: 70px 0 80px;
+  // padding: 80px 0 00px;
   overflow: hidden;
   @media (max-width: 990px) {
     padding: 50px 0 60px 0;

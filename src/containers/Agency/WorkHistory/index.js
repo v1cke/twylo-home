@@ -13,10 +13,13 @@ import WorkHistoryWrapper, { CounterUpArea } from './workHistory.style'
 
 const WorkHistory = ({ row, col, cardStyle, title, description, btnStyle }) => {
   return (
-    <WorkHistoryWrapper id="workHistorySection">
+    <WorkHistoryWrapper
+      id="workHistorySection"
+      style={{ background: 'linear-gradient(to right, transparent, #e0e0e0)' }}
+    >
       <Container>
         <Box className="row" {...row}>
-          <Box className="col" {...col}>
+          <Box style={{}} className="col" {...col}>
             <FeatureBlock
               title={
                 <Heading
@@ -35,19 +38,35 @@ const WorkHistory = ({ row, col, cardStyle, title, description, btnStyle }) => {
           </Box>
           <Box className="col" {...col}>
             <CounterUpArea>
-              <Card className="card" {...cardStyle}>
+              <Card
+                className="card"
+                {...cardStyle}
+                style={{ background: 'white', opacity: '0.9' }}
+              >
                 <h3>15</h3>
                 <Text content="irgendwas" />
               </Card>
-              <Card className="card" {...cardStyle}>
+              <Card
+                className="card"
+                {...cardStyle}
+                style={{ background: 'white', opacity: '0.9' }}
+              >
                 <h3>15</h3>
                 <Text content="Glückliche Kunden" />
               </Card>
-              <Card className="card" {...cardStyle}>
+              <Card
+                className="card"
+                {...cardStyle}
+                style={{ background: 'white', opacity: '0.9' }}
+              >
                 <h3>30+</h3>
                 <Text content="fertiggestellte Projekt" />
               </Card>
-              <Card className="card" {...cardStyle}>
+              <Card
+                className="card"
+                {...cardStyle}
+                style={{ background: 'white', opacity: '0.9' }}
+              >
                 <Text content="& Vieles mehr" />
                 <Link legacyBehavior href="#1">
                   <a>Geschichte ansehen</a>

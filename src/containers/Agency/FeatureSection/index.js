@@ -21,30 +21,43 @@ const FeatureSection = ({
   blockWrapperStyle,
 }) => {
   return (
-    <FeatureSectionWrapper id="featureSection">
+    <FeatureSectionWrapper
+      id="featureSection"
+      style={{ background: 'linear-gradient(to right, transparent, #e0e0e0)' }}
+    >
       <Container>
-        <Box {...sectionHeader}>
-          <Text content="Leistungen" {...sectionSubTitle} />
-          <Heading
-            content="Leistungen auf die wir spezialisiert sind"
-            {...sectionTitle}
-          />
-        </Box>
-        <Box className="row" {...row}>
-          {data.features.map((feature, index) => (
-            <Box className="col" {...col} key={`feature-${index}`}>
-              <FeatureBlock
-                icon={<i className={feature.icon} />}
-                wrapperStyle={blockWrapperStyle}
-                iconStyle={iconStyle}
-                contentStyle={contentStyle}
-                title={<Heading content={feature.title} {...featureTitle} />}
-                description={
-                  <Text content={feature.description} {...featureDescription} />
-                }
-              />
-            </Box>
-          ))}
+        <Box
+          style={{
+            paddingTop: 80,
+            paddingBottom: 80,
+          }}
+        >
+          <Box {...sectionHeader}>
+            <Text content="Leistungen" {...sectionSubTitle} />
+            <Heading
+              content="Leistungen auf die wir spezialisiert sind"
+              {...sectionTitle}
+            />
+          </Box>
+          <Box className="row" {...row}>
+            {data.features.map((feature, index) => (
+              <Box className="col" {...col} key={`feature-${index}`}>
+                <FeatureBlock
+                  icon={<i className={feature.icon} />}
+                  wrapperStyle={blockWrapperStyle}
+                  iconStyle={iconStyle}
+                  contentStyle={contentStyle}
+                  title={<Heading content={feature.title} {...featureTitle} />}
+                  description={
+                    <Text
+                      content={feature.description}
+                      {...featureDescription}
+                    />
+                  }
+                />
+              </Box>
+            ))}
+          </Box>
         </Box>
       </Container>
     </FeatureSectionWrapper>

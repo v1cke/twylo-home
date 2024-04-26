@@ -8,7 +8,12 @@ import FeatureBlock from 'common/components/FeatureBlock'
 import data from 'common/data/Agency'
 import Container from 'common/components/UI/Container'
 import TeamSectionWrapper, { SocialLinks } from './teamSection.style'
-import { height } from 'styled-system'
+import {
+  IconArrowLeft,
+  IconBrandLinkedin,
+  IconBrandX,
+  IconBrandXing,
+} from '@tabler/icons-react'
 
 const TeamSection = ({
   row,
@@ -21,7 +26,12 @@ const TeamSection = ({
   contentStyle,
 }) => {
   return (
-    <TeamSectionWrapper id="teamSection">
+    <TeamSectionWrapper
+      style={{
+        background: 'linear-gradient(to left, transparent, #e0e0e0)',
+      }}
+      id="teamSection"
+    >
       <Container>
         <Box {...sectionHeader}>
           <Text content="TEAM MEMBER" {...sectionSubTitle} />
@@ -53,10 +63,17 @@ const TeamSection = ({
                       {member.social_links.map((social, index) => (
                         <a
                           href={social.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           key={`profile_id-${index}`}
-                          className={social.icon}
-                          aria-label={social.icon}
-                        ></a>
+                          style={{ background: '#fff' }}
+                        >
+                          {social.icon === 'xing' ? (
+                            <IconBrandXing />
+                          ) : social.icon === 'linkedin' ? (
+                            <IconBrandLinkedin />
+                          ) : undefined}
+                        </a>
                       ))}
                     </SocialLinks>
                   </Fragment>

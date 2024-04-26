@@ -13,6 +13,7 @@ import data from 'common/data/Agency'
 import HumanAI from '../../../../public/images/humanai2.png'
 import SmartPhone from '../../../../public/images/smartphonedigital2.jpg'
 import Codehacker from '../../../../public/images/codehacker.jpg'
+import { paddingTop } from 'styled-system'
 
 const AboutUsSection = ({
   row,
@@ -25,7 +26,17 @@ const AboutUsSection = ({
 }) => {
   return (
     <AboutUsSectionWrapper id="AboutUsSection">
-      <Box className="row" {...row}>
+      <Box
+        style={{
+          // background: '#e0e0e0',
+          background: 'linear-gradient(to right, #e0e0e0, transparent)',
+          opacity: '0.9',
+          paddingTop: 20,
+          paddingBottom: 20,
+        }}
+        className="row"
+        {...row}
+      >
         <Box className="col" {...col}>
           <Card className="group-gallery">
             <Box className="col1">

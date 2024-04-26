@@ -19,7 +19,12 @@ const BlogSection = ({
   blogMeta,
 }) => {
   return (
-    <BlogSectionWrapper id="blogSection">
+    <BlogSectionWrapper
+      style={{
+        background: 'linear-gradient(to left, transparent, #e0e0e0)',
+      }}
+      id="blogSection"
+    >
       <Container>
         <Box {...sectionHeader}>
           <Text content="PORTFOLIO" {...sectionSubTitle} />

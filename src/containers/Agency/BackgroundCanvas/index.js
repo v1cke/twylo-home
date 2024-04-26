@@ -21,7 +21,7 @@ const ParticlesComponent = () => {
       options={{
         background: {
           color: {
-            value: '#fff',
+            value: '#f0f0f0',
           },
         },
         fpsLimit: 120,
@@ -55,8 +55,8 @@ const ParticlesComponent = () => {
             color: '#7367F0',
             distance: 150,
             enable: true,
-            opacity: 0.5,
-            width: 1,
+            opacity: 0.4,
+            width: 2,
           },
           collisions: {
             enable: true,
@@ -68,7 +68,7 @@ const ParticlesComponent = () => {
               default: 'bounce',
             },
             random: false,
-            speed: 2,
+            speed: 1,
             straight: false,
           },
           number: {
@@ -76,16 +76,24 @@ const ParticlesComponent = () => {
               enable: true,
               area: 800,
             },
-            value: 80,
+            value: 40,
           },
           opacity: {
-            value: 0.5,
+            value: 0.3,
           },
+          // shape: {
+          //   type: 'circle',
+          // },
           shape: {
-            type: 'circle',
+            type: 'image',
+            image: {
+              src: '/logo.png',
+              width: 100,
+              height: 100,
+            },
           },
           size: {
-            value: { min: 1, max: 5 },
+            value: { min: 5, max: 20 },
           },
         },
         detectRetina: true,
