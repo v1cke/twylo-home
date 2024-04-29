@@ -41,33 +41,35 @@ const FaqSection = ({
         </Box>
         <Box className="row">
           <Accordion>
-            <Fragment>
-              {data.faq.map((faqItem, index) => (
-                <AccordionItem key={`accordion_key-${index}`}>
-                  <Fragment>
-                    <AccordionTitle>
-                      <Fragment>
-                        <Heading content={faqItem.title} {...titleStyle} />
-                        <IconWrapper>
-                          <OpenIcon>
-                            <Icon icon={minus} size={18} />
-                          </OpenIcon>
-                          <CloseIcon>
-                            <Icon icon={plus} size={18} />
-                          </CloseIcon>
-                        </IconWrapper>
-                      </Fragment>
-                    </AccordionTitle>
-                    <AccordionBody>
-                      <Text
-                        content={faqItem.description}
-                        {...descriptionStyle}
-                      />
-                    </AccordionBody>
-                  </Fragment>
-                </AccordionItem>
-              ))}
-            </Fragment>
+            <Box style={{ background: 'white', opacity: '0.9' }}>
+              <Fragment>
+                {data.faq.map((faqItem, index) => (
+                  <AccordionItem key={`accordion_key-${index}`}>
+                    <Fragment>
+                      <AccordionTitle>
+                        <Fragment>
+                          <Heading content={faqItem.title} {...titleStyle} />
+                          <IconWrapper>
+                            <OpenIcon>
+                              <Icon icon={minus} size={18} />
+                            </OpenIcon>
+                            <CloseIcon>
+                              <Icon icon={plus} size={18} />
+                            </CloseIcon>
+                          </IconWrapper>
+                        </Fragment>
+                      </AccordionTitle>
+                      <AccordionBody>
+                        <Text
+                          content={faqItem.description}
+                          {...descriptionStyle}
+                        />
+                      </AccordionBody>
+                    </Fragment>
+                  </AccordionItem>
+                ))}
+              </Fragment>
+            </Box>
           </Accordion>
         </Box>
       </Container>

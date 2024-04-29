@@ -41,7 +41,12 @@ const FeatureSection = ({
           </Box>
           <Box className="row" {...row}>
             {data.features.map((feature, index) => (
-              <Box className="col" {...col} key={`feature-${index}`}>
+              <Box
+                className="col"
+                {...col}
+                key={`feature-${index}`}
+                style={{ background: 'white', opacity: '0.9' }}
+              >
                 <FeatureBlock
                   icon={<i className={feature.icon} />}
                   wrapperStyle={blockWrapperStyle}

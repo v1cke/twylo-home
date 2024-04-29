@@ -11,11 +11,8 @@ import FeatureSection from 'containers/Agency/FeatureSection'
 import AboutUsSection from 'containers/Agency/AboutUsSection'
 import WorkHistory from 'containers/Agency/WorkHistory'
 import BlogSection from 'containers/Agency/BlogSection'
-import TestimonialSection from 'containers/Agency/TestimonialSection'
 import TeamSection from 'containers/Agency/TeamSection'
 import VideoSection from 'containers/Agency/VideoSection'
-import NewsletterSection from 'containers/Agency/NewsletterSection'
-import QualitySection from 'containers/Agency/QualitySection'
 import Footer from 'containers/Agency/Footer'
 import { DrawerProvider } from 'common/contexts/DrawerContext'
 import FaqSection from 'containers/Agency/FaqSection'
@@ -27,8 +24,11 @@ export const Agency = () => {
       <Fragment>
         {/* Start agency head section */}
         <Head>
-          <title>twylo | AI your business</title>
-          <meta name="Description" content="twylo - Software Developing" />
+          <title>twylo | AI & Cyber-Security Partner</title>
+          <meta
+            name="Description"
+            content="twylo - Digitaler Vorsprung durch KI und Cyber-Security"
+          />
           <meta name="theme-color" content="#10ac84" />
 
           {/* Load google fonts */}
@@ -39,8 +39,6 @@ export const Agency = () => {
         </Head>
         <ResetCSS />
         <GlobalStyle />
-        {/* End of agency head section */}
-        {/* Start agency wrapper section */}
         <AgencyWrapper>
           <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
             <DrawerProvider>
@@ -58,7 +56,7 @@ export const Agency = () => {
           {/* <TestimonialSection /> */}
           <TeamSection />
           <FaqSection />
-          <NewsletterSection />
+          {/* <NewsletterSection /> */}
           <Footer />
         </AgencyWrapper>
         {/* End of agency wrapper section */}

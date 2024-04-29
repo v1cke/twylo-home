@@ -4,19 +4,16 @@ import PropTypes from 'prop-types'
 import NavbarWrapper from 'common/components/Navbar'
 import Drawer from 'common/components/Drawer'
 import Button from 'common/components/Button'
-import Logo from 'common/components/UIElements/Logo'
 import HamburgMenu from 'common/components/HamburgMenu'
 import ScrollSpyMenu from 'common/components/ScrollSpyMenu'
 import { Container } from './navbar.style'
 import SearchPanel from '../SearchPanel'
 import LoginModal from '../LoginModal'
 import CopyrightSection from '../CopyrightsSection'
+import { DrawerContext } from 'common/contexts/DrawerContext'
+import data from 'common/data/Agency/'
 
 const LogoImage = '/logo.png'
-
-import { DrawerContext } from 'common/contexts/DrawerContext'
-
-import data from 'common/data/Agency/'
 
 const Navbar = ({ navbarStyle, logoStyle }) => {
   const [opened, setOpened] = React.useState(false)
@@ -49,13 +46,13 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
             gap: 20,
             fontWeight: '600',
             fontSize: 24,
-            color: '#7367F0',
+            color: '#0092CA',
           }}
         >
           <img src={LogoImage} style={logoStyle} />
           <span
             style={{
-              color: '#7367F0',
+              color: '#0092CA',
             }}
           >
             twylo
@@ -63,7 +60,7 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
         </a>
 
         <div style={{ display: 'flex', alignItems: 'center' }}>
-          <Button
+          {/* <Button
             variant="textButton"
             onClick={handler}
             icon={<i className="flaticon-magnifying-glass" />}
@@ -74,7 +71,7 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
             onClick={loginUser}
             icon={<i className="flaticon-user" />}
             aria-label="login"
-          />
+          /> */}
           <Drawer
             width="420px"
             placement="right"

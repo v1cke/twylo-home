@@ -34,11 +34,8 @@ const TeamSection = ({
     >
       <Container>
         <Box {...sectionHeader}>
-          <Text content="TEAM MEMBER" {...sectionSubTitle} />
-          <Heading
-            content="Meet with team member behind scense"
-            {...sectionTitle}
-          />
+          <Text content="TEAM" {...sectionSubTitle} />
+          <Heading content="Ihre Ansprechpartner" {...sectionTitle} />
         </Box>
         <Box className="row" {...row}>
           {data.teamMember.map((member, index) => (

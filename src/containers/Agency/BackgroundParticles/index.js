@@ -49,13 +49,13 @@ const BackgroundParticles = () => {
         },
         particles: {
           color: {
-            value: '#7367F0',
+            value: '#0092CA',
           },
           links: {
-            color: '#7367F0',
+            color: '#0092CA',
             distance: 150,
             enable: true,
-            opacity: 0.4,
+            opacity: 0.28,
             width: 2,
           },
           collisions: {
@@ -79,7 +79,7 @@ const BackgroundParticles = () => {
             value: 40,
           },
           opacity: {
-            value: 0.3,
+            value: 0.32,
           },
           // shape: {
           //   type: 'circle',

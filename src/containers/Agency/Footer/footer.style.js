@@ -4,7 +4,6 @@ import FooterImage from 'common/assets/image/agency/footer-bg.png'
 
 const FooterWrapper = styled.section`
   padding: 80px 0;
-  margin-top: 40px;
   background-image: url(${FooterImage?.src});
   background-repeat: no-repeat;
   background-position: center 50px;

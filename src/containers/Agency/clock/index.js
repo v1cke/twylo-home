@@ -40,7 +40,7 @@ const Clock = () => {
     width: '50px',
     height: '50px',
     backgroundColor: '#333',
-    color: '#7367F0',
+    color: '#0092CA',
     textAlign: 'center',
     lineHeight: '50px',
     fontSize: '20px',

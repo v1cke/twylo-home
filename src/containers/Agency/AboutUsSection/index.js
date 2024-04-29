@@ -28,11 +28,10 @@ const AboutUsSection = ({
     <AboutUsSectionWrapper id="AboutUsSection">
       <Box
         style={{
-          // background: '#e0e0e0',
           background: 'linear-gradient(to right, #e0e0e0, transparent)',
           opacity: '0.9',
-          paddingTop: 20,
-          paddingBottom: 20,
+          paddingTop: 80,
+          paddingBottom: 80,
         }}
         className="row"
         {...row}

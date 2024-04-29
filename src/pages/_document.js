@@ -34,6 +34,54 @@ export default class CustomDocument extends Document {
             rel="icon"
             href="https://react-next-landing.redq.io/_next/static/images/favicon-ec2551afb2782a53fb493269d1ba4efe.png"
           /> */}
+
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              var _iub = _iub || [];
+              _iub.csConfiguration = {
+                "askConsentAtCookiePolicyUpdate":true,
+                "enableFadp":true,
+                "enableLgpd":true,
+                "fadpApplies":true,
+                "floatingPreferencesButtonDisplay":"bottom-right",
+                "lang":"de",
+                "perPurposeConsent":true,
+                "whitelabel":false,
+                "cookiePolicyId":47420556,
+                "siteId":3614080,
+                "banner":{
+                  "acceptButtonCaptionColor":"#FFFFFF",
+                  "acceptButtonColor":"#0073CE",
+                  "acceptButtonDisplay":true,
+                  "backgroundColor":"#FFFFFF",
+                  "closeButtonDisplay":false,
+                  "customizeButtonCaptionColor":"#4D4D4D",
+                  "customizeButtonColor":"#DADADA",
+                  "customizeButtonDisplay":true,
+                  "explicitWithdrawal":true,
+                  "listPurposes":true,
+                  "position":"bottom",
+                  "rejectButtonCaptionColor":"#FFFFFF",
+                  "rejectButtonColor":"#0073CE",
+                  "rejectButtonDisplay":true,
+                  "showTitle":false,
+                  "textColor":"#000000"
+                }
+              };
+            `,
+            }}
+          />
+          <script
+            src="https://cs.iubenda.com/autoblocking/3614080.js"
+            type="text/javascript"
+          ></script>
+          <script
+            src="//cdn.iubenda.com/cs/iubenda_cs.js"
+            type="text/javascript"
+            async
+            charset="UTF-8"
+          ></script>
         </Head>
         <body>
           <Main />

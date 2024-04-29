@@ -33,7 +33,7 @@ const WorkHistory = ({ row, col, cardStyle, title, description, btnStyle }) => {
                   {...description}
                 />
               }
-              button={<Button title="PROJEKTE" {...btnStyle} />}
+              // button={<Button title="PROJEKTE" {...btnStyle} />}
             />
           </Box>
           <Box className="col" {...col}>

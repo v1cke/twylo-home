@@ -4,9 +4,6 @@ import Ref3 from '../../../../public/images/sl_screenshot.png'
 import Daniel from '../../../../public/images/DanielFounder2.png'
 import Viktor from '../../../../public/images/ViKCeo2.png'
 import Tony from '../../../../public/images/TonyDev2.png'
-import Member1 from '../../assets/image/agency/team/member-1.jpg'
-import Member2 from '../../assets/image/agency/team/member-2.jpg'
-import Member3 from '../../assets/image/agency/team/member-3.jpg'
 import Denny from '../../assets/image/agency/client/denny.png'
 import Menny from '../../assets/image/agency/client/menny.png'
 
@@ -56,7 +53,7 @@ const data = {
     },
     {
       id: 2,
-      title: 'Anwendung modernster Design-Tools',
+      title: 'Nutzung von modernsten Design-Tools',
       icon: 'flaticon-next',
     },
     {
@@ -66,7 +63,7 @@ const data = {
     },
     {
       id: 4,
-      title: 'KI-Anwendungen zur Optimierung Ihrer Arbeitsabläufe',
+      title: 'KI-Anwendungen (z.B. Chatbots)',
       icon: 'flaticon-next',
     },
     {
@@ -81,42 +78,42 @@ const data = {
       icon: 'flaticon-flask',
       title: 'Suchmaschinenoptimierung (SEO)',
       description:
-        'Durch Nutzung von Suchmaschinenoptimierung erhalten Sie mehr Kunden.',
+        'Bringen Sie Ihre Website an die Spitze der Suchergebnisse, mit cleveren SEO-Strategien, die Sie vom Rest abheben.',
     },
     {
       id: 2,
       icon: 'flaticon-pencil-case',
       title: 'Ui/UX Design',
       description:
-        'Wir bieten das beste UI/UX Design, indem wir den neuesten Trends des Marktes folgen.',
+        'Schicke Designs und simple Interfaces, die Ihre Nutzer lieben werden – wir haben das Auge dafür und setzen es um!',
     },
     {
       id: 3,
       icon: 'flaticon-ruler',
       title: 'Cyber-Security',
       description:
-        'Anwendung modernster Sicherheits-Mechanismen zum Schutz vor Cyber-Angriffen.',
+        'Ihr digitaler Bodyguard – robuste Cyber Security, die Hacker alt aussehen lässt.',
     },
     {
       id: 4,
       icon: 'flaticon-startup',
-      title: 'Flexible Stack',
+      title: 'Flexibler Tech-Stack',
       description:
-        'Software-Entwicklung verändert sich stetig. Daher erweitern auch wir unser Tech-Stack stetig.',
+        'Egal, ob Javascript, PHP oder MySQL – wir sind die Tech-Chamäleons, die für jedes deiner Probleme den richtigen Code parat haben.',
     },
     {
       id: 5,
       icon: 'flaticon-briefing',
       title: 'Digitale Telefonanlage',
       description:
-        'Festnetz und Mobilfunk perfekt vereint und mit KI-Funktionen optimiert.',
+        'Telefonieren 2.0 – überall und jederzeit erreichbar, mit einer Telefonanlage, die sich Ihrem Business anpasst.',
     },
     {
       id: 6,
       icon: 'flaticon-creative',
       title: 'KI-unterstütze Software',
       description:
-        'KI-unterstützte Software für eine maximale Effiziens Ihrer Arbeitsabläufe.',
+        'Work smart, not hard! KI-unterstützte Software boostet Ihre Prozesse und lässt Ihnen Raum für andere Aufgaben.',
     },
   ],
   qualityFeature: [
@@ -276,123 +273,127 @@ const data = {
     {
       id: 1,
       expend: true,
-      title: 'How to contact with Customer Service?',
+      title:
+        'Was umfasst Ihre Dienstleistungen in der Software- und Webentwicklung?',
       description:
-        'Our Customer Experience Team is available 7 days a week and we offer 2 ways to get in contact.Email and Chat . We try to reply quickly, so you need not to wait too long for a response!. ',
+        'Von der ersten Skizze bis zum finalen Code – wir sind Ihre digitalen Zauberer! Ob Sie eine komplett neue Software brauchen, Ihre Website einen Frischekick vertragen könnte oder Sie einfach technischen Support suchen – wir haben den richtigen Tech-Stack und das Know-how, um Ihr Projekt zum Laufen zu bringen.',
     },
     {
       id: 2,
-      title: 'App installation failed, how to update system information?',
+      title:
+        'Wie gewährleisten Sie die Qualität und Sicherheit der entwickelten Software?',
       description:
-        'Please read the documentation carefully . We also have some online  video tutorials regarding this issue . If the problem remains, Please Open a ticket in the support forum . ',
+        'Qualität und Sicherheit? Bei uns Standard! Wir checken jeden Code zweimal, testen was das Zeug hält und bleiben immer auf dem neuesten Stand der Techniksicherheit. Unsere Devs sind wie Detektive – nichts entgeht ihrem scharfen Blick!',
     },
     {
       id: 3,
-      title: 'Website reponse taking time, how to improve?',
+      title:
+        'Welche Vorteile bietet eine Online-Telefonanlage für kleine und mittelständische Unternehmen?',
       description:
-        'At first, Please check your internet connection . We also have some online  video tutorials regarding this issue . If the problem remains, Please Open a ticket in the support forum .',
+        'Stell Sie sich vor, Ihre Telefonanlage macht, was Sie wollen – und das überall! Keine hohen Kosten mehr, super flexibel und skalierbar. Plus: Telefonanlage von überall, also auch im Homeoffice oder im Café. Willkommen in der Zukunft der Telefonie!',
     },
     {
       id: 4,
-      title: 'New update fixed all bug and issues?',
+      title:
+        'Kann ich meine vorhandene Telefonnummer behalten, wenn ich zu Ihrer Online-Telefonanlage wechsle?',
       description:
-        'We are giving the update of this theme continuously . You will receive an email Notification when we push an update. Always try to be updated with us .',
+        'Klar doch, Ihre Nummer können Sie mitnehmen! Wechseln Sie zu twylo phone und nehmen Sie Ihre alte Rufnummer einfach mit. Kein Drama, kein Papierkram – einfach weiter telefonieren wie gewohnt.',
     },
   ],
   menuWidget: [
     {
       id: 1,
-      title: 'About Us',
+      title: 'Über uns',
       menuItems: [
         {
           id: 1,
           url: '#1',
           text: 'Support Center',
         },
-        {
-          id: 2,
-          url: '#2',
-          text: 'Customer Support',
-        },
-        {
-          id: 3,
-          url: '#3',
-          text: 'About Us',
-        },
-        {
-          id: 4,
-          url: '#4',
-          text: 'Copyright',
-        },
-        {
-          id: 5,
-          url: '#5',
-          text: 'Popular Campaign',
-        },
+        // {
+        //   id: 2,
+        //   url: '#2',
+        //   text: 'Customer Support',
+        // },
+        // {
+        //   id: 3,
+        //   url: '#3',
+        //   text: 'About Us',
+        // },
+        // {
+        //   id: 4,
+        //   url: '#4',
+        //   text: 'Copyright',
+        // },
+        // {
+        //   id: 5,
+        //   url: '#5',
+        //   text: 'Popular Campaign',
+        // },
       ],
     },
     {
       id: 2,
       title: 'Our Information',
       menuItems: [
-        {
-          id: 1,
-          url: '#1',
-          text: 'Return Policy',
-        },
+        // {
+        //   id: 1,
+        //   url: '#1',
+        //   text: 'Return Policy',
+        // },
         {
           id: 2,
           url: '#2',
           text: 'Privacy Policy',
         },
-        {
-          id: 3,
-          url: '#2',
-          text: 'Terms & Conditions',
-        },
-        {
-          id: 4,
-          url: '#4',
-          text: 'Site Map',
-        },
-        {
-          id: 5,
-          url: '#5',
-          text: 'Store Hours',
-        },
+        // {
+        //   id: 3,
+        //   url: '#2',
+        //   text: 'Terms & Conditions',
+        // },
+        // {
+        //   id: 4,
+        //   url: '#4',
+        //   text: 'Site Map',
+        // },
+        // {
+        //   id: 5,
+        //   url: '#5',
+        //   text: 'Store Hours',
+        // },
       ],
     },
-    {
-      id: 3,
-      title: 'My Account',
-      menuItems: [
-        {
-          id: 1,
-          url: '#1',
-          text: 'Press inquiries',
-        },
-        {
-          id: 2,
-          url: '#2',
-          text: 'Social media directories',
-        },
-        {
-          id: 3,
-          url: '#3',
-          text: 'Images & B-roll',
-        },
-        {
-          id: 4,
-          url: '#4',
-          text: 'Permissions',
-        },
-        {
-          id: 5,
-          url: '#5',
-          text: 'Speaker requests',
-        },
-      ],
-    },
+    // {
+    //   id: 3,
+    //   title: 'My Account',
+    //   menuItems: [
+    //     {
+    //       id: 1,
+    //       url: '#1',
+    //       text: 'Press inquiries',
+    //     },
+    //     {
+    //       id: 2,
+    //       url: '#2',
+    //       text: 'Social media directories',
+    //     },
+    //     {
+    //       id: 3,
+    //       url: '#3',
+    //       text: 'Images & B-roll',
+    //     },
+    //     {
+    //       id: 4,
+    //       url: '#4',
+    //       text: 'Permissions',
+    //     },
+    //     {
+    //       id: 5,
+    //       url: '#5',
+    //       text: 'Speaker requests',
+    //     },
+    //   ],
+    // },
     {
       id: 4,
       title: 'Policy',
@@ -402,21 +403,21 @@ const data = {
           url: '#1',
           text: 'Application security',
         },
-        {
-          id: 2,
-          url: '#2',
-          text: 'Software principles',
-        },
-        {
-          id: 3,
-          url: '#3',
-          text: 'Unwanted software policy',
-        },
-        {
-          id: 4,
-          url: '#4',
-          text: 'Responsible supply chain',
-        },
+        // {
+        //   id: 2,
+        //   url: '#2',
+        //   text: 'Software principles',
+        // },
+        // {
+        //   id: 3,
+        //   url: '#3',
+        //   text: 'Unwanted software policy',
+        // },
+        // {
+        //   id: 4,
+        //   url: '#4',
+        //   text: 'Responsible supply chain',
+        // },
       ],
     },
   ],

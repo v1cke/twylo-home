@@ -67,8 +67,8 @@ const BannerSection = ({
                       <Heading
                         content={
                           headings[
-                          (activeHeading + headings.length - 1) %
-                          headings.length
+                            (activeHeading + headings.length - 1) %
+                              headings.length
                           ]
                         }
                         {...title}
@@ -83,19 +83,23 @@ const BannerSection = ({
               }
               description={
                 <Text
-                  content="Firmen auf der ganzen Welt sind auf dem Weg zu Digitalisierung. Es ist also höchste Zeit. "
+                  content="Mit Künstlicher Inteligenz vorausdenken, mit Sicherheit führen."
                   {...description}
                 />
               }
               button={
                 <Fragment>
-                  <Button title="MEHR VON UNS" {...btnStyle} />
-                  <Button
-                    title="PROJEKTE ANSEHEN"
-                    variant="textButton"
-                    icon={<i className="flaticon-next" />}
-                    {...outlineBtnStyle}
-                  />
+                  <a href="#AboutUsSection">
+                    <Button title="MEHR VON UNS" {...btnStyle}></Button>
+                  </a>
+                  <a href="#workHistorySection">
+                    <Button
+                      title="PROJEKTE ANSEHEN"
+                      variant="textButton"
+                      icon={<i className="flaticon-next" />}
+                      {...outlineBtnStyle}
+                    />
+                  </a>
                 </Fragment>
               }
             />
