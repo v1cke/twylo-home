@@ -124,7 +124,7 @@
     transform: translateY(300px) scale(0);
     transform-origin: bottom;
     text-shadow:
-      -180px 0 0 #ddd,
-      180px 0 0 #ddd;
+      -180px 0 0 darkgrey,
+      180px 0 0 darkgrey;
   }
 }
