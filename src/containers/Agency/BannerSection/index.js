@@ -9,6 +9,7 @@ import Container from 'common/components/UI/Container'
 // import Particles from '../../Agency/Particle'
 import BannerWrapper, { DiscountLabel } from './bannerSection.style'
 import Fade from 'react-reveal/Fade'
+import Rain from '../Rain'
 
 const BannerSection = ({
   row,
@@ -51,16 +52,12 @@ const BannerSection = ({
   }, [])
 
   return (
-    <BannerWrapper>
+    <BannerWrapper style={{ position: 'relative' }}>
       {/* <Particles /> */}
-
+      <Rain />
       <Container>
-        <Box className="row" {...row}>
+        <Box className="row" {...row} style={{ marginTop: '100px' }}>
           <Box className="col" {...col}>
-            <DiscountLabel>
-              <Text content="25% Aufpreis" {...discountAmount} />
-              <Text content="auf Alles" {...discountText} />
-            </DiscountLabel>
             <FeatureBlock
               title={
                 <div style={{ display: 'flex', whiteSpace: 'nowrap' }}>
@@ -70,8 +67,8 @@ const BannerSection = ({
                       <Heading
                         content={
                           headings[
-                            (activeHeading + headings.length - 1) %
-                              headings.length
+                          (activeHeading + headings.length - 1) %
+                          headings.length
                           ]
                         }
                         {...title}
