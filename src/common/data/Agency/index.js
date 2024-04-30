@@ -310,26 +310,21 @@ const data = {
           url: '#1',
           text: 'Support Center',
         },
-        // {
-        //   id: 2,
-        //   url: '#2',
-        //   text: 'Customer Support',
-        // },
-        // {
-        //   id: 3,
-        //   url: '#3',
-        //   text: 'About Us',
-        // },
-        // {
-        //   id: 4,
-        //   url: '#4',
-        //   text: 'Copyright',
-        // },
-        // {
-        //   id: 5,
-        //   url: '#5',
-        //   text: 'Popular Campaign',
-        // },
+        {
+          id: 2,
+          url: '#blogSection',
+          text: 'Projekte',
+        },
+        {
+          id: 3,
+          url: '#teamSection',
+          text: 'Team',
+        },
+        {
+          id: 4,
+          url: '#featureSection',
+          text: 'Leistungen',
+        },
       ],
     },
     {
@@ -396,23 +391,23 @@ const data = {
     // },
     {
       id: 4,
-      title: 'Policy',
+      title: 'Rechtliches',
       menuItems: [
         {
           id: 1,
-          url: '#1',
-          text: 'Application security',
+          url: 'https://www.iubenda.com/privacy-policy/47420556',
+          text: 'Datenschutzbestimmungen',
         },
-        // {
-        //   id: 2,
-        //   url: '#2',
-        //   text: 'Software principles',
-        // },
-        // {
-        //   id: 3,
-        //   url: '#3',
-        //   text: 'Unwanted software policy',
-        // },
+        {
+          id: 2,
+          url: 'https://www.iubenda.com/privacy-policy/47420556/cookie-policy',
+          text: 'Cookies',
+        },
+        {
+          id: 3,
+          url: '#3',
+          text: 'Impressum',
+        },
         // {
         //   id: 4,
         //   url: '#4',

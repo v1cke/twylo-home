@@ -45,10 +45,15 @@ const TeamSection = ({
                 className="team__member"
                 icon={
                   <NextImage
-                    style={{ objectFit: 'cover', height: 500 }}
+                    style={{
+                      objectFit: 'cover',
+                      height: 500,
+                      boxShadow: 'rgba(0, 146, 202, 1) 0px 20px 30px -10px',
+                    }}
                     src={member.thumbnail_url}
                     alt={`Team member photo ${member.id}`}
                     className="member__photo"
+                    // style={{}}
                   />
                 }
                 contentStyle={contentStyle}

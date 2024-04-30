@@ -6,10 +6,10 @@ import Heading from 'common/components/Heading'
 import Button from 'common/components/Button'
 import FeatureBlock from 'common/components/FeatureBlock'
 import Container from 'common/components/UI/Container'
-// import Particles from '../../Agency/Particle'
-import BannerWrapper, { DiscountLabel } from './bannerSection.style'
+import BannerWrapper from './bannerSection.style'
 import Fade from 'react-reveal/Fade'
 import Rain from '../Rain'
+import { fontWeight, textColor } from 'styled-system'
 
 const BannerSection = ({
   row,
@@ -25,16 +25,16 @@ const BannerSection = ({
   const [isFadingOut, setIsFadingOut] = useState(false)
 
   const headings = [
-    'Innovativ.',
-    'Kundenorientiert.',
-    'Agil.',
-    'Technisch versiert.',
-    'Transparent.',
-    'Teamorientiert.',
-    'Qualitätsbewusst.',
-    'Lernbereit.',
-    'Anpassungsfähig.',
-    'Nachhaltig.',
+    'innovativ.',
+    // 'Kundenorientiert.',
+    'agil.',
+    // 'Technisch versiert.',
+    'transparent.',
+    // 'Teamorientiert.',
+    // 'qualitätsbewusst.',
+    'lernbereit.',
+    'anpassungsfähig.',
+    'kreativ.',
   ]
 
   useEffect(() => {
@@ -53,8 +53,7 @@ const BannerSection = ({
 
   return (
     <BannerWrapper style={{ position: 'relative' }}>
-      {/* <Particles /> */}
-      <Rain />
+      {/* <Rain /> */}
       <Container>
         <Box className="row" {...row} style={{ marginTop: '100px' }}>
           <Box className="col" {...col}>
@@ -71,19 +70,26 @@ const BannerSection = ({
                               headings.length
                           ]
                         }
+                        className="logoFont"
+                        style={{ fontWeight: '500', color: '#0092CA' }}
                         {...title}
                       />
                     </Fade>
                   ) : (
                     <Fade top collapse when={isFadingOut}>
-                      <Heading content={headings[activeHeading]} {...title} />
+                      <Heading
+                        className="logoFont"
+                        style={{ fontWeight: '500', color: '#0092CA' }}
+                        content={headings[activeHeading]}
+                        {...title}
+                      />
                     </Fade>
                   )}
                 </div>
               }
               description={
                 <Text
-                  content="Mit Künstlicher Inteligenz vorausdenken, mit Sicherheit führen."
+                  content="Mit künstlicher Intelligenz vorausdenken, mit Sicherheit führen."
                   {...description}
                 />
               }
@@ -92,7 +98,7 @@ const BannerSection = ({
                   <a href="#AboutUsSection">
                     <Button title="MEHR VON UNS" {...btnStyle}></Button>
                   </a>
-                  <a href="#workHistorySection">
+                  <a href="#blogSection">
                     <Button
                       title="PROJEKTE ANSEHEN"
                       variant="textButton"

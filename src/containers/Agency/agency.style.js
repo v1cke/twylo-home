@@ -12,7 +12,7 @@ import { themeGet } from '@styled-system/theme-get'
 /* agency global style */
 const GlobalStyle = createGlobalStyle`
   body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
   }
   h1,
   h2,
@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
   h4,
   h5,
   h6 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
   }
   section {
     position: relative;

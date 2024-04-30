@@ -51,8 +51,11 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
         >
           <img src={LogoImage} style={logoStyle} />
           <span
+            className="logoFont"
             style={{
               color: '#0092CA',
+              fontSize: 40,
+              fontWeight: '500',
             }}
           >
             twylo

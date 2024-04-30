@@ -10,30 +10,6 @@ import data from 'common/data/Agency'
 
 const LogoImage = '/logo.png'
 
-const PrivacyPolicyLink = () => {
-  return (
-    <a
-      href="https://www.iubenda.com/privacy-policy/47420556"
-      className="iubenda-white iubenda-noiframe iubenda-embed"
-      title="Datenschutzerklärung"
-    >
-      Datenschutzerklärung
-    </a>
-  )
-}
-
-const CookiePolicyLink = () => {
-  return (
-    <a
-      href="https://www.iubenda.com/privacy-policy/47420556/cookie-policy"
-      className="iubenda-white iubenda-noiframe iubenda-embed"
-      title="Cookie-Richtlinie"
-    >
-      Cookie-Richtlinie
-    </a>
-  )
-}
-
 const Footer = ({
   row,
   col,
@@ -45,8 +21,6 @@ const Footer = ({
 }) => {
   return (
     <FooterWrapper id="footerSection" style={{ background: 'white' }}>
-      {/* <PrivacyPolicyLink />
-      <CookiePolicyLink /> */}
       <Container>
         <Box className="row" {...row}>
           <Box {...colOne}>
@@ -64,17 +38,19 @@ const Footer = ({
             >
               <img src={LogoImage} style={logoStyle} />
               <span
+                className="logoFont"
                 style={{
                   color: '#0092CA',
+                  eight: '500',
+                  fontSize: 30,
                 }}
               >
                 twylo
               </span>
             </div>
-            <Text content="mail@twylo.com" {...textStyle} />
-            <Text content="+4917 19 79 67 75" {...textStyle} />
+            <Text content="mail@twylo.net" {...textStyle} />
+            <Text content="+49171 9796 775" {...textStyle} />
           </Box>
-          {/* End of footer logo column */}
           <Box {...colTwo}>
             {data.menuWidget.map((widget) => (
               <Box className="col" {...col} key={widget.id}>
@@ -96,7 +72,6 @@ const Footer = ({
               </Box>
             ))}
           </Box>
-          {/* End of footer List column */}
         </Box>
       </Container>
     </FooterWrapper>

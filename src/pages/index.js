@@ -30,8 +30,6 @@ export const Agency = () => {
             content="twylo - Digitaler Vorsprung durch KI und Cyber-Security"
           />
           <meta name="theme-color" content="#10ac84" />
-
-          {/* Load google fonts */}
           <link
             href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
             rel="stylesheet"

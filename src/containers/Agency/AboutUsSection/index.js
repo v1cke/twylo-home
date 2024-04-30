@@ -76,13 +76,13 @@ const AboutUsSection = ({
             <FeatureBlock
               title={
                 <Heading
-                  content="Ein Auge für Design und moderne Anforderungen an KI und Cyber-Security"
+                  content="Modernes Design, Cyber-Security und Künstliche Intelligenz"
                   {...title}
                 />
               }
               description={
                 <Text
-                  content="9 to 5 war gestern! Wir bieten Support, wann immer er benötigt wird!"
+                  content="9 to 5 war gestern! Support bieten, wann immer er benötigt wird."
                   {...description}
                 />
               }

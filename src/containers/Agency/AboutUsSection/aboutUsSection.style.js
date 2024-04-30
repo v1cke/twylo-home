@@ -4,9 +4,6 @@ import { themeGet } from '@styled-system/theme-get'
 const AboutUsSectionWrapper = styled.section`
   overflow: hidden;
 
-  @media (max-width: 990px) {
-    padding: 60px 0 40px 0;
-  }
   .col {
     align-self: center;
   }
