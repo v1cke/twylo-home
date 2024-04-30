@@ -1,0 +1,92 @@
+.outsideContainer {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 700px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
+  transform-style: preserve-3d;
+  margin-bottom: 100px;
+}
+
+.box {
+  position: relative;
+  width: 280px;
+  height: 400px;
+  transform-style: preserve-3d;
+  transition: 1.5s;
+  transform: perspective(1000px) rotateY(0deg);
+  /* -webkit-box-reflect: below 0px linear-gradient(transparent, #0004); */
+}
+
+.spanImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+}
+
+.spanImg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+  box-shadow: rgba(0, 146, 202, 1) 0px 20px 30px -10px;
+}
+
+.btns {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -100px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.btn {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: transparent;
+}
+
+.btn:active {
+  background: #fff;
+  opacity: 0.9;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  transform: rotate(45deg) translate(-2.5px, 2.5px);
+}
+
+.prev::before {
+  transform: rotate(225deg) translate(-2.5px, 2.5px);
+}
+
+.btn:active::before {
+  border-top: 3px solid rgba(0, 146, 202, 1);
+  border-right: 3px solid rgba(0, 146, 202, 1);
+}

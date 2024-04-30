@@ -13,7 +13,6 @@ import data from 'common/data/Agency'
 import HumanAI from '../../../../public/images/humanai2.png'
 import SmartPhone from '../../../../public/images/smartphonedigital2.jpg'
 import Codehacker from '../../../../public/images/codehacker.jpg'
-import { paddingTop } from 'styled-system'
 
 const AboutUsSection = ({
   row,
@@ -46,6 +45,7 @@ const AboutUsSection = ({
                   style={{
                     borderBottomRightRadius: 25,
                     borderTopRightRadius: 25,
+                    boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px',
                   }}
                 />
               </Fade>
@@ -56,6 +56,7 @@ const AboutUsSection = ({
                   style={{
                     borderBottomRightRadius: 25,
                     borderTopRightRadius: 25,
+                    boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px',
                   }}
                 />
               </Fade>
@@ -65,7 +66,10 @@ const AboutUsSection = ({
                 <NextImage
                   src={Codehacker}
                   alt="Code Hacker"
-                  style={{ borderRadius: 25 }}
+                  style={{
+                    borderRadius: 25,
+                    boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px',
+                  }}
                 />
               </Fade>
             </Box>

@@ -33,13 +33,25 @@ const FeatureSection = ({
           }}
         >
           <Box {...sectionHeader}>
-            <Text content="Leistungen" {...sectionSubTitle} />
+            <Text
+              style={{
+                color: 'rgba(0, 146, 202, 1)',
+              }}
+              content="Leistungen"
+              {...sectionSubTitle}
+            />
             <Heading
               content="Leistungen auf die wir spezialisiert sind"
               {...sectionTitle}
             />
           </Box>
-          <Box className="row" {...row}>
+          <Box
+            style={{
+              boxShadow: 'rgba(0, 146, 202, 1) 20px 20px 30px -10px',
+            }}
+            className="row"
+            {...row}
+          >
             {data.features.map((feature, index) => (
               <Box
                 className="col"

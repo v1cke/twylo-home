@@ -14,7 +14,6 @@ import GlassCards from '../GlassCards'
 
 const WorkHistory = ({ row, col, cardStyle, title, description, btnStyle }) => {
   const matches = useMediaQuery('(min-width:990px)')
-  console.log('matches', matches)
 
   return (
     <WorkHistoryWrapper

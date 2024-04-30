@@ -31,7 +31,13 @@ const VideoSection = ({
     >
       <Container>
         <Box {...sectionHeader}>
-          <Text content="WIE WIR ARBEITEN" {...sectionSubTitle} />
+          <Text
+            style={{
+              color: 'rgba(0, 146, 202, 1)',
+            }}
+            content="WIE WIR ARBEITEN"
+            {...sectionSubTitle}
+          />
           <Heading
             content="Ein typischer Tag im twylo office..."
             {...sectionTitle}

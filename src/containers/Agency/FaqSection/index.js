@@ -36,7 +36,13 @@ const FaqSection = ({
     >
       <Container>
         <Box {...sectionHeader}>
-          <Text content="FAQ" {...sectionSubTitle} />
+          <Text
+            style={{
+              color: 'rgba(0, 146, 202, 1)',
+            }}
+            content="FAQ"
+            {...sectionSubTitle}
+          />
           <Heading content="Häufige Fragen" {...sectionTitle} />
         </Box>
         <Box className="row">

@@ -34,7 +34,13 @@ const TeamSection = ({
     >
       <Container>
         <Box {...sectionHeader}>
-          <Text content="TEAM" {...sectionSubTitle} />
+          <Text
+            style={{
+              color: 'rgba(0, 146, 202, 1)',
+            }}
+            content="TEAM"
+            {...sectionSubTitle}
+          />
           <Heading content="Ihre Ansprechpartner" {...sectionTitle} />
         </Box>
         <Box className="row" {...row}>
@@ -48,7 +54,7 @@ const TeamSection = ({
                     style={{
                       objectFit: 'cover',
                       height: 500,
-                      boxShadow: 'rgba(0, 146, 202, 1) 0px 20px 30px -10px',
+                      boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px',
                     }}
                     src={member.thumbnail_url}
                     alt={`Team member photo ${member.id}`}

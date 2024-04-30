@@ -54,14 +54,22 @@ const Footer = ({
           <Box {...colTwo}>
             {data.menuWidget.map((widget) => (
               <Box className="col" {...col} key={widget.id}>
-                <Heading content={widget.title} {...titleStyle} />
+                <Heading
+                  style={{
+                    color: 'rgba(0, 146, 202, 1)',
+                  }}
+                  content={widget.title}
+                  {...titleStyle}
+                />
                 <List>
                   {widget.menuItems.map((item) => (
                     <ListItem key={`list__item-${item.id}`}>
                       <Link legacyBehavior href={item.url}>
                         <a
                           className="ListItem"
-                          style={{ whiteSpace: 'nowrap' }}
+                          style={{
+                            whiteSpace: 'nowrap',
+                          }}
                         >
                           {item.text}
                         </a>

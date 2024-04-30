@@ -9,6 +9,8 @@ import FeatureBlock from 'common/components/FeatureBlock'
 import data from 'common/data/Agency'
 import Container from 'common/components/UI/Container'
 import BlogSectionWrapper from './blogSection.style'
+import ImageGallery from '../ImageGallery'
+import { useMediaQuery } from '@material-ui/core'
 
 const BlogSection = ({
   row,
@@ -18,6 +20,8 @@ const BlogSection = ({
   blogTitle,
   blogMeta,
 }) => {
+  const matches = useMediaQuery('(min-width:990px)')
+
   return (
     <BlogSectionWrapper
       style={{
@@ -27,32 +31,42 @@ const BlogSection = ({
     >
       <Container>
         <Box {...sectionHeader}>
-          <Text content="PORTFOLIO" {...sectionSubTitle} />
+          <Text
+            style={{
+              color: 'rgba(0, 146, 202, 1)',
+            }}
+            content="PORTFOLIO"
+            {...sectionSubTitle}
+          />
           <Heading content="Auszüge unserer Projekte" {...sectionTitle} />
         </Box>
-        <Box className="row" {...row}>
-          {data.blog.map((post, index) => (
-            <FeatureBlock
-              key={`post_key-${index}`}
-              id={`post_id-${post.id}`}
-              className="blog__post"
-              icon={
-                <NextImage
-                  src={post.thumbnail_url}
-                  alt={`Blog Image ${post.id}`}
-                  className="blog__image"
-                  layout="fill"
-                />
-              }
-              title={
-                <Link href={post.postLink} {...blogTitle}>
-                  {post.title}
-                </Link>
-              }
-              description={<Text content={post.date} {...blogMeta} />}
-            />
-          ))}
-        </Box>
+        {matches ? (
+          <ImageGallery />
+        ) : (
+          <Box className="row" {...row}>
+            {data.blog.map((post, index) => (
+              <FeatureBlock
+                key={`post_key-${index}`}
+                id={`post_id-${post.id}`}
+                className="blog__post"
+                icon={
+                  <NextImage
+                    src={post.thumbnail_url}
+                    alt={`Blog Image ${post.id}`}
+                    className="blog__image"
+                    layout="fill"
+                  />
+                }
+                title={
+                  <Link href={post.postLink} {...blogTitle}>
+                    {post.title}
+                  </Link>
+                }
+                description={<Text content={post.date} {...blogMeta} />}
+              />
+            ))}
+          </Box>
+        )}
       </Container>
     </BlogSectionWrapper>
   )
