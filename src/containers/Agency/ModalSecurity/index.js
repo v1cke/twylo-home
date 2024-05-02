@@ -7,7 +7,7 @@ import Image from 'common/components/Image'
 import ModalFeatureStyle from '../modalFeatureStyle'
 import 'rc-tabs/assets/index.css'
 import LogoImage from '../../../../public/logo.png'
-import SeoImage from '../../../../public/images/uiux.jpg'
+import SecurityImage from '../../../../public/images/cyber-S.png'
 
 const ModalSecurity = ({
   row,
@@ -23,8 +23,8 @@ const ModalSecurity = ({
         <Box className="col imageCol" {...col}>
           <Image
             className="patternImage"
-            src={SeoImage?.src}
-            alt="UiUx Image"
+            src={SecurityImage?.src}
+            alt="Security Image"
           />
         </Box>
         <Box className="col tabCol" {...col}>
@@ -32,7 +32,7 @@ const ModalSecurity = ({
             <Image src={LogoImage?.src} {...logoStyle} alt="Logo" />
 
             <Heading content="IT-Security" {...titleStyle} />
-            <Text content="Entdecken Sie, wie unser flexibler Tech-Stack Ihr Projekt optimieren kann!" />
+            <Text content="Sicher ist sicher, schütz dich wie die Profis!" />
             <Text
               content="Kein Unternehmen sollte sich im Netz unsicher fühlen. Mit unseren Cyber-Security-Lösungen rüsten wir dich gegen alle Arten von Cyber-Bedrohungen. Wir implementieren die neuesten Sicherheitstechniken, um deine Infrastruktur zu schützen, von proaktiven Monitoring-Systemen bis zu robusten Verschlüsselungspraktiken. Maßgeschneidert für deine speziellen Anforderungen, bieten wir eine Security, die mitdenkt und sich anpasst. Lass uns deine IT verteidigen, damit du dich auf dein Business konzentrieren kannst. Schlaf ruhig, wir halten die Wache!"
               {...descriptionStyle}

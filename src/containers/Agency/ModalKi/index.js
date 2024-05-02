@@ -7,7 +7,7 @@ import Image from 'common/components/Image'
 import ModalFeatureStyle from '../modalFeatureStyle'
 import 'rc-tabs/assets/index.css'
 import LogoImage from '../../../../public/logo.png'
-import SeoImage from '../../../../public/images/uiux.jpg'
+import KiImage from '../../../../public/images/Ki-software.png'
 
 const ModalKi = ({
   row,
@@ -23,8 +23,8 @@ const ModalKi = ({
         <Box className="col imageCol" {...col}>
           <Image
             className="patternImage"
-            src={SeoImage?.src}
-            alt="UiUx Image"
+            src={KiImage?.src}
+            alt="Ki Image"
           />
         </Box>
         <Box className="col tabCol" {...col}>
@@ -32,7 +32,7 @@ const ModalKi = ({
             <Image src={LogoImage?.src} {...logoStyle} alt="Logo" />
 
             <Heading content="KI-unterstützung" {...titleStyle} />
-            <Text content="Entdecken Sie, wie unser flexibler Tech-Stack Ihr Projekt optimieren kann!" />
+            <Text content="Mach mehr aus deinen Daten – Dein neuer digitaler Assistent wartet" />
             <Text
               content="KI ist nicht nur ein Buzzword, sondern ein Game Changer. Unsere KI-unterstützte Software hilft dir, aus Daten Gold zu machen. Egal, ob es um die Automatisierung mühsamer Aufgaben geht oder um das Aufspüren von Insights, die deinem Unternehmen einen Vorsprung verschaffen – unsere Algorithmen sind bereit, für dich zu arbeiten. Von smarten Chatbots, die deinen Kundenservice revolutionieren, bis hin zu Analysetools, die Marktrends vorhersagen – unsere KI-Lösungen sind wie ein Turbo für deine Produktivität, ausgerichtet auf maximale Effizienz und minimalen Aufwand."
               {...descriptionStyle}

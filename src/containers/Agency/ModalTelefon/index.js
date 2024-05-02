@@ -6,7 +6,7 @@ import Heading from 'common/components/Heading'
 import Image from 'common/components/Image'
 import 'rc-tabs/assets/index.css'
 import LogoImage from '../../../../public/logo.png'
-import SeoImage from '../../../../public/images/uiux.jpg'
+import TelefonieImage from '../../../../public/images/telefonie.png'
 import ModalFeatureStyle from '../modalFeatureStyle'
 
 const ModalTelefon = ({
@@ -23,8 +23,8 @@ const ModalTelefon = ({
         <Box className="col imageCol" {...col}>
           <Image
             className="patternImage"
-            src={SeoImage?.src}
-            alt="UiUx Image"
+            src={TelefonieImage?.src}
+            alt="Telefonie Image"
           />
         </Box>
         <Box className="col tabCol" {...col}>
@@ -32,7 +32,7 @@ const ModalTelefon = ({
             <Image src={LogoImage?.src} {...logoStyle} alt="Logo" />
 
             <Heading content="Digitale Telefonie" {...titleStyle} />
-            <Text content="Entdecken Sie, wie unser flexibler Tech-Stack Ihr Projekt optimieren kann!" />
+            <Text content="Telefonie, neu gedacht, gib deiner Kommunikation ein Upgrade!" />
             <Text
               content="Moderne Geschäftswelt erfordert moderne Kommunikationslösungen. Unsere digitale Telefonanlage macht es möglich, dass du und dein Team von überall aus arbeiten könnt – ohne an Qualität einzubüßen. Genieße Funktionen wie Anrufweiterleitung, Konferenzschaltungen und Integration in vorhandene Unternehmenssysteme, alles über eine intuitive Benutzeroberfläche. Plus, unsere Telefonlösungen sind flexibel und wachsen mit deinem Business mit. Verpasse keinen Anruf mehr und bleibe immer erreichbar, mit einer Telefonlösung, die für die Zukunft gemacht ist."
               {...descriptionStyle}
