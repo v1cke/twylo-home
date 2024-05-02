@@ -17,9 +17,17 @@ import Footer from 'containers/Agency/Footer'
 import { DrawerProvider } from 'common/contexts/DrawerContext'
 import FaqSection from 'containers/Agency/FaqSection'
 import BackgroundParticles from 'containers/Agency/BackgroundParticles'
-import QualitySection from 'containers/Agency/QualitySection'
+import CloudTelephony from 'containers/Agency/CloudTelephony'
 import TestimonialSection from 'containers/Agency/TestimonialSection'
 import NewsletterSection from 'containers/Agency/NewsletterSection'
+import MessagingMeeting from 'containers/Agency/MessagingMeeting'
+import CallCenter from 'containers/Agency/CallCenter'
+import Integration from 'containers/Agency/Integration'
+import AdminReporting from 'containers/Agency/AdminReporting'
+import ClientsEndgeraete from 'containers/Agency/ClientsEndgeraete'
+import Box from 'common/components/Box'
+import Heading from 'common/components/Heading'
+import FeatureBlock from 'common/components/FeatureBlock'
 
 export const Agency = () => {
   return (
@@ -51,9 +59,36 @@ export const Agency = () => {
           {/* <VideoSection />
           <TeamSection />
           <FaqSection /> */}
-          <QualitySection />
-          <TestimonialSection />
-          <NewsletterSection />
+          <Box className="row" >
+            <Box className="col" >
+              <Heading
+                content="Digitale Telefonanlage"
+
+              />
+              {/* <FeatureBlock
+                title={
+                  <Heading
+                    content="Digitale Telefonanlage"
+
+                  />
+                }
+                description={
+                  <Text
+                    content="Die Cloud-Telefonanlage bietet über 150 Funktionen, die über eine intuitive Benutzeroberfläche einfach zu verwalten sind. Dies hilft dabei, keinen Anruf mehr zu verpassen und die Kommunikation effizient zu gestalten."
+
+                  />
+                }
+              /> */}
+            </Box>
+          </Box>
+          <CloudTelephony />
+          <MessagingMeeting />
+          <CallCenter />
+          <Integration />
+          <AdminReporting />
+          <ClientsEndgeraete />
+          {/* <TestimonialSection />
+          <NewsletterSection /> */}
           <Footer />
         </AgencyWrapper>
         {/* End of agency wrapper section */}

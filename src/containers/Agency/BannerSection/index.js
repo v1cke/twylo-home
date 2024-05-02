@@ -8,7 +8,7 @@ import FeatureBlock from 'common/components/FeatureBlock'
 import Container from 'common/components/UI/Container'
 import BannerWrapper from './bannerSection.style'
 import Fade from 'react-reveal/Fade'
-import Rain from '../Rain'
+import Clock from '../Clock'
 import { fontWeight, textColor } from 'styled-system'
 
 const BannerSection = ({
@@ -54,6 +54,7 @@ const BannerSection = ({
   return (
     <BannerWrapper style={{ position: 'relative' }}>
       {/* <Rain /> */}
+      <Clock />
       <Container>
         <Box className="row" {...row} style={{ marginTop: '100px' }}>
           <Box className="col" {...col}>
@@ -66,8 +67,8 @@ const BannerSection = ({
                       <Heading
                         content={
                           headings[
-                            (activeHeading + headings.length - 1) %
-                              headings.length
+                          (activeHeading + headings.length - 1) %
+                          headings.length
                           ]
                         }
                         className="logoFont"

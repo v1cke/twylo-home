@@ -4,131 +4,145 @@ import Fade from 'react-reveal/Fade'
 import Box from 'common/components/Box'
 import Text from 'common/components/Text'
 import Heading from 'common/components/Heading'
-import Card from 'common/components/Card'
-import NextImage from 'common/components/NextImage'
 import FeatureBlock from 'common/components/FeatureBlock'
 import Container from 'common/components/UI/Container'
-import QualitySectionWrapper from './qualitySection.style'
+import CloudTelephonyWrapper from './cloudTelephony.style'
 
-import data from 'common/data/Agency'
 
-import FeatureImage from 'common/assets/image/agency/surface-studio.png'
-
-const QualitySection = ({
+const CloudTelephony = ({
   row,
   col,
   title,
   featureCol,
   description,
   textArea,
-  imageArea,
-  imageAreaRow,
-  imageWrapper,
   featureTitle,
   featureDescription,
   iconStyle,
 }) => {
+  const cloudTelephony = [
+    {
+      title: "Zeitbasiertes Routing:",
+      description: "Legen Sie fest, wann und wo Sie erreichbar sind."
+    },
+    {
+      title: "Gruppenruf:",
+      description: "Optimieren Sie die Erreichbarkeit durch Anrufgruppen für Teams oder Abteilungen."
+    },
+    {
+      title: "Sprachmenü (IVR):",
+      description: "Kunden wählen per Sprachmenü die gewünschte Abteilung."
+    },
+    {
+      title: "Besetztlampenfeld:",
+      description: "Überblick, wer gerade telefoniert."
+    },
+    {
+      title: "Voicemail:",
+      description: "Nachrichten zu bestimmten Anlässen und Benachrichtigung via E-Mail."
+    },
+  ]
+
+  const featureBox = { background: '#fff', opacity: '0.9', padding: '10px', borderRadius: '10px', marginBottom: '20px', boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px', }
   return (
-    <QualitySectionWrapper id="qualitySection">
+    <CloudTelephonyWrapper id="qualitySection">
       <Container>
+
+        {/* TODO: Header auslagern!!  */}
         <Box className="row" {...row}>
           <Box className="col" {...col} {...textArea}>
             <FeatureBlock
               title={
                 <Heading
-                  content="Unsere Leidenschaft für innovative Technik und einem Auge für Design und Sicherheit ist, was unsere Kunden am meisten schätzen."
+                  content="Digitale Telefonanlage"
                   {...title}
                 />
               }
               description={
                 <Text
-                  content="Kundenwünsche nicht nur erfüllen sondern Erwartungen zu übertreffen ist unser täglicher Ansporn."
+                  content="Die Cloud-Telefonanlage bietet über 150 Funktionen, die über eine intuitive Benutzeroberfläche einfach zu verwalten sind. Dies hilft dabei, keinen Anruf mehr zu verpassen und die Kommunikation effizient zu gestalten."
                   {...description}
                 />
               }
             />
           </Box>
         </Box>
-        <Box className="row" {...row} {...textArea}>
-          {data.qualityFeature.map((feature, index) => (
-            <Box
-              className="col"
-              {...featureCol}
-              key={`quality_feature-${index}`}
-            >
-              <FeatureBlock
-                icon={<i className={feature.icon} />}
-                iconPosition="left"
-                iconStyle={iconStyle}
-                title={<Heading content={feature.title} {...featureTitle} />}
-                description={
-                  <Text content={feature.description} {...featureDescription} />
-                }
-              />
-            </Box>
-          ))}
+
+        <Box className="row" {...col} {...textArea} style={{ gap: '20px' }}>
+          <h3>Cloud-Telefonie:</h3>
+
+          {cloudTelephony.map((item, index) =>
+            <Fade right delay={90 + index * 90}>
+              <Box
+                className="col"
+                {...featureCol}
+                style={featureBox}
+
+              >
+                <FeatureBlock
+                  // icon={<i className={feature.icon} />}
+                  iconPosition="left"
+                  iconStyle={iconStyle}
+                  title={<Heading content={item.title} {...featureTitle} />}
+                  description={
+                    <Text content={item.description} {...featureDescription} />
+                  }
+                />
+              </Box>  </Fade>
+          )}
+
+
         </Box>
       </Container>
-      <Container fluid noGutter className="info-sec-container">
-        <Box className="row" {...row} {...imageAreaRow}>
-          <Box className="col" {...col} {...imageArea}>
-            <Card {...imageWrapper}>
-              <Fade right delay={90}>
-                <NextImage src={FeatureImage} alt="Feature Image" />
-              </Fade>
-            </Card>
-          </Box>
-        </Box>
-      </Container>
-    </QualitySectionWrapper>
+
+    </CloudTelephonyWrapper>
   )
 }
 
-QualitySection.propTypes = {
+CloudTelephony.propTypes = {
   row: PropTypes.object,
   col: PropTypes.object,
   featureCol: PropTypes.object,
+  featureBox: PropTypes.object,
   title: PropTypes.object,
   description: PropTypes.object,
   button: PropTypes.object,
 }
 
-QualitySection.defaultProps = {
+CloudTelephony.defaultProps = {
   // Quality section row default style
   row: {
     flexBox: true,
     flexWrap: 'wrap',
     ml: '-15px',
     mr: '-15px',
-  },
-  // Quality section iamge row default style
-  imageAreaRow: {
-    flexDirection: 'row-reverse',
+
   },
   // Quality section col default style
   col: {
     pr: '15px',
     pl: '15px',
+
+
   },
   // Quality feature col default style
   featureCol: {
     width: [1, 1, 1 / 2],
     pr: '15px',
     pl: '15px',
+
+  },
+  featureCol: {
+    width: [1, 1, 1 / 2],
+    background: '#fff',
+    padding: '10px',
+    pr: '15px',
+    pl: '15px',
+
   },
   // Quality section text area default style
   textArea: {
     width: [1, '100%', '100%', '70%', '64%'],
-  },
-  // Quality section image area default style
-  imageArea: {
-    width: [1, '100%', '100%', '30%', '38%'],
-    flexBox: true,
-    flexDirection: 'row-reverse',
-  },
-  // Quality section image wrapper default style
-  imageWrapper: {
-    boxShadow: 'none',
   },
   // Quality section title default style
   title: {
@@ -179,4 +193,4 @@ QualitySection.defaultProps = {
   },
 }
 
-export default QualitySection
+export default CloudTelephony

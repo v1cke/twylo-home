@@ -1,104 +1,71 @@
 import React, { useState, useEffect } from 'react'
+import styles from './clock.module.css'
+
+const ClockLetter
+  = ({ children, iStyle }) => {
+    return (
+      <div className={styles.letter} style={{ '--i': iStyle }}>
+        {children}
+      </div>
+    )
+  }
+const ClockBox = ({ children, jStyle, }) => {
+  return (
+    <div className={styles.box} style={{ '--j': jStyle }}>
+      {children}
+    </div>
+  )
+}
+const PointBox = ({ children }) => {
+  return (
+    <div className={styles.ponit} >
+      {children}
+    </div>
+  )
+}
 
 const Clock = () => {
-  const [time, setTime] = useState({
-    hours: new Date().getHours(),
-    minutes: new Date().getMinutes(),
-    seconds: new Date().getSeconds(),
-  })
-  const [animate, setAnimate] = useState({
-    hours: false,
-    minutes: false,
-    seconds: false,
-  })
 
-  useEffect(() => {
-    const timerId = setInterval(() => {
-      const now = new Date()
-      const newHours = now.getHours()
-      const newMinutes = now.getMinutes()
-      const newSeconds = now.getSeconds()
 
-      // Set animation trigger based on value changes
-      setAnimate({
-        hours: newHours !== time.hours,
-        minutes: newMinutes !== time.minutes,
-        seconds: newSeconds !== time.seconds,
-      })
-
-      setTime({
-        hours: newHours,
-        minutes: newMinutes,
-        seconds: newSeconds,
-      })
-    }, 1000)
-
-    return () => clearInterval(timerId)
-  }, [time])
-
-  const cubeStyle = (value, angle, shouldAnimate) => ({
-    width: '50px',
-    height: '50px',
-    backgroundColor: '#333',
-    color: '#0092CA',
-    textAlign: 'center',
-    lineHeight: '50px',
-    fontSize: '20px',
-    margin: '5px',
-    display: 'inline-block',
-    transform: `rotateY(${angle}deg)`,
-    transition: shouldAnimate ? 'transform 0.7s ease-in-out' : 'none',
-    transformStyle: 'preserve-3d',
-  })
 
   return (
-    <div id="clock" style={{ perspective: '1000px' }}>
-      <Cube value={time.hours} animate={animate.hours} />
-      <Cube value={time.minutes} animate={animate.minutes} />
-      <Cube value={time.seconds} animate={animate.seconds} />
+    <div className={styles.container}>
+      <ClockBox jStyle={0} >
+        <ClockLetter iStyle={0}>1</ClockLetter>
+        <ClockLetter iStyle={1}>2</ClockLetter>
+        <ClockLetter iStyle={2}>3</ClockLetter>
+        <ClockLetter iStyle={3}>4</ClockLetter>
+      </ClockBox>
+      <ClockBox jStyle={1} >
+        <ClockLetter iStyle={0}>1</ClockLetter>
+        <ClockLetter iStyle={1}>2</ClockLetter>
+        <ClockLetter iStyle={2}>3</ClockLetter>
+        <ClockLetter iStyle={3}>4</ClockLetter>
+      </ClockBox>
+      < PointBox >
+        <ClockLetter iStyle={0}>:</ClockLetter>
+        <ClockLetter iStyle={1}></ClockLetter>
+        <ClockLetter iStyle={2}></ClockLetter>
+        <ClockLetter iStyle={3}></ClockLetter>
+      </PointBox >
+      <ClockBox jStyle={2} >
+        <ClockLetter iStyle={0}>1</ClockLetter>
+        <ClockLetter iStyle={1}>2</ClockLetter>
+        <ClockLetter iStyle={2}>3</ClockLetter>
+        <ClockLetter iStyle={3}>4</ClockLetter>
+      </ClockBox>
+      <ClockBox jStyle={3} >
+        <ClockLetter iStyle={0}>1</ClockLetter>
+        <ClockLetter iStyle={1}>2</ClockLetter>
+        <ClockLetter iStyle={2}>3</ClockLetter>
+        <ClockLetter iStyle={3}>4</ClockLetter>
+      </ClockBox>
     </div>
   )
 }
 
-const Cube = ({ value, animate }) => {
-  // Hier wird die Logik zum Drehen des Würfels eingefügt
-  const sideStyle = {
-    position: 'absolute',
-    width: '100%',
-    height: '100%',
-    backgroundColor: '#333',
-    color: 'white',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    fontSize: '20px',
-    borderRadius: '4px',
-  }
 
-  return (
-    <div
-      className={`cube ${animate ? 'animate' : ''}`}
-      style={{
-        position: 'relative',
-        width: '50px',
-        height: '50px',
-        transformStyle: 'preserve-3d',
-        margin: '5px',
-      }}
-    >
-      <div className="cube__face front" style={sideStyle}>
-        {value < 10 ? `0${value}` : value}
-      </div>
-      <div
-        className="cube__face back"
-        style={{ ...sideStyle, transform: 'rotateY(180deg)' }}
-      >
-        {value < 10 ? `0${value}` : value}
-      </div>
-    </div>
-  )
-}
 
 export default Clock
 
-// style={{ position: 'absolute', top: '100px', right: '100px' }}
+
