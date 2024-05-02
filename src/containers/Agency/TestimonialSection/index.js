@@ -33,7 +33,10 @@ const TestimonialSection = ({
   }
 
   return (
-    <TestimonialSectionWrapper id="testimonialSection">
+    <TestimonialSectionWrapper
+      style={{ background: 'linear-gradient(to right, transparent, #e0e0e0)' }}
+      id="testimonialSection"
+    >
       <Container>
         <Box {...sectionHeader}>
           <Text content="CLIENT FEEDBACK" {...sectionSubTitle} />

@@ -34,7 +34,7 @@ const ModalTelefon = ({
             <Heading content="Digitale Telefonie" {...titleStyle} />
             <Text content="Telefonie, neu gedacht, gib deiner Kommunikation ein Upgrade!" />
             <Text
-              content="Moderne Geschäftswelt erfordert moderne Kommunikationslösungen. Unsere digitale Telefonanlage macht es möglich, dass du und dein Team von überall aus arbeiten könnt – ohne an Qualität einzubüßen. Genieße Funktionen wie Anrufweiterleitung, Konferenzschaltungen und Integration in vorhandene Unternehmenssysteme, alles über eine intuitive Benutzeroberfläche. Plus, unsere Telefonlösungen sind flexibel und wachsen mit deinem Business mit. Verpasse keinen Anruf mehr und bleibe immer erreichbar, mit einer Telefonlösung, die für die Zukunft gemacht ist."
+              content="Moderne Geschäftswelt erfordert moderne Kommunikationslösungen. Unsere Cloud-Telefonanlage twylo phone macht es möglich, dass Sie und Ihr Team von überall aus arbeiten können – ohne an Qualität einzubüßen. Funktionen wie Anrufweiterleitung, Konferenzschaltungen, KI-gesteuerte Anrufbeantwortung, Messaging und Meetings, Call Center und Integration in vorhandene Unternehmenssysteme über eine intuitive Benutzeroberfläche, lassen keine Wünsche offen. Plus, twylo phone ist flexibel und wächst mit Ihrem Business mit. Verpassen Sie keinen Anruf mehr und bleiben immer erreichbar, mit einer Telefonlösung, die für die Zukunft gemacht ist."
               {...descriptionStyle}
             />
           </Box>
