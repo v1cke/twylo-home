@@ -47,7 +47,13 @@ const FaqSection = ({
         </Box>
         <Box className="row">
           <Accordion>
-            <Box style={{ background: 'white', opacity: '0.9' }}>
+            <Box
+              style={{
+                background: 'white',
+                opacity: '0.9',
+                boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px',
+              }}
+            >
               <Fragment>
                 {data.faq.map((faqItem, index) => (
                   <AccordionItem key={`accordion_key-${index}`}>

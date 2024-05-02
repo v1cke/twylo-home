@@ -18,9 +18,12 @@ const VideoSectionWrapper = styled.section`
     align-items: center;
     justify-content: center;
     position: relative;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 
     img {
-      border-radius: 4px;
+      border-radius: 10px;
     }
 
     .fig__caption {

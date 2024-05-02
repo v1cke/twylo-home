@@ -10,7 +10,7 @@
   content: '';
   position: absolute;
   top: 50%;
-  background-color: red;
+  background-color: rgba(202, 55, 0, 1);
   width: 1000px;
   height: 3px;
 }

@@ -1,14 +1,12 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import { Modal } from '@nextui-org/react'
 import PropTypes from 'prop-types'
 import NavbarWrapper from 'common/components/Navbar'
 import Drawer from 'common/components/Drawer'
-import Button from 'common/components/Button'
 import HamburgMenu from 'common/components/HamburgMenu'
 import ScrollSpyMenu from 'common/components/ScrollSpyMenu'
 import { Container } from './navbar.style'
 import SearchPanel from '../SearchPanel'
-import LoginModal from '../LoginModal'
 import CopyrightSection from '../CopyrightsSection'
 import { DrawerContext } from 'common/contexts/DrawerContext'
 import data from 'common/data/Agency/'
@@ -17,9 +15,6 @@ const LogoImage = '/logo.png'
 
 const Navbar = ({ navbarStyle, logoStyle }) => {
   const [opened, setOpened] = React.useState(false)
-  const [loginModal, setLoginModal] = useState(false)
-  const handler = () => setOpened(true)
-  const loginUser = () => setLoginModal(true)
 
   const closeHandler = () => {
     setOpened(false)
@@ -27,6 +22,7 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
   }
 
   const { state, dispatch } = useContext(DrawerContext)
+  console.log('state', state)
 
   // Toggle drawer
   const toggleHandler = () => {
@@ -68,8 +64,8 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
             onClick={handler}
             icon={<i className="flaticon-magnifying-glass" />}
             aria-label="search"
-          />
-          <Button
+          /> */}
+          {/* <Button
             variant="textButton"
             onClick={loginUser}
             icon={<i className="flaticon-user" />}
@@ -103,19 +99,6 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
           css={{ paddingTop: '0 !important', borderRadius: '0 !important' }}
         >
           <SearchPanel />
-        </Modal>
-
-        <Modal
-          blur
-          width="1170px"
-          closeButton
-          aria-labelledby="User Panel"
-          open={loginModal}
-          onClose={closeHandler}
-          justify="center"
-          css={{ paddingTop: '0 !important', borderRadius: '0 !important' }}
-        >
-          <LoginModal />
         </Modal>
       </Container>
     </NavbarWrapper>

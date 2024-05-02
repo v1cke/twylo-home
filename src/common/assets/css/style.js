@@ -179,8 +179,8 @@ const ResetCSS = createGlobalStyle`
     min-width: 40px !important;
     min-height: 40px !important;
     color: rgb(255, 255, 255) !important;
-    background-color: rgb(16, 172, 132) !important;
-    box-shadow: rgba(16, 172, 132, 0.5) 0px 8px 38px !important;
+    background-color: rgba(0, 146, 202, 1) !important;
+    box-shadow: rgba(0, 146, 202, 0.5) 0px 8px 38px !important;
 
     svg {
       margin: auto;

@@ -43,7 +43,7 @@ const FeatureSectionWrapper = styled.section`
       }
     }
     &:hover {
-      box-shadow: 0 40px 90px -30px rgba(39, 79, 117, 0.2);
+      box-shadow: 0 40px 90px -30px rgba(0, 146, 202, 1);
     }
   }
   .row {

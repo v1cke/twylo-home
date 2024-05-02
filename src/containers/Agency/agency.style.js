@@ -49,7 +49,7 @@ const GlobalStyle = createGlobalStyle`
       }
       .scrollspy__menu {
         padding: 60px 71px;
-        max-height: 505px;
+        // max-height: 505px;
         overflow-x: auto;
         @media only screen and (max-width: 320px) {
           max-height: 380px;

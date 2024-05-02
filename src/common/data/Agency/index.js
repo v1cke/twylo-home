@@ -15,7 +15,12 @@ const data = {
       offset: '80',
     },
     {
-      label: 'Geschichte',
+      label: 'Unser Know-How',
+      path: '#AboutUsSection',
+      offset: '67',
+    },
+    {
+      label: 'Work smart, not hard',
       path: '#workHistorySection',
       offset: '67',
     },
@@ -24,16 +29,16 @@ const data = {
       path: '#blogSection',
       offset: '67',
     },
-    // {
-    //   label: 'Quality feature',
-    //   path: '#qualitySection',
-    //   offset: '67',
-    // },
     {
-      label: 'Kundenmeinungen',
-      path: '#testimonialSection',
-      offset: '100',
+      label: 'Wie wir arbeiten',
+      path: '#videoSection',
+      offset: '67',
     },
+    // {
+    //   label: 'Kundenmeinungen',
+    //   path: '#testimonialSection',
+    //   offset: '100',
+    // },
     {
       label: 'Team',
       path: '#teamSection',
@@ -76,7 +81,7 @@ const data = {
     {
       id: 1,
       icon: 'flaticon-flask',
-      title: 'Suchmaschinenoptimierung (SEO)',
+      title: 'Suchmaschinen-Optimierung (SEO)',
       description:
         'Bringen Sie Ihre Website an die Spitze der Suchergebnisse, mit cleveren SEO-Strategien, die Sie vom Rest abheben.',
     },

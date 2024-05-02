@@ -9,6 +9,7 @@ import Container from 'common/components/UI/Container'
 import VideoSectionWrapper from './videoSection.style'
 import twylo from '../../../../public/images/twylo_screen.png'
 import { Modal } from '@nextui-org/react'
+import { useMediaQuery } from '@material-ui/core'
 
 const VideoSection = ({
   sectionHeader,
@@ -17,6 +18,7 @@ const VideoSection = ({
   sectionSubTitle,
 }) => {
   const [openModal, setModal] = useState(false)
+  const matches = useMediaQuery('(min-width:900px)')
   const handler = () => setModal(true)
   const closeHandler = () => {
     setModal(false)
@@ -43,13 +45,28 @@ const VideoSection = ({
             {...sectionTitle}
           />
         </Box>
-        <Box className="figure">
-          <NextImage src={twylo} alt="Twylo Image Video" />
+        <Box
+          className="figure"
+          onClick={handler}
+          style={{
+            cursor: 'pointer',
+            //  boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px'
+          }}
+        >
+          <NextImage
+            src={twylo}
+            alt="Twylo Image Video"
+            style={{
+              objectFit: 'contain',
+              borderRadius: '10px',
+              // boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px',
+            }}
+          />
           <Box className="fig__caption">
             <Button
               {...buttonStyle}
               icon={<i className="flaticon-youtube" />}
-              onClick={handler}
+              // onClick={handler}
               aria-label="Play Video"
             />
           </Box>
@@ -69,7 +86,7 @@ const VideoSection = ({
         >
           <div style={{ margin: 'auto' }}>
             <iframe
-              width="850"
+              width={!matches ? '100%' : '850px'}
               height="450"
               src="https://www.youtube.com/embed/iz2R3HGMWHE?si=leCyAn3hytE6G1JK"
               title="Software Developing Company"

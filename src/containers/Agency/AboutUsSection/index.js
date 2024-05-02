@@ -19,6 +19,9 @@ const AboutUsSection = ({
   col,
   title,
   description,
+  sectionHeader,
+  sectionSubTitle,
+  sectionTitle,
   textArea,
   featureTitle,
   btnStyle,
@@ -32,76 +35,87 @@ const AboutUsSection = ({
           paddingTop: 80,
           paddingBottom: 80,
         }}
-        className="row"
-        {...row}
       >
-        <Box className="col" {...col}>
-          <Card className="group-gallery">
-            <Box className="col1">
-              <Fade top delay={30}>
-                <NextImage
-                  src={HumanAI}
-                  alt="Human&AI"
-                  style={{
-                    borderBottomRightRadius: 25,
-                    borderTopRightRadius: 25,
-                    boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px',
-                  }}
-                />
-              </Fade>
-              <Fade left delay={60}>
-                <NextImage
-                  src={SmartPhone}
-                  alt="Digital World"
-                  style={{
-                    borderBottomRightRadius: 25,
-                    borderTopRightRadius: 25,
-                    boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px',
-                  }}
-                />
-              </Fade>
-            </Box>
-            <Box className="col2">
-              <Fade bottom delay={90}>
-                <NextImage
-                  src={Codehacker}
-                  alt="Code Hacker"
-                  style={{
-                    borderRadius: 25,
-                    boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px',
-                  }}
-                />
-              </Fade>
-            </Box>
-          </Card>
+        <Box {...sectionHeader}>
+          <Text
+            style={{
+              color: 'rgba(0, 146, 202, 1)',
+            }}
+            content="Über uns"
+            {...sectionSubTitle}
+          />
+          <Heading content="Unser Know-How" {...sectionTitle} />
         </Box>
-        <Box className="col" {...col}>
-          <Box {...textArea}>
-            <FeatureBlock
-              title={
-                <Heading
-                  content="Modernes Design, Cyber-Security und Künstliche Intelligenz"
-                  {...title}
-                />
-              }
-              description={
-                <Text
-                  content="9 to 5 war gestern! Support bieten, wann immer er benötigt wird."
-                  {...description}
-                />
-              }
-            />
+        <Box className="row" {...row}>
+          {' '}
+          <Box className="col" {...col}>
+            <Card className="group-gallery">
+              <Box className="col1">
+                <Fade top delay={30}>
+                  <NextImage
+                    src={HumanAI}
+                    alt="Human&AI"
+                    style={{
+                      borderBottomRightRadius: 25,
+                      borderTopRightRadius: 25,
+                      boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px',
+                    }}
+                  />
+                </Fade>
+                <Fade left delay={60}>
+                  <NextImage
+                    src={SmartPhone}
+                    alt="Digital World"
+                    style={{
+                      borderBottomRightRadius: 25,
+                      borderTopRightRadius: 25,
+                      boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px',
+                    }}
+                  />
+                </Fade>
+              </Box>
+              <Box className="col2">
+                <Fade bottom delay={90}>
+                  <NextImage
+                    src={Codehacker}
+                    alt="Code Hacker"
+                    style={{
+                      borderRadius: 25,
+                      boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px',
+                    }}
+                  />
+                </Fade>
+              </Box>
+            </Card>
           </Box>
-          <Box {...textArea}>
-            {data.aboutus.map((feature, index) => (
+          <Box className="col" {...col}>
+            <Box {...textArea}>
               <FeatureBlock
-                key={`feature_point-${index}`}
-                icon={<i className={feature.icon} />}
-                iconPosition="left"
-                title={<Heading content={feature.title} {...featureTitle} />}
+                title={
+                  <Heading
+                    content="Modernes Design, Cyber-Security und Künstliche Intelligenz"
+                    {...title}
+                  />
+                }
+                description={
+                  <Text
+                    content="9 to 5 war gestern! Support bieten, wann immer er benötigt wird."
+                    {...description}
+                  />
+                }
               />
-            ))}
-            <Button title="INFORMATIONEN" {...btnStyle} />
+            </Box>
+            <Box {...textArea}>
+              {data.aboutus.map((feature, index) => (
+                <FeatureBlock
+                  key={`feature_point-${index}`}
+                  icon={<i className={feature.icon} />}
+                  iconPosition="left"
+                  title={<Heading content={feature.title} {...featureTitle} />}
+                />
+              ))}
+              {/* <Button title="INFORMATIONEN" {...btnStyle} /> */}
+            </Box>
           </Box>
         </Box>
       </Box>
@@ -112,6 +126,9 @@ const AboutUsSection = ({
 AboutUsSection.propTypes = {
   row: PropTypes.object,
   col: PropTypes.object,
+  sectionHeader: PropTypes.object,
+  sectionSubTitle: PropTypes.object,
+  sectionTitle: PropTypes.object,
   textArea: PropTypes.object,
   title: PropTypes.object,
   description: PropTypes.object,
@@ -123,6 +140,29 @@ AboutUsSection.defaultProps = {
   row: {
     flexBox: true,
     flexWrap: 'wrap',
+  },
+  sectionHeader: {
+    mb: ['40px', '56px'],
+  },
+  // sub section default style
+  sectionSubTitle: {
+    as: 'span',
+    display: 'block',
+    textAlign: 'center',
+    fontSize: '14px',
+    letterSpacing: '0.15em',
+    fontWeight: '700',
+    color: '#10ac84',
+    mb: '10px',
+  },
+  // section title default style
+  sectionTitle: {
+    textAlign: 'center',
+    fontSize: ['20px', '24px'],
+    fontWeight: '400',
+    color: '#0f2137',
+    letterSpacing: '-0.025em',
+    mb: '0',
   },
   // About us section col default style
   col: {

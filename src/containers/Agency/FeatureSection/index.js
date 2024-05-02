@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import Box from 'common/components/Box'
 import Text from 'common/components/Text'
@@ -7,6 +7,13 @@ import FeatureBlock from 'common/components/FeatureBlock'
 import data from 'common/data/Agency'
 import Container from 'common/components/UI/Container'
 import FeatureSectionWrapper from './featureSection.style'
+import ModalUiUx from '../ModalUIUX'
+import ModalFlexStack from '../ModalFlexStack'
+import ModalKi from '../ModalKi'
+import ModalSecurity from '../ModalSecurity'
+import ModalSeo from '../ModalSeo'
+import ModalTelefon from '../ModalTelefon'
+import { Modal } from '@nextui-org/react'
 
 const FeatureSection = ({
   row,
@@ -20,6 +27,9 @@ const FeatureSection = ({
   contentStyle,
   blockWrapperStyle,
 }) => {
+  const [openModal, setopenModal] = useState(false)
+  const [selectedModal, setSelectedModal] = useState(0)
+
   return (
     <FeatureSectionWrapper
       id="featureSection"
@@ -47,7 +57,7 @@ const FeatureSection = ({
           </Box>
           <Box
             style={{
-              boxShadow: 'rgba(0, 146, 202, 1) 20px 20px 30px -10px',
+              boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px',
             }}
             className="row"
             {...row}
@@ -57,7 +67,15 @@ const FeatureSection = ({
                 className="col"
                 {...col}
                 key={`feature-${index}`}
-                style={{ background: 'white', opacity: '0.9' }}
+                style={{
+                  background: 'white',
+                  opacity: '0.9',
+                  cursor: 'pointer',
+                }}
+                onClick={() => {
+                  setSelectedModal(feature.id)
+                  setopenModal(true)
+                }}
               >
                 <FeatureBlock
                   icon={<i className={feature.icon} />}
@@ -76,6 +94,26 @@ const FeatureSection = ({
             ))}
           </Box>
         </Box>
+        <Modal
+          blur
+          width="1170px"
+          closeButton
+          aria-labelledby="User Panel"
+          open={openModal}
+          onClose={() => {
+            setSelectedModal(0)
+            setopenModal(false)
+          }}
+          justify="center"
+          css={{ paddingTop: '0 !important', borderRadius: '0 !important' }}
+        >
+          {selectedModal === 1 && <ModalSeo />}
+          {selectedModal === 2 && <ModalUiUx />}
+          {selectedModal === 3 && <ModalSecurity />}
+          {selectedModal === 4 && <ModalFlexStack />}
+          {selectedModal === 5 && <ModalTelefon />}
+          {selectedModal === 6 && <ModalKi />}
+        </Modal>
       </Container>
     </FeatureSectionWrapper>
   )

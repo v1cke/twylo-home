@@ -14,6 +14,7 @@ import {
   IconBrandX,
   IconBrandXing,
 } from '@tabler/icons-react'
+import { Flip } from 'react-reveal'
 
 const TeamSection = ({
   row,
@@ -50,17 +51,18 @@ const TeamSection = ({
                 id={`member-${member.id}`}
                 className="team__member"
                 icon={
-                  <NextImage
-                    style={{
-                      objectFit: 'cover',
-                      height: 500,
-                      boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px',
-                    }}
-                    src={member.thumbnail_url}
-                    alt={`Team member photo ${member.id}`}
-                    className="member__photo"
-                    // style={{}}
-                  />
+                  <Flip left delay={200 + index * 250}>
+                    <NextImage
+                      style={{
+                        objectFit: 'cover',
+                        height: 500,
+                        boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px',
+                      }}
+                      src={member.thumbnail_url}
+                      alt={`Team member photo ${member.id}`}
+                      className="member__photo"
+                    />
+                  </Flip>
                 }
                 contentStyle={contentStyle}
                 title={<Heading content={member.name} {...memberName} />}

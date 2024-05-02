@@ -33,6 +33,7 @@ const HamburgMenuWrapper = styled.button`
       props.barColor ? props.barColor : '#10ac84'};
     transition: all 0.3s ease;
     &:first-child {
+      width: calc(100% - 10px);
       margin-top: 0;
     }
     &:last-child {
@@ -40,33 +41,36 @@ const HamburgMenuWrapper = styled.button`
       margin-bottom: 0;
     }
   }
-  &:focus,
+  // &:focus,
   &:hover {
     outline: none;
     > span {
+      &:first-child {
+        width: 100%;
+      }
       &:last-child {
         width: 100%;
       }
     }
   }
 
-  &:focus,
-  &.active {
-    > span {
-      &:first-child {
-        transform: rotate(45deg);
-        transform-origin: 8px 50%;
-      }
-      &:nth-child(2) {
-        display: none;
-      }
-      &:last-child {
-        width: 100%;
-        transform: rotate(-45deg);
-        transform-origin: 9px 50%;
-      }
-    }
-  }
+  // &:focus,
+  // &.active {
+  //   > span {
+  //     &:first-child {
+  //       transform: rotate(45deg);
+  //       transform-origin: 8px 50%;
+  //     }
+  //     &:nth-child(2) {
+  //       display: none;
+  //     }
+  //     &:last-child {
+  //       width: 100%;
+  //       transform: rotate(-45deg);
+  //       transform-origin: 9px 50%;
+  //     }
+  //   }
+  // }
 `
 
 HamburgMenuWrapper.displayName = 'HamburgMenuWrapper'

@@ -40,33 +40,35 @@ const BlogSection = ({
           />
           <Heading content="Auszüge unserer Projekte" {...sectionTitle} />
         </Box>
-        {matches ? (
+        {
+          // matches ?
           <ImageGallery />
-        ) : (
-          <Box className="row" {...row}>
-            {data.blog.map((post, index) => (
-              <FeatureBlock
-                key={`post_key-${index}`}
-                id={`post_id-${post.id}`}
-                className="blog__post"
-                icon={
-                  <NextImage
-                    src={post.thumbnail_url}
-                    alt={`Blog Image ${post.id}`}
-                    className="blog__image"
-                    layout="fill"
-                  />
-                }
-                title={
-                  <Link href={post.postLink} {...blogTitle}>
-                    {post.title}
-                  </Link>
-                }
-                description={<Text content={post.date} {...blogMeta} />}
-              />
-            ))}
-          </Box>
-        )}
+          // : (
+          //   <Box className="row" {...row}>
+          //     {data.blog.map((post, index) => (
+          //       <FeatureBlock
+          //         key={`post_key-${index}`}
+          //         id={`post_id-${post.id}`}
+          //         className="blog__post"
+          //         icon={
+          //           <NextImage
+          //             src={post.thumbnail_url}
+          //             alt={`Blog Image ${post.id}`}
+          //             className="blog__image"
+          //             layout="fill"
+          //           />
+          //         }
+          //         title={
+          //           <Link href={post.postLink} {...blogTitle}>
+          //             {post.title}
+          //           </Link>
+          //         }
+          //         description={<Text content={post.date} {...blogMeta} />}
+          //       />
+          //     ))}
+          //   </Box>
+          // )
+        }
       </Container>
     </BlogSectionWrapper>
   )
