@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const MessagingMeetingWrapper = styled.section`
-  padding: 110px 0 60px;
+  padding: 10px 0 60px;
   min-height: 600px;
   overflow: hidden;
 

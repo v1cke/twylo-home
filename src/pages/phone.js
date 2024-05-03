@@ -59,8 +59,11 @@ export const Agency = () => {
           {/* <VideoSection />
           <TeamSection />
           <FaqSection /> */}
-          <Box className="row" >
-            <Box className="col" >
+          <Box style={{ with: '100%', marginTop: '200px', display: 'flex', justifyContent: 'centers' }} >
+            <Box  >
+              <h2>Digitale Telefonanlage</h2>
+              <p>Die Cloud-Telefonanlage bietet über 150 Funktionen, die über eine intuitive Benutzeroberfläche einfach zu verwalten sind. Dies hilft dabei, keinen Anruf mehr zu verpassen und die Kommunikation effizient zu gestalten.
+              </p>
               <Heading
                 content="Digitale Telefonanlage"
 
@@ -79,6 +82,7 @@ export const Agency = () => {
                   />
                 }
               /> */}
+
             </Box>
           </Box>
           <CloudTelephony />

@@ -35,7 +35,7 @@ const FeatureSection = ({
       id="featureSection"
       style={{ background: 'linear-gradient(to right, transparent, #e0e0e0)' }}
     >
-      <Container>
+      <Container >
         <Box
           style={{
             paddingTop: 80,

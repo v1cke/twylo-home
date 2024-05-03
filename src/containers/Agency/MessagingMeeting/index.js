@@ -44,14 +44,15 @@ const MessagingMeeting = ({
   ]
 
   const featureBox = { background: '#fff', opacity: '0.9', padding: '10px', borderRadius: '10px', marginBottom: '20px', boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px', }
+
   return (
-    <MessagingMeetingWrapper id="qualitySection">
-      <Container>
-        <Box className="row" {...col} {...textArea} style={{ gap: '20px' }}>
+    <MessagingMeetingWrapper id="qualitySection" >
+      <Container >
+        <Box className="row" {...col} {...textArea} style={{ gap: '20px', display: 'flex', flexDirection: 'column', alignItems: 'end' }}>
           <h3>Messaging & Meetings:</h3>
 
           {messagingMeetings.map((item, index) =>
-            <Fade right delay={90 + index * 90}>
+            <Fade left delay={90 + index * 90}>
               <Box
                 className="col"
                 {...featureCol}
@@ -60,14 +61,15 @@ const MessagingMeeting = ({
               >
                 <FeatureBlock
                   // icon={<i className={feature.icon} />}
-                  iconPosition="left"
+                  iconPosition="right"
                   iconStyle={iconStyle}
                   title={<Heading content={item.title} {...featureTitle} />}
                   description={
                     <Text content={item.description} {...featureDescription} />
                   }
                 />
-              </Box>  </Fade>
+              </Box>
+            </Fade>
           )}
 
 

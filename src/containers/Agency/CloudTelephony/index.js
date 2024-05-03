@@ -46,10 +46,42 @@ const CloudTelephony = ({
   const featureBox = { background: '#fff', opacity: '0.9', padding: '10px', borderRadius: '10px', marginBottom: '20px', boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px', }
   return (
     <CloudTelephonyWrapper id="qualitySection">
+      <div style={{
+        position: 'absolute',
+        top: '2px',
+        right: '50%',
+        height: '100px',
+        width: 'calc(50% - 200px)',
+        borderRight: '2px solid rgba(202, 55, 0, 1)',
+        borderBottom: '2px solid rgba(202, 55, 0, 1)',
+        borderBottomRightRadius: '75px'
+      }} />
+      <div style={{
+        position: 'absolute',
+        top: '100px',
+        left: '100px',
+        height: 'calc(100% - 200px)',
+        width: 'calc(50% - 200px)',
+        borderLeft: '2px solid rgba(202, 55, 0, 1)',
+        borderTop: '2px solid rgba(202, 55, 0, 1)',
+        borderBottom: '2px solid rgba(202, 55, 0, 1)',
+        borderTopLeftRadius: '75px',
+        borderBottomLeftRadius: '75px'
+      }} />
+      <div style={{
+        position: 'absolute',
+        bottom: '2px',
+        right: '100px',
+        height: '100px',
+        width: 'calc(50% + 200px)',
+        borderRight: '2px solid rgba(202, 55, 0, 1)',
+        borderTop: '2px solid rgba(202, 55, 0, 1)',
+        borderTopRightRadius: '75px'
+      }} />
       <Container>
 
         {/* TODO: Header auslagern!!  */}
-        <Box className="row" {...row}>
+        {/* <Box className="row" {...row}>
           <Box className="col" {...col} {...textArea}>
             <FeatureBlock
               title={
@@ -66,9 +98,9 @@ const CloudTelephony = ({
               }
             />
           </Box>
-        </Box>
+        </Box> */}
 
-        <Box className="row" {...col} {...textArea} style={{ gap: '20px' }}>
+        <Box className="row" {...col} {...textArea} style={{ gap: '20px', paddingTop: '50px', paddingBottom: '100px' }}>
           <h3>Cloud-Telefonie:</h3>
 
           {cloudTelephony.map((item, index) =>
@@ -95,7 +127,7 @@ const CloudTelephony = ({
         </Box>
       </Container>
 
-    </CloudTelephonyWrapper>
+    </CloudTelephonyWrapper >
   )
 }
 
