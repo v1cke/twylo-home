@@ -182,7 +182,7 @@ const CloudPhonePbx = ({
 }) => {
   const [selectedTab, setSetselectedTab] = useState('Cloud Phone')
   const currentContent = phoneFeatures.find((tab) => tab.tab === selectedTab)
-  const matches = useMediaQuery('(min-width:990px)')
+  const matches = useMediaQuery('(min-width:750px)')
   return (
     <CloudPhoneWrapper>
       <Box
@@ -221,7 +221,7 @@ const CloudPhonePbx = ({
           alignItems: 'center',
         }}
       >
-        <Box
+        {matches && <Box
           style={{
             width: '40%',
           }}
@@ -229,21 +229,23 @@ const CloudPhonePbx = ({
         >
           <Rotate key={currentContent.image} delay={100}>
             <Image
+
               src={currentContent.image}
-              alt="twyloPhone"
+              alt={currentContent.tab}
               style={{
                 width: '100%',
-                // minWidth: '400px',
-                // objectFit: 'contain',
+                height: '100%',
+                objectFit: 'cover',
+                minWidth: '300px',
                 // boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px',
               }}
             />
           </Rotate>
-        </Box>
+        </Box>}
 
         <Box
           style={{
-            width: '60%',
+            width: matches ? '60%' : '100%',
             boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px',
             margin: '50px',
           }}
