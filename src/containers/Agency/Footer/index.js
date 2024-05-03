@@ -7,6 +7,7 @@ import Heading from 'common/components/Heading'
 import Container from 'common/components/UI/Container'
 import FooterWrapper, { List, ListItem } from './footer.style'
 import data from 'common/data/Agency'
+import { useRouter } from 'next/router'
 
 const LogoImage = '/logo.png'
 
@@ -19,13 +20,13 @@ const Footer = ({
   logoStyle,
   textStyle,
 }) => {
+  const router = useRouter()
   return (
     <FooterWrapper id="footerSection" style={{ background: 'white' }}>
       <Container>
         <Box className="row" {...row}>
           <Box {...colOne}>
             <div
-              href="#"
               style={{
                 display: 'flex',
                 alignItems: 'center',
@@ -34,6 +35,10 @@ const Footer = ({
                 fontSize: 24,
                 color: '#0092CA',
                 marginBottom: '15px',
+                cursor: 'pointer',
+              }}
+              onClick={() => {
+                router.push('/')
               }}
             >
               <img src={LogoImage} style={logoStyle} />

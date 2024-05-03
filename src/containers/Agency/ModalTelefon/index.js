@@ -8,6 +8,8 @@ import 'rc-tabs/assets/index.css'
 import LogoImage from '../../../../public/logo.png'
 import TelefonieImage from '../../../../public/images/telefonie.png'
 import ModalFeatureStyle from '../modalFeatureStyle'
+import { useRouter } from 'next/router'
+import Button55 from 'common/components/Button55'
 
 const ModalTelefon = ({
   row,
@@ -17,6 +19,8 @@ const ModalTelefon = ({
   contentWrapper,
   descriptionStyle,
 }) => {
+  const router = useRouter()
+
   return (
     <ModalFeatureStyle>
       <Box className="row" {...row}>
@@ -37,6 +41,14 @@ const ModalTelefon = ({
               content="Moderne Geschäftswelt erfordert moderne Kommunikationslösungen. Unsere Cloud-Telefonanlage twylo phone macht es möglich, dass Sie und Ihr Team von überall aus arbeiten können – ohne an Qualität einzubüßen. Funktionen wie Anrufweiterleitung, Konferenzschaltungen, KI-gesteuerte Anrufbeantwortung, Messaging und Meetings, Call Center und Integration in vorhandene Unternehmenssysteme über eine intuitive Benutzeroberfläche, lassen keine Wünsche offen. Plus, twylo phone ist flexibel und wächst mit Ihrem Business mit. Verpassen Sie keinen Anruf mehr und bleiben immer erreichbar, mit einer Telefonlösung, die für die Zukunft gemacht ist."
               {...descriptionStyle}
             />
+
+            <Button55
+              onClick={() => {
+                router.push('/' + '#phone'.slice(1))
+              }}
+            >
+              Mehr Dazu
+            </Button55>
           </Box>
         </Box>
       </Box>

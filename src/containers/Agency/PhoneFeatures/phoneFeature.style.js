@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 import { themeGet } from '@styled-system/theme-get'
 
-const LoginModalWrapper = styled.div`
-  width: 80%;
+const CloudPhoneWrapper = styled.div`
+  width: 100%;
   margin: 0 auto;
   border-radius: 5px;
   overflow: hidden;
@@ -42,7 +42,7 @@ const LoginModalWrapper = styled.div`
 
   .rc-tabs {
     border: 0;
-    max-width: 360px;
+    max-width: 1360px;
     margin: 30px 0 0;
     box-sizing: border-box;
     position: relative;
@@ -164,4 +164,4 @@ const LoginModalWrapper = styled.div`
   }
 `
 
-export default LoginModalWrapper
+export default CloudPhoneWrapper

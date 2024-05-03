@@ -35,7 +35,7 @@ const FeatureSection = ({
       id="featureSection"
       style={{ background: 'linear-gradient(to right, transparent, #e0e0e0)' }}
     >
-      <Container >
+      <Container>
         <Box
           style={{
             paddingTop: 80,
@@ -50,10 +50,7 @@ const FeatureSection = ({
               content="Leistungen"
               {...sectionSubTitle}
             />
-            <Heading
-              content="Leistungen auf die wir spezialisiert sind"
-              {...sectionTitle}
-            />
+            <Heading content="Unsere Spezialitäten" {...sectionTitle} />
           </Box>
           <Box
             style={{

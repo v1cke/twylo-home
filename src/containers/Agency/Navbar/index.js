@@ -10,11 +10,14 @@ import SearchPanel from '../SearchPanel'
 import CopyrightSection from '../CopyrightsSection'
 import { DrawerContext } from 'common/contexts/DrawerContext'
 import data from 'common/data/Agency/'
+import { useRouter } from 'next/router'
 
 const LogoImage = '/logo.png'
 
 const Navbar = ({ navbarStyle, logoStyle }) => {
   const [opened, setOpened] = React.useState(false)
+
+  const router = useRouter()
 
   const closeHandler = () => {
     setOpened(false)
@@ -34,8 +37,7 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
   return (
     <NavbarWrapper {...navbarStyle}>
       <Container>
-        <a
-          href="#"
+        <div
           style={{
             display: 'flex',
             alignItems: 'center',
@@ -43,6 +45,10 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
             fontWeight: '600',
             fontSize: 24,
             color: '#0092CA',
+            cursor: 'pointer',
+          }}
+          onClick={() => {
+            router.push('/')
           }}
         >
           <img src={LogoImage} style={logoStyle} />
@@ -56,7 +62,7 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
           >
             twylo
           </span>
-        </a>
+        </div>
 
         <div style={{ display: 'flex', alignItems: 'center' }}>
           {/* <Button

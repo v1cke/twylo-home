@@ -12,7 +12,16 @@ import Container from 'common/components/UI/Container'
 import WorkHistoryWrapper, { CounterUpArea } from './workHistory.style'
 import GlassCards from '../GlassCards'
 
-const WorkHistory = ({ row, col, cardStyle, title, description, btnStyle }) => {
+const WorkHistory = ({
+  row,
+  col,
+  cardStyle,
+  title,
+  description,
+  sectionHeader,
+  sectionSubTitle,
+  sectionTitle,
+}) => {
   const matches = useMediaQuery('(min-width:990px)')
 
   return (
@@ -20,6 +29,19 @@ const WorkHistory = ({ row, col, cardStyle, title, description, btnStyle }) => {
       id="workHistorySection"
       style={{ background: 'linear-gradient(to right, transparent, #e0e0e0)' }}
     >
+      <Box {...sectionHeader}>
+        <Text
+          style={{
+            color: 'rgba(0, 146, 202, 1)',
+          }}
+          content="Meilensteine"
+          {...sectionSubTitle}
+        />
+        <Heading
+          content="Was wir bisher geleistet haben..."
+          {...sectionTitle}
+        />
+      </Box>
       <Container>
         {matches ? (
           <>
@@ -35,55 +57,41 @@ const WorkHistory = ({ row, col, cardStyle, title, description, btnStyle }) => {
             />
           </>
         ) : (
-          <Box className="row" {...row}>
-            <Box className="col" {...col}>
-              <FeatureBlock
-                title={<Heading content="Work smart, not hard !" {...title} />}
-                description={
-                  <Text
-                    content="...dieser Leitsatz prägt unsere Philosophie und eint uns. Wir sind stets bestrebt, uns weiterzuentwickeln, indem wir kontinuierlich unser Know-how durch Weiterbildung ausbauen. Wir nutzen die neuesten Entwicklungen und Errungenschaften der IT-Welt, um unsere Effektivität stetig zu steigern. Künstliche Intelligenz betrachten wir nicht als Bedrohung unserer Arbeitsplätze, sondern als integralen Bestandteil der Cyber-Evolution – eine Chance, unsere Arbeit auf das nächste Level zu heben. Indem wir AI-Technologien gezielt einsetzen, verwandeln wir Herausforderungen in Möglichkeiten und gestalten die Zukunft der Technologie aktiv mit."
-                    {...description}
-                  />
-                }
-                // button={<Button title="PROJEKTE" {...btnStyle} />}
-              />
-            </Box>
-            <Box className="col" {...col}>
-              <CounterUpArea>
-                <Card
-                  className="card"
-                  {...cardStyle}
-                  style={{ background: 'white', opacity: '0.9' }}
-                >
-                  <h3>7</h3>
-                  <Text content="Jahre Erfahrung" />
-                </Card>
-                <Card
-                  className="card"
-                  {...cardStyle}
-                  style={{ background: 'white', opacity: '0.9' }}
-                >
-                  <h3>15</h3>
-                  <Text content="Glückliche Kunden" />
-                </Card>
-                <Card
-                  className="card"
-                  {...cardStyle}
-                  style={{ background: 'white', opacity: '0.9' }}
-                >
-                  <h3>30+</h3>
-                  <Text content="fertiggestellte Projekt" />
-                </Card>
-                <Card
-                  className="card"
-                  {...cardStyle}
-                  style={{ background: 'white', opacity: '0.9' }}
-                >
-                  <h3>&</h3>
-                  <Text content="vieles mehr" />
-                </Card>
-              </CounterUpArea>
-            </Box>
+          <Box className="col" {...col}>
+            <CounterUpArea>
+              <Card
+                className="card"
+                {...cardStyle}
+                style={{ background: 'white', opacity: '0.9' }}
+              >
+                <h3>7</h3>
+                <Text content="Jahre Erfahrung" />
+              </Card>
+              <Card
+                className="card"
+                {...cardStyle}
+                style={{ background: 'white', opacity: '0.9' }}
+              >
+                <h3>15</h3>
+                <Text content="Glückliche Kunden" />
+              </Card>
+              <Card
+                className="card"
+                {...cardStyle}
+                style={{ background: 'white', opacity: '0.9' }}
+              >
+                <h3>30+</h3>
+                <Text content="fertiggestellte Projekt" />
+              </Card>
+              <Card
+                className="card"
+                {...cardStyle}
+                style={{ background: 'white', opacity: '0.9' }}
+              >
+                <h3>&</h3>
+                <Text content="vieles mehr" />
+              </Card>
+            </CounterUpArea>
           </Box>
         )}
         {/* <Box className="row" {...row}>
@@ -190,11 +198,28 @@ WorkHistory.defaultProps = {
     lineHeight: '1.75',
     mb: '33px',
   },
-  // Button default style
-  btnStyle: {
-    minWidth: '156px',
+  sectionHeader: {
+    mb: ['40px', '56px'],
+  },
+  // sub section default style
+  sectionSubTitle: {
+    as: 'span',
+    display: 'block',
+    textAlign: 'center',
     fontSize: '14px',
-    fontWeight: '500',
+    letterSpacing: '0.15em',
+    fontWeight: '700',
+    color: '#10ac84',
+    mb: '10px',
+  },
+  // section title default style
+  sectionTitle: {
+    textAlign: 'center',
+    fontSize: ['20px', '24px'],
+    fontWeight: '400',
+    color: '#0f2137',
+    letterSpacing: '-0.025em',
+    mb: '0',
   },
 }
 

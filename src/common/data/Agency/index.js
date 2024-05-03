@@ -11,42 +11,42 @@ const data = {
   menuItems: [
     {
       label: 'Leistungen',
-      path: '#featureSection',
+      path: '/#featureSection',
       offset: '80',
     },
     {
       label: 'Unser Know-How',
-      path: '#AboutUsSection',
+      path: '/#AboutUsSection',
       offset: '67',
     },
     {
       label: 'Work smart, not hard',
-      path: '#workHistorySection',
+      path: '/#workHistorySection',
       offset: '67',
     },
     {
       label: 'Portfolio',
-      path: '#blogSection',
-      offset: '67',
+      path: '/#blogSection',
+      offset: '50',
     },
     {
       label: 'Wie wir arbeiten',
-      path: '#videoSection',
+      path: '/#videoSection',
       offset: '67',
     },
     // {
     //   label: 'Kundenmeinungen',
-    //   path: '#testimonialSection',
+    //   path: '/#testimonialSection',
     //   offset: '100',
     // },
     {
       label: 'Team',
-      path: '#teamSection',
+      path: '/#teamSection',
       offset: '67',
     },
     {
       label: 'FAQ',
-      path: '#faqSection',
+      path: '/#faqSection',
       offset: '67',
     },
   ],

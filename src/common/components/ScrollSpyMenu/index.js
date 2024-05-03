@@ -1,10 +1,11 @@
 import React, { useContext } from 'react'
 import PropTypes from 'prop-types'
 import Scrollspy from 'react-scrollspy'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
-
+import { useRouter } from 'next/router'
 import { DrawerContext } from '../../contexts/DrawerContext'
 import NextImage from '../NextImage'
+import Button from '../Button'
+import Button55 from '../Button55'
 
 const RenderLinkWithIcon = ({ menu }) => {
   return (
@@ -25,6 +26,8 @@ const RenderLinkWithIcon = ({ menu }) => {
 }
 
 const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
+  const router = useRouter()
+
   const { dispatch } = useContext(DrawerContext)
   // empty array for scrollspy items
   const scrollItems = []
@@ -61,21 +64,17 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
           {menu.staticLink ? (
             <RenderLinkWithIcon menu={menu} />
           ) : (
-            <>
-              {drawerClose ? (
-                <AnchorLink
-                  href={menu.path}
-                  offset={menu.offset}
-                  onClick={toggleDrawer}
-                >
-                  {menu.label}
-                </AnchorLink>
-              ) : (
-                <AnchorLink href={menu.path} offset={menu.offset}>
-                  {menu.label}
-                </AnchorLink>
-              )}
-            </>
+            <Button55
+              offset={menu.offset}
+              onClick={() => {
+                if (drawerClose) {
+                  toggleDrawer()
+                }
+                router.push('/' + menu.path.slice(1))
+              }}
+            >
+              {menu.label}
+            </Button55>
           )}
         </li>
       ))}
