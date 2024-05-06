@@ -199,6 +199,7 @@ const CloudPhonePbx = ({
         {phoneFeatures.map((item) => {
           return (
             <Button55
+              key={item.tab}
               onClick={() => {
                 setSetselectedTab(item.tab)
               }}
