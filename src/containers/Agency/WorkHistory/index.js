@@ -57,15 +57,15 @@ const WorkHistory = ({
             />
           </>
         ) : (
-          <Box className="col" {...col}>
-            <CounterUpArea>
+          <Box className="row" {...row}>
+            <CounterUpArea style={{ margin: 'auto' }}>
               <Card
                 className="card"
                 {...cardStyle}
                 style={{ background: 'white', opacity: '0.9' }}
               >
-                <h3>7</h3>
-                <Text content="Jahre Erfahrung" />
+                <h3>20</h3>
+                <Text content="IT-Erfahrung" />
               </Card>
               <Card
                 className="card"
@@ -80,8 +80,8 @@ const WorkHistory = ({
                 {...cardStyle}
                 style={{ background: 'white', opacity: '0.9' }}
               >
-                <h3>30+</h3>
-                <Text content="fertiggestellte Projekt" />
+                <h3>50+</h3>
+                <Text content="Endpoints in Cloud-Telefonie" />
               </Card>
               <Card
                 className="card"
@@ -92,6 +92,15 @@ const WorkHistory = ({
                 <Text content="vieles mehr" />
               </Card>
             </CounterUpArea>
+            <FeatureBlock
+              title={<Heading content="Work smart, not hard !" {...title} />}
+              description={
+                <Text
+                  content="...dieser Leitsatz prägt unsere Philosophie und eint uns. Wir sind stets bestrebt, uns weiterzuentwickeln, indem wir kontinuierlich unser Know-how durch Weiterbildung ausbauen. Wir nutzen die neuesten Entwicklungen und Errungenschaften der IT-Welt, um unsere Effektivität stetig zu steigern. Künstliche Intelligenz betrachten wir nicht als Bedrohung unserer Arbeitsplätze, sondern als integralen Bestandteil der Cyber-Evolution – eine Chance, unsere Arbeit auf das nächste Level zu heben. Indem wir AI-Technologien gezielt einsetzen, verwandeln wir Herausforderungen in Möglichkeiten und gestalten die Zukunft der Technologie aktiv mit."
+                  {...description}
+                />
+              }
+            />
           </Box>
         )}
         {/* <Box className="row" {...row}>

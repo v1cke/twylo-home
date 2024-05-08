@@ -10,6 +10,7 @@ import VideoSectionWrapper from './videoSection.style'
 import twylo from '../../../../public/images/twylo_screen.png'
 import { Modal } from '@nextui-org/react'
 import { useMediaQuery } from '@material-ui/core'
+import ReactPlayer from 'react-player'
 
 const VideoSection = ({
   sectionHeader,
@@ -18,7 +19,7 @@ const VideoSection = ({
   sectionSubTitle,
 }) => {
   const [openModal, setModal] = useState(false)
-  const matches = useMediaQuery('(min-width:900px)')
+  const matches = useMediaQuery('(min-width:850px)')
   const handler = () => setModal(true)
   const closeHandler = () => {
     setModal(false)
@@ -50,10 +51,12 @@ const VideoSection = ({
           onClick={handler}
           style={{
             cursor: 'pointer',
+            width: '100%',
+            height: '400px',
             //  boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px'
           }}
         >
-          <NextImage
+          {/* <NextImage
             src={twylo}
             alt="Twylo Image Video"
             style={{
@@ -69,10 +72,18 @@ const VideoSection = ({
               // onClick={handler}
               aria-label="Play Video"
             />
-          </Box>
+          </Box> */}
+          <ReactPlayer
+            url="https://www.youtube.com/embed/iz2R3HGMWHE?si=leCyAn3hytE6G1JK"
+            className="react-player"
+            // playing
+            width={matches ? '800px' : '100%'}
+            height="100%"
+            controls
+          />
         </Box>
 
-        <Modal
+        {/* <Modal
           blur
           width="850px"
           aria-labelledby="Search Panel"
@@ -96,7 +107,7 @@ const VideoSection = ({
               allowfullscreen
             ></iframe>
           </div>
-        </Modal>
+        </Modal> */}
       </Container>
     </VideoSectionWrapper>
   )

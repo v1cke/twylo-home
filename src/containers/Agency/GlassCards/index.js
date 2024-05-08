@@ -14,21 +14,21 @@ const GlassCards = () => {
     <div className={styles.container}>
       <GlassCard rStyle={-15}>
         <span>
-          <b>7</b> <br />
-          <p>Jahre Erfahrung</p>
+          <b>20</b> <br />
+          <p>Jahre IT-Erfahrung</p>
         </span>
       </GlassCard>
       <GlassCard rStyle={5}>
         <span>
-          <b>15 </b>
+          <b>15</b>
           <br />
           <p>Glückliche Kunden</p>
         </span>
       </GlassCard>
       <GlassCard rStyle={25}>
         <span>
-          <b>30+</b> <br />
-          <p>Fertiggestellte Projekte</p>
+          <b>50+</b> <br />
+          <p>Cloud-Telefonie Endpunkte</p>
         </span>
       </GlassCard>
       <GlassCard rStyle={-15}>

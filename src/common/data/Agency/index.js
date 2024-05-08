@@ -1,4 +1,4 @@
-import Ref1 from '../../../../public/images/wee_screenshot.png'
+import Ref1 from '../../../../public/images/wee_start.png'
 import Ref2 from '../../../../public/images/tc_screenshot.png'
 import Ref3 from '../../../../public/images/sl_screenshot.png'
 import Daniel from '../../../../public/images/DanielFounder2.png'
