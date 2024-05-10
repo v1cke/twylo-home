@@ -24,6 +24,8 @@
     "animate.css": "^4.1.1",
     "firebase-admin": "^11.2.0",
     "firebase-functions": "^3.24.1",
+    "flowise-embed": "^1.2.6",
+    "flowise-embed-react": "^1.0.2",
     "gsap": "^3.12.5",
     "next": "^14.2.2",
     "next-compose-plugins": "^2.2.1",

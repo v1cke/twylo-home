@@ -1,0 +1,279 @@
+
+twylo
+
+Wir sind 
+innovativ.
+Mit künstlicher Intelligenz vorausdenken, mit Sicherheit führen.
+
+
+MEHR VON UNS
+
+PROJEKTE ANSEHEN
+Leistungen
+Unsere Spezialitäten
+Suchmaschinen-Optimierung (SEO)
+Bringen Sie Ihre Website an die Spitze der Suchergebnisse, mit cleveren SEO-Strategien, die Sie vom Rest abheben.
+SEO
+Entdecken Sie, wie SEO Ihr Business mit Suchmaschinenoptimierung aufs nächste Level bringt!
+
+Suchmaschinenoptimierung ist kein Hexenwerk, aber fast! Es geht darum, Ihre Website so zu optimieren, dass Google und Co. sie nicht nur lieben, sondern auch ganz oben in den Suchergebnissen platzieren. Wie? Indem wir die richtigen Keywords wählen, die perfekten Inhalte erstellen und Ihre Site technisch auf Vordermann bringen. Egal ob Sie mehr Traffic, höhere Conversion Rates oder einfach eine bessere Online-Präsenz wollen, wir haben die Skills und Tools, um Ihre Seite auf die Überholspur zu bringen. Und das Beste? Sie sehen jeden Schritt, den wir machen, durch transparente Analysen und Reports. Lassen Sie uns gemeinsam dafür sorgen, dass jeder nach Ihnen googelt!
+
+Ui/UX Design
+Schicke Designs und simple Interfaces, die Ihre Nutzer lieben werden – wir haben das Auge dafür und setzen es um!Design
+Entdecken Sie, warum gutes Design mehr als nur hübsch aussieht!
+
+Ein herausragendes UI/UX Design ist wie der beste Barkeeper der Stadt: Es weiß genau, was die User wollen, bevor sie es selbst tun! Unser Ansatz fokussiert darauf, intuitive und ansprechende Designs zu schaffen, die nicht nur gut aussehen, sondern auch funktionieren. Wir nehmen uns die Zeit, deine Zielgruppe und deren Bedürfnisse zu verstehen, damit wir Interfaces designen können, die auf den ersten Klick überzeugen. Ob App, Webseite oder Software – unsere Designs sorgen dafür, dass Ihre Kunden gerne bleiben und noch lieber wiederkommen!
+
+Cyber-Security
+Ihr digitaler Bodyguard – robuste Cyber Security, die Hacker alt aussehen lässt.IT-Security
+Sicher ist sicher, schütz dich wie die Profis!
+
+Kein Unternehmen sollte sich im Netz unsicher fühlen. Mit unseren Cyber-Security-Lösungen rüsten wir dich gegen alle Arten von Cyber-Bedrohungen. Wir implementieren die neuesten Sicherheitstechniken, um deine Infrastruktur zu schützen, von proaktiven Monitoring-Systemen bis zu robusten Verschlüsselungspraktiken. Maßgeschneidert für deine speziellen Anforderungen, bieten wir eine Security, die mitdenkt und sich anpasst. Lass uns deine IT verteidigen, damit du dich auf dein Business konzentrieren kannst. Schlaf ruhig, wir halten die Wache!
+
+Flexibler Tech-Stack
+Egal, ob Javascript, PHP oder MySQL – wir sind die Tech-Chamäleons, die für jedes deiner Probleme den richtigen Code parat haben.Flexibler Stack
+Entdecken Sie, wie unser flexibler Tech-Stack Ihr Projekt optimieren kann!
+
+In der Welt der Softwareentwicklung ist Flexibilität der Schlüssel zum Erfolg. Unser breites Spektrum an Technologien und Plattformen ermöglicht es uns, genau die richtige Lösung für jedes Ihrer Probleme zu finden – maßgeschneidert und bereit zu skalieren. Egal, ob Sie mit Pascal experimentieren, eine robuste Java-Lösung benötigen oder die neuesten JavaScript-Frameworks ausprobieren wollen – wir haben die Expertise und die Technologie, um Ihre Vision umzusetzen. Lassen Sie uns gemeinsam die Grenzen dessen verschieben, was technisch möglich ist!
+
+Digitale Telefonanlage
+Telefonieren 2.0 – überall und jederzeit erreichbar, mit einer Telefonanlage, die sich Ihrem Business anpasst.Digitale Telefonie
+Telefonie, neu gedacht, gib deiner Kommunikation ein Upgrade!
+ {
+    tab: 'Cloud Phone',
+    content: [
+      {
+        title: 'Zeitbasiertes Routing',
+        description:
+          'Stellen Sie sich vor, Sie könnten selbst entscheiden, wann und wo Sie Anrufe entgegennehmen – und das alles mit nur ein paar Klicks. Mit unserem zeitbasierten Routing haben Sie die Kontrolle!',
+      },
+      {
+        title: 'Gruppenruf',
+        description:
+          'Teamwork auf die smarte Art: Richten Sie Anrufgruppen für Ihr Team und verschiedene Abteilungen ein. So optimieren Sie die Erreichbarkeit und jeder Anruf findet schnell den richtigen Ansprechpartner.',
+      },
+      {
+        title: 'Sprachmenü (IVR)',
+        description:
+          'Geben Sie Ihren Kunden die Freiheit zu wählen, mit wem sie sprechen möchten. Unser interaktives Sprachmenü (IVR) macht es möglich und leitet Anrufer intuitiv zur gewünschten Abteilung.',
+      },
+      {
+        title: 'Besetztlampenfeld',
+        description:
+          'Ein schneller Blick genügt: Unser Besetztlampenfeld zeigt Ihnen sofort, ob Kollegen verfügbar oder bereits in einem Gespräch sind – perfekt für Tischtelefone und Softphones.',
+      },
+      {
+        title: 'Voicemail',
+        description:
+          'Nie wieder wichtige Nachrichten verpassen: Unsere Voicemail-Funktion informiert Sie per E-Mail über neue Nachrichten und spielt Ansagen zu speziellen Anlässen ab.',
+      },
+    ],
+    image: 'images/cloudphoneIMG.png',
+  },
+  {
+    tab: 'Messaging & Meetings',
+    content: [
+      {
+        title: 'Online Meetings',
+        description:
+          'Starten Sie blitzschnell Meetings aus Ihrem persönlichen Raum – mit Platz für bis zu 1.000 Teilnehmer. Ein Klick und los gehts!',
+      },
+      {
+        title: 'File-/Screensharing',
+        description:
+          'Drag&Drop leicht gemacht: Teilen Sie Dateien im Handumdrehen oder zeigen Sie anderen Ihren Bildschirm. So einfach, so effektiv.',
+      },
+      {
+        title: 'Präsenzanzeige',
+        description:
+          'Mit unserer Präsenzanzeige wissen Sie immer, ob Ihre Kollegen gerade verfügbar sind. Ein schneller Blick, und Sie sind informiert.',
+      },
+      {
+        title: 'Meetings aufzeichnen',
+        description:
+          'Kein Problem, wenn jemand nicht dabei sein kann: Senden Sie einfach die Aufzeichnung des Meetings hinterher und halten Sie alle auf dem Laufenden.',
+      },
+      {
+        title: 'Virtuelles Whiteboard',
+        description:
+          'Unser virtuelles Whiteboard bietet unendlich viel Platz für Ihre Ideen. Zeichnen und schreiben Sie, wohin Sie wollen – die Möglichkeiten sind grenzenlos.',
+      },
+    ],
+    image: 'images/meetingIMG2.png',
+  },
+  {
+    tab: 'Call Center',
+    content: [
+      {
+        title: 'Warteschleife',
+        description:
+          'Richten Sie smarte Warteschleifen ein, die Ihre Kunden automatisch mit dem nächsten freien Mitarbeiter verbinden. Schneller Service, zufriedene Kunden!',
+      },
+      {
+        title: 'Skillbasiertes Routing',
+        description:
+          'Mit unserem skillbasierten Routing gelangen Anrufe immer zum richtigen Experten. So lösen Ihre Mitarbeiter Kundenanliegen effizient und kompetent.',
+      },
+      {
+        title: 'Detailiertes Reporting',
+        description:
+          'Behalten Sie den Überblick: Unser detailliertes Call-Center-Reporting zeigt Ihnen alle Aktivitäten und hilft, verborgene Potenziale zu entdecken.',
+      },
+      {
+        title: 'Agentenstatus',
+        description:
+          'Kein Problem, wenn jemand nicht dabei sein kann: Senden Sie einfach die Aufzeichnung des Meetings hinterher und halten Sie alle auf dem Laufenden.',
+      },
+      {
+        title: 'IVR (Interactive Voice Response)',
+        description:
+          'Unser virtuelles Whiteboard bietet unendlich viel Platz für Ihre Ideen. Zeichnen und schreiben Sie, wohin Sie wollen – die Möglichkeiten sind grenzenlos.',
+      },
+    ],
+    image: 'images/callcenterIMG.png',
+  },
+  {
+    tab: 'Integration',
+    content: [
+      {
+        title: 'MS Teams Intergration',
+        description:
+          'Verbinden Sie die Kraft von twylo-phone direkt mit Microsoft Teams. Bleiben Sie überall und jederzeit erreichbar – die Einrichtung? Ein Kinderspiel und in Minuten erledigt!',
+      },
+      {
+        title: 'Datev Integration',
+        description:
+          'Machen Sie es sich leicht: Mit der nahtlosen Integration von Telefoniefunktionen in Ihre DATEV-Anwendung optimieren Sie Ihre Arbeitsabläufe für maximale Effizienz.',
+      },
+      {
+        title: 'HubSpot Integration',
+        description:
+          'Telefonieren Sie direkt aus Ihrem HubSpot CRM, protokollieren Sie Anrufe automatisch und legen Sie bei Bedarf neue Aktivitäten an. So verbinden Sie Kommunikation und Kundenmanagement perfekt miteinander.',
+      },
+    ],
+    image: 'images/integrationIMG.png',
+  },
+  {
+    tab: 'Admin / Reportings',
+    content: [
+      {
+        title: 'Intuitives Webportal',
+        description:
+          'Unser Webportal ist das Herzstück Ihrer Cloud-Telefonanlage und macht es Ihnen leicht, alle Einstellungen Ihrer Kommunikation jederzeit selbst zu verwalten – intuitiv und effizient.',
+      },
+      {
+        title: 'Anrufmanagement',
+        description:
+          'Behalten Sie die Kontrolle: Verwalten Sie alle Telefonie-Einstellungen für Ihre Mitarbeiter und Endgeräte zentral über unsere benutzerfreundliche Oberfläche – jederzeit und von überall!',
+      },
+      {
+        title: 'Anrufstatistiken',
+        description:
+          'Mit unseren detaillierten Anrufstatistiken – von durchschnittlicher Wartezeit bis zu verpassten Anrufen – behalten Sie stets den Überblick und erkennen leicht, wo Optimierungspotenzial besteht.',
+      },
+    ],
+    image: 'images/adminIMG.png',
+  },
+  {
+    tab: 'Clients / Endgeräte',
+    content: [
+      {
+        title: 'Intuitives Webportal',
+        description:
+          'Nutzen Sie unsere kostenlosen Apps und Softphones, um mit Ihrem Smartphone, Laptop oder PC über twylo phone zu telefonieren, an Meetings teilzunehmen und Nachrichten zu versenden – mobil und flexibel.',
+      },
+      {
+        title: 'Hardware mieten',
+        description:
+          'Sparen Sie sich hohe Anschaffungskosten: Mieten Sie einfach die passende Hardware zu Ihrer Cloud-Telefonanlage bei uns und profitieren Sie von unserer großen Auswahl und Flexibilität.',
+      },
+      {
+        title: 'Autoprovisionierung',
+        description:
+          'Ein paar Klicks genügen: Geben Sie die MAC-Adresse Ihres Geräts ein, und wir kümmern uns um die automatische Konfiguration. Einfach, schnell und ohne zusätzlichen Aufwand.',
+      },
+    ],
+    image: 'images/clientsIMG.avif',
+  },
+
+Moderne Geschäftswelt erfordert moderne Kommunikationslösungen. Unsere Cloud-Telefonanlage twylo phone macht es möglich, dass Sie und Ihr Team von überall aus arbeiten können – ohne an Qualität einzubüßen. Funktionen wie Anrufweiterleitung, Konferenzschaltungen, KI-gesteuerte Anrufbeantwortung, Messaging und Meetings, Call Center und Integration in vorhandene Unternehmenssysteme über eine intuitive Benutzeroberfläche, lassen keine Wünsche offen. Plus, twylo phone ist flexibel und wächst mit Ihrem Business mit. Verpassen Sie keinen Anruf mehr und bleiben immer erreichbar, mit einer Telefonlösung, die für die Zukunft gemacht ist.
+
+KI-unterstütze Software
+Work smart, not hard! KI-unterstützte Software boostet Ihre Prozesse und lässt Ihnen Raum für andere Aufgaben.KI-unterstützung
+Mach mehr aus deinen Daten – Dein neuer digitaler Assistent wartet
+
+KI ist nicht nur ein Buzzword, sondern ein Game Changer. Unsere KI-unterstützte Software hilft dir, aus Daten Gold zu machen. Egal, ob es um die Automatisierung mühsamer Aufgaben geht oder um das Aufspüren von Insights, die deinem Unternehmen einen Vorsprung verschaffen – unsere Algorithmen sind bereit, für dich zu arbeiten. Von smarten Chatbots, die deinen Kundenservice revolutionieren, bis hin zu Analysetools, die Marktrends vorhersagen – unsere KI-Lösungen sind wie ein Turbo für deine Produktivität, ausgerichtet auf maximale Effizienz und minimalen Aufwand.
+
+Über uns
+Unser Know-How
+Human&AI
+Digital World
+Code Hacker
+Modernes Design, Cyber-Security und Künstliche Intelligenz
+9 to 5 war gestern! Support bieten, wann immer er benötigt wird.
+
+Hervorragende Kommunikationsfähigkeiten
+Nutzung von modernsten Design-Tools
+Cyber-Security Maßnahmen
+KI-Anwendungen (z.B. Chatbots)
+Digitale Telefonanlagen mit nativer Smartphone-Anbindung
+Meilensteine
+Was wir bisher geleistet haben...
+20
+Jahre IT-Erfahrung
+
+15
+Glückliche Kunden
+
+50+
+Cloud-Telefonie Endpunkte
+
+&
+vieles mehr
+
+Work smart, not hard !
+...dieser Leitsatz prägt unsere Philosophie und eint uns. Wir sind stets bestrebt, uns weiterzuentwickeln, indem wir kontinuierlich unser Know-how durch Weiterbildung ausbauen. Wir nutzen die neuesten Entwicklungen und Errungenschaften der IT-Welt, um unsere Effektivität stetig zu steigern. Künstliche Intelligenz betrachten wir nicht als Bedrohung unserer Arbeitsplätze, sondern als integralen Bestandteil der Cyber-Evolution – eine Chance, unsere Arbeit auf das nächste Level zu heben. Indem wir AI-Technologien gezielt einsetzen, verwandeln wir Herausforderungen in Möglichkeiten und gestalten die Zukunft der Technologie aktiv mit.
+
+PORTFOLIO
+Auszüge unserer Projekte
+WIE WIR ARBEITEN
+Ein typischer Tag im twylo office...
+
+TEAM
+Ihre Ansprechpartner
+Team member photo 1
+Daniel Wulfing
+Founder / Developer
+
+Team member photo 2
+Viktor Grünwald
+CEO / Developer
+
+Team member photo 3
+Tony Schroeder
+Developer / Ui-UX Designer
+
+FAQ
+Häufige Fragen
+Was umfasst Ihre Dienstleistungen in der Software- und Webentwicklung?
+Wie gewährleisten Sie die Qualität und Sicherheit der entwickelten Software?
+Welche Vorteile bietet eine Online-Telefonanlage für kleine und mittelständische Unternehmen?
+Kann ich meine vorhandene Telefonnummer behalten, wenn ich zu Ihrer Online-Telefonanlage wechsle?
+
+twylo
+mail@twylo.net
+
++49171 9796 775
+
+Über uns
+Support Center
+Projekte
+Team
+Leistungen
+Our Information
+Privacy Policy
+Rechtliches
+Datenschutzbestimmungen
+Cookies
+Impressum
+
