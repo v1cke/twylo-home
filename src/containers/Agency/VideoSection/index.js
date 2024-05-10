@@ -1,29 +1,19 @@
-import React, { useState } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import Box from 'common/components/Box'
 import Text from 'common/components/Text'
 import Heading from 'common/components/Heading'
-import Button from 'common/components/Button'
-import NextImage from 'common/components/NextImage'
 import Container from 'common/components/UI/Container'
 import VideoSectionWrapper from './videoSection.style'
-import twylo from '../../../../public/images/twylo_screen.png'
-import { Modal } from '@nextui-org/react'
 import { useMediaQuery } from '@material-ui/core'
-import ReactPlayer from 'react-player'
 
 const VideoSection = ({
   sectionHeader,
   sectionTitle,
-  buttonStyle,
   sectionSubTitle,
 }) => {
-  const [openModal, setModal] = useState(false)
   const matches = useMediaQuery('(min-width:850px)')
-  const handler = () => setModal(true)
-  const closeHandler = () => {
-    setModal(false)
-  }
+
 
   return (
     <VideoSectionWrapper
@@ -48,7 +38,6 @@ const VideoSection = ({
         </Box>
         <Box
           className="figure"
-          onClick={handler}
           style={{
             cursor: 'pointer',
             width: '100%',
@@ -56,58 +45,17 @@ const VideoSection = ({
             //  boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px'
           }}
         >
-          {/* <NextImage
-            src={twylo}
-            alt="Twylo Image Video"
-            style={{
-              objectFit: 'contain',
-              borderRadius: '10px',
-              // boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px',
-            }}
-          />
-          <Box className="fig__caption">
-            <Button
-              {...buttonStyle}
-              icon={<i className="flaticon-youtube" />}
-              // onClick={handler}
-              aria-label="Play Video"
-            />
-          </Box> */}
-          <ReactPlayer
-            url="https://www.youtube.com/embed/iz2R3HGMWHE?si=leCyAn3hytE6G1JK"
-            className="react-player"
+
+          <iframe
+            src="https://www.youtube.com/embed/iz2R3HGMWHE?si=leCyAn3hytE6G1JK"
+            // className="react-player"
             // playing
             width={matches ? '800px' : '100%'}
             height="100%"
-            controls
+          // controls
           />
         </Box>
 
-        {/* <Modal
-          blur
-          width="850px"
-          aria-labelledby="Search Panel"
-          open={openModal}
-          onClose={closeHandler}
-          justify="center"
-          css={{
-            background: 'transparent !important',
-            borderRadius: '0px !important',
-          }}
-        >
-          <div style={{ margin: 'auto' }}>
-            <iframe
-              width={!matches ? '100%' : '850px'}
-              height="450"
-              src="https://www.youtube.com/embed/iz2R3HGMWHE?si=leCyAn3hytE6G1JK"
-              title="Software Developing Company"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </Modal> */}
       </Container>
     </VideoSectionWrapper>
   )
