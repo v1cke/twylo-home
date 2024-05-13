@@ -14,7 +14,6 @@
   gap: 20px;
   padding: 20px;
 
-
   /* animation: animateColor 5s linear infinite; */
 }
 
@@ -22,13 +21,11 @@
   position: absolute;
   top: 10px;
   right: 20px;
-
 }
 
 .chatBotMessages {
   height: calc(100% - 50px);
   overflow-y: scroll;
-
 }
 
 .chatBotInput {
@@ -43,4 +40,17 @@
   100% {
     filter: hue-rotate(360deg);
   }
+}
+
+.bubbleBottom {
+  --size: 120px;
+  z-index: 99999;
+  position: absolute;
+  right: 20px;
+  top: calc(100vh - 130px);
+  cursor: pointer;
+  width: var(--size);
+  height: calc(var(--size) * 0.5);
+  font-weight: 800;
+  font-size: large;
 }

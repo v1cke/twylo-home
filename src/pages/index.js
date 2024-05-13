@@ -40,11 +40,10 @@ export const Agency = () => {
               <Navbar />
             </DrawerProvider>
           </Sticky>
-          <Sticky top={0} innerZ={99999} >
+          <Sticky top={0} innerZ={99999}>
             <ChatBot />
           </Sticky>
           <BackgroundParticles />
-
           <BannerSection />
           <FeatureSection />
           <AboutUsSection />
