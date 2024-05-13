@@ -25,7 +25,6 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
   }
 
   const { state, dispatch } = useContext(DrawerContext)
-  console.log('state', state)
 
   // Toggle drawer
   const toggleHandler = () => {

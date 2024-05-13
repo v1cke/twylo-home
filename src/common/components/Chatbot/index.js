@@ -1,5 +1,6 @@
 // import axios from 'axios'
 import React, { useState } from 'react'
+import styles from './chatBot.module.css';
 import axios from 'axios'
 
 export const ChatBot = () => {
@@ -28,11 +29,14 @@ export const ChatBot = () => {
   }
 
   return (
-    <div>
-      {messages.map((msg, index) => (
-        <p key={index}>{msg}</p>
-      ))}
-      <form onSubmit={handleSubmit}>
+    <div className={styles.chatBotContainer} >
+      <div className={styles.chatBotClose}>X</div>
+      <div className={styles.chatBotMessages} >
+        {messages.map((msg, index) => (
+          <p key={index}>{msg}</p>
+        ))}
+      </div>
+      <form onSubmit={handleSubmit} className={styles.chatBotInput}>
         <input value={input} onChange={handleInputChange} />
         <button type="submit">Send</button>
       </form>

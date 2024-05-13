@@ -41,7 +41,7 @@ const ModalUiUx = ({
           </Box>
         </Box>
       </Box>
-    </ModalFeatureStyle>
+    </ModalFeatureStyle >
   )
 }
 
