@@ -17,7 +17,7 @@ import Footer from 'containers/Agency/Footer'
 import { DrawerProvider } from 'common/contexts/DrawerContext'
 import FaqSection from 'containers/Agency/FaqSection'
 import BackgroundParticles from 'containers/Agency/BackgroundParticles'
-import { BubbleChat } from 'flowise-embed-react'
+import { ChatBot } from 'common/components/Chatbot'
 
 export const Agency = () => {
   return (
@@ -40,12 +40,9 @@ export const Agency = () => {
               <Navbar />
             </DrawerProvider>
           </Sticky>
-          <BubbleChat
-            chatflowid="3c936b04-343e-41c0-9caa-ab1bf2d0190d"
-            apiHost="http://localhost:3000"
-          />
-          <BackgroundParticles />
+          {/* <BackgroundParticles /> */}
           <BannerSection />
+          <ChatBot />
           <FeatureSection />
           <AboutUsSection />
           <WorkHistory />
