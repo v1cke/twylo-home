@@ -1,8 +1,9 @@
 import styles from './button55.module.css'
 
-const Button55 = ({ children, onClick, style, className }) => {
+const Button55 = ({ children, onClick, style, className, disabled }) => {
   return (
     <button
+      disabled={disabled}
       className={`${styles.button55} ${className}`}
       onClick={onClick}
       style={style}
