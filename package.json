@@ -28,6 +28,7 @@
     "firebase-functions": "^3.24.1",
     "flowise-embed": "^1.2.6",
     "flowise-embed-react": "^1.0.2",
+    "groq-sdk": "^0.3.3",
     "gsap": "^3.12.5",
     "next": "^14.2.2",
     "next-compose-plugins": "^2.2.1",

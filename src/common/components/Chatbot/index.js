@@ -6,7 +6,8 @@ import Button55 from '../Button55'
 import Slide from 'react-reveal/Slide'
 
 export const ChatBot = () => {
-  const inputRef = useRef(null);
+  const inputRef = useRef(null)
+  const messageArea = useRef(null)
   const [input, setInput] = useState('')
   const [messages, setMessages] = useState([
     'Hallo, mein Name ist Twyli. Wie kann ich Ihnen heute helfen?',
@@ -16,29 +17,37 @@ export const ChatBot = () => {
   const [previewSet, setPreviewSet] = useState(false)
   const [loading, setLoading] = useState(false)
 
+  const scrollToBottom = () => {
+    if (messageArea.current) {
+      messageArea.current.scrollTop = messageArea.current.scrollHeight
+    }
+  }
+
+  useEffect(() => {
+    scrollToBottom()
+  }, [messages])
+  const handleInputChange = (e) => {
+    setInput(e.target.value)
+  }
+
   useEffect(() => {
     if (!previewSet) {
       const timer1 = setTimeout(() => {
         if (!openChat) {
-          setPreviewChat(true);
-          setPreviewSet(true);
+          setPreviewChat(true)
+          setPreviewSet(true)
         }
-      }, 10000);
+      }, 10000)
 
-      return () => clearTimeout(timer1);
+      return () => clearTimeout(timer1)
     }
-  }, [openChat, previewSet]);
+  }, [openChat, previewSet])
 
   useEffect(() => {
     if (openChat) {
-      inputRef.current.focus();
+      inputRef.current.focus()
     }
-  }, [openChat]);
-
-
-  const handleInputChange = (e) => {
-    setInput(e.target.value)
-  }
+  }, [openChat])
 
   const handleSubmit = async (e) => {
     setLoading(true)
@@ -58,33 +67,41 @@ export const ChatBot = () => {
     setLoading(false)
   }
 
-
-  useEffect
-
   return (
     <>
       {openChat && (
         <div className={styles.chatBotContainer}>
-          <div className={styles.chatBotMessages}>
+          <div className={styles.chatBotMessages} ref={messageArea}>
             {messages.map((msg, index) => {
               const isUserMsg = msg.startsWith('user')
               const position = msg.indexOf(':')
 
               return (
-                <div className={styles.messagesWrapper}
+                <div
+                  key={index}
+                  className={styles.messagesWrapper}
                   style={{
                     flexDirection: isUserMsg ? 'row-reverse' : 'row',
                   }}
                   key={index}
                 >
-                  <img src={isUserMsg ? "images/User-Avatar.png" : "images/Twyli-avatar.png"} height={'40px'} width={'40px'} />
+                  {/* <IconWrapper></IconWrapper> */}
+                  <img
+                    src={
+                      isUserMsg
+                        ? 'images/User-Avatar.png'
+                        : 'images/Twyli-avatar.png'
+                    }
+                    height={'40px'}
+                    width={'40px'}
+                  />
                   <p
                     style={{
                       textAlign: isUserMsg ? 'right' : 'left',
                       paddingLeft: isUserMsg ? '50px' : '0px',
                       paddingRight: isUserMsg ? '0px' : '50px',
                     }}
-
+                    key={index}
                   >
                     {msg.substring(position + 1)}
                   </p>
@@ -95,21 +112,28 @@ export const ChatBot = () => {
 
           <form onSubmit={handleSubmit} className={styles.chatBotInput}>
             <input ref={inputRef} value={input} onChange={handleInputChange} />
-            <button disabled={input === ''} type="submit">{loading ? '...Denken' : 'Senden'}</button>
+            <button disabled={input === ''} type="submit">
+              {loading ? '...Denken' : 'Senden'}
+            </button>
           </form>
         </div>
       )}
       {previewChat && (
-        <div className={styles.previewChatBotContainer} onClick={() => {
-          setPreviewChat(false)
-          setPreviewSet(true)
-          setOpenChat(!openChat);
-        }}>
+        <div
+          className={styles.previewChatBotContainer}
+          onClick={() => {
+            setPreviewChat(false)
+            setPreviewSet(true)
+            setOpenChat(!openChat)
+          }}
+        >
           <div className={styles.previewChatBotMessages}>
-
-            <div className={styles.messagesWrapper}
-            >
-              <img src="images/Twyli-avatar.png" height={'40px'} width={'40px'} />
+            <div className={styles.messagesWrapper}>
+              <img
+                src="images/Twyli-avatar.png"
+                height={'40px'}
+                width={'40px'}
+              />
               <p
                 style={{
                   textAlign: 'left',
@@ -127,12 +151,17 @@ export const ChatBot = () => {
         className={styles.bubbleBottom}
         style={{ paddingLeft: openChat ? '12px' : '8px' }}
         onClick={() => {
-          setPreviewChat(false)
-          setPreviewSet(true)
-          setOpenChat(!openChat);
+          setOpenChat(!openChat)
         }}
       >
-        {openChat ? <img src="images/X-avatar.png" height={'40px'} width={'40px'} /> : <><img src="images/Twyli-avatar.png" height={'40px'} width={'40px'} />Frag mich</>}
+        {openChat ? (
+          <img src="images/X-avatar.png" height={'40px'} width={'40px'} />
+        ) : (
+          <>
+            <img src="images/Twyli-avatar.png" height={'40px'} width={'40px'} />
+            Frag mich
+          </>
+        )}
       </Button55>
     </>
   )
