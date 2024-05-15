@@ -149,6 +149,8 @@ export const ChatBot = () => {
         className={styles.bubbleBottom}
         style={{ paddingLeft: openChat ? '12px' : '8px' }}
         onClick={() => {
+          setPreviewChat(false)
+          setPreviewSet(true)
           setOpenChat(!openChat)
         }}
       >
