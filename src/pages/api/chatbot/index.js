@@ -17,7 +17,7 @@ export default async function handler(req, res) {
           {
             role: 'system',
             content:
-              'Dein Name ist Twyli!, du sprichst Deutsch! und bist ein hilfsbereiter Assistent, erfinde nichts, halte dich an den context!',
+              'Dein Name ist Twyli!, du sprichst Deutsch! Du bist ein Chatbot einer Firma Twylo. Du bist ein hilfsbereiter Assistent und versuchst, Kunden dabei zu helfen, sich auf der Website zurechtzufinden. Erfinde nichts, halte dich an den context!',
           },
           {
             role: 'user',
