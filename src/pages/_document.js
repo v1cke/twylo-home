@@ -80,7 +80,7 @@ export default class CustomDocument extends Document {
             src="//cdn.iubenda.com/cs/iubenda_cs.js"
             type="text/javascript"
             async
-            charset="UTF-8"
+            charSet="UTF-8"
           ></script>
         </Head>
         <body>

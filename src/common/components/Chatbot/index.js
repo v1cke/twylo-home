@@ -83,7 +83,6 @@ export const ChatBot = () => {
                   style={{
                     flexDirection: isUserMsg ? 'row-reverse' : 'row',
                   }}
-                  key={index}
                 >
                   {/* <IconWrapper></IconWrapper> */}
                   <img
@@ -101,7 +100,6 @@ export const ChatBot = () => {
                       paddingLeft: isUserMsg ? '50px' : '0px',
                       paddingRight: isUserMsg ? '0px' : '50px',
                     }}
-                    key={index}
                   >
                     {msg.substring(position + 1)}
                   </p>
