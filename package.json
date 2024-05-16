@@ -5,6 +5,7 @@
   "main": "firebaseFunctions.js",
   "scripts": {
     "dev": "next",
+    "tsc": "tsc --noEmit",
     "build": "next build",
     "start": "next start",
     "serve": "npm run build && firebase emulators:start --only functions,hosting",

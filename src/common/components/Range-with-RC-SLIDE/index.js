@@ -91,7 +91,7 @@ const RangeBox = (props) => {
   )
 }
 
-export default ({ className, labelText, labelPosition, type, ...props }) => {
+function CustomRangeComponent({ className, labelText, labelPosition, type, ...props }) {
   // Add all classs to an array
   const addAllClasses = ['reusecore__rangebox']
   // Add label position class
@@ -196,3 +196,5 @@ RangeBox.defaultProps = {
   dots: true,
   vertical: false,
 }
+
+export default CustomRangeComponent;

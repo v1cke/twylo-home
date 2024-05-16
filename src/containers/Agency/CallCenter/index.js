@@ -51,7 +51,7 @@ const CallCenter = ({
           <h3>Call Center:</h3>
 
           {callCenters.map((item, index) =>
-            <Fade right delay={90 + index * 90}>
+            <Fade right delay={90 + index * 90} key={item.title}>
               <Box
                 className="col"
                 {...featureCol}

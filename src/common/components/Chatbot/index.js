@@ -93,6 +93,7 @@ export const ChatBot = () => {
                     }
                     height={'40px'}
                     width={'40px'}
+                    alt='Twyli/User-avatar'
                   />
                   <p
                     style={{
@@ -131,6 +132,7 @@ export const ChatBot = () => {
                 src="images/Twyli-avatar.png"
                 height={'40px'}
                 width={'40px'}
+                alt='Twyli-avatar'
               />
               <p
                 style={{
@@ -155,10 +157,10 @@ export const ChatBot = () => {
         }}
       >
         {openChat ? (
-          <img src="images/X-avatar.png" height={'40px'} width={'40px'} />
+          <img src="images/X-avatar.png" height={'40px'} width={'40px'} alt='X-avatar' />
         ) : (
           <>
-            <img src="images/Twyli-avatar.png" height={'40px'} width={'40px'} />
+            <img src="images/Twyli-avatar.png" height={'40px'} width={'40px'} alt='Twyli-avatar' />
             Frag mich
           </>
         )}

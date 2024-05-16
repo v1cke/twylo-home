@@ -50,7 +50,7 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
             router.push('/')
           }}
         >
-          <img src={LogoImage} style={logoStyle} />
+          <img src={LogoImage} style={logoStyle} alt='logo' />
           <span
             className="logoFont"
             style={{

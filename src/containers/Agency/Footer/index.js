@@ -41,7 +41,7 @@ const Footer = ({
                 router.push('/')
               }}
             >
-              <img src={LogoImage} style={logoStyle} />
+              <img src={LogoImage} style={logoStyle} alt='Logo' />
               <span
                 className="logoFont"
                 style={{

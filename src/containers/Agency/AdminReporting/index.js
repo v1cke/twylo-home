@@ -44,7 +44,7 @@ const AdminReporting = ({
           <h3>Admin & Reportings:</h3>
 
           {adminReportings.map((item, index) =>
-            <Fade right delay={90 + index * 90}>
+            <Fade right delay={90 + index * 90} key={item.title}>
               <Box
                 className="col"
                 {...featureCol}

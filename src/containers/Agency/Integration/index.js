@@ -44,7 +44,7 @@ const Integration = ({
           <h3>Integration:</h3>
 
           {integrations.map((item, index) =>
-            <Fade right delay={90 + index * 90}>
+            <Fade right delay={90 + index * 90} key={item.title}>
               <Box
                 className="col"
                 {...featureCol}

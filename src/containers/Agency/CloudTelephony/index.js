@@ -104,7 +104,7 @@ const CloudTelephony = ({
           <h3>Cloud-Telefonie:</h3>
 
           {cloudTelephony.map((item, index) =>
-            <Fade right delay={90 + index * 90}>
+            <Fade right delay={90 + index * 90} key={item.title}>
               <Box
                 className="col"
                 {...featureCol}

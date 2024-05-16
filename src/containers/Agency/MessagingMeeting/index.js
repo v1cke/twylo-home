@@ -52,12 +52,11 @@ const MessagingMeeting = ({
           <h3>Messaging & Meetings:</h3>
 
           {messagingMeetings.map((item, index) =>
-            <Fade left delay={90 + index * 90}>
+            <Fade left delay={90 + index * 90} key={item.title}>
               <Box
                 className="col"
                 {...featureCol}
                 style={featureBox}
-
               >
                 <FeatureBlock
                   // icon={<i className={feature.icon} />}

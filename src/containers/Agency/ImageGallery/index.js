@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import styles from './imageGallery.module.css'
 
-const ImageCard = ({ img, iStyle }) => {
+const ImageCard = ({ img, iStyle, alt }) => {
   return (
-    <span className={styles.spanImg} style={{ '--i': iStyle }}>
-      <img src={img} />
+    <span className={styles.spanImg} style={{ '--i': iStyle }} >
+      <img src={img} alt={alt} />
     </span>
   )
 }
@@ -47,14 +47,14 @@ const ImageGallery = () => {
           className={styles.box}
           style={{ transform: `perspective(1000px) rotateY(${angle}deg)` }}
         >
-          <ImageCard img="/images/wee_start.png" iStyle={1} />
-          <ImageCard img="/images/tr_schicht.png" iStyle={2} />
-          <ImageCard img="/images/tr_dienstplan.png" iStyle={3} />
-          <ImageCard img="/images/wee_karriere.png" iStyle={4} />
-          <ImageCard img="/images/traincrew2.png" iStyle={5} />
-          <ImageCard img="/images/tr_wee.png" iStyle={6} />
-          <ImageCard img="/images/traincrew.png" iStyle={7} />
-          <ImageCard img="/images/tr_ticket.png" iStyle={8} />
+          <ImageCard img="/images/wee_start.png" iStyle={1} alt='start' />
+          <ImageCard img="/images/tr_schicht.png" iStyle={2} alt='schicht' />
+          <ImageCard img="/images/tr_dienstplan.png" iStyle={3} alt='dienstplan' />
+          <ImageCard img="/images/wee_karriere.png" iStyle={4} alt='karriere' />
+          <ImageCard img="/images/traincrew2.png" iStyle={5} alt='traincrew2' />
+          <ImageCard img="/images/tr_wee.png" iStyle={6} alt='wee' />
+          <ImageCard img="/images/traincrew.png" iStyle={7} alt='traincrew' />
+          <ImageCard img="/images/tr_ticket.png" iStyle={8} alt='ticket' />
         </div>
         <div className={styles.btns}>
           <div
