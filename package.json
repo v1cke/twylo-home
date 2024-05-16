@@ -1,5 +1,5 @@
 {
-  "name": "@superprops/next",
+  "name": "twylo",
   "version": "13.0.5",
   "private": true,
   "main": "firebaseFunctions.js",
