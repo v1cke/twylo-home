@@ -3,7 +3,6 @@ import Box from 'common/components/Box'
 import Heading from 'common/components/Heading'
 import Container from 'common/components/UI/Container'
 import PhoneHeaderWrapper from './phoneHeader.style'
-import { alignItems, display, flexDirection } from 'styled-system'
 
 const PhoneHeader = ({}) => {
   return (

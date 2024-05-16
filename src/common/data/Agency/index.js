@@ -29,15 +29,10 @@ const data = {
       path: '/#blogSection',
       offset: '50',
     },
-    {
-      label: 'Wie wir arbeiten',
-      path: '/#videoSection',
-      offset: '67',
-    },
     // {
-    //   label: 'Kundenmeinungen',
-    //   path: '/#testimonialSection',
-    //   offset: '100',
+    //   label: 'Wie wir arbeiten',
+    //   path: '/#videoSection',
+    //   offset: '67',
     // },
     {
       label: 'Team',
@@ -312,57 +307,72 @@ const data = {
       menuItems: [
         {
           id: 1,
-          url: '#1',
-          text: 'Support Center',
+          url: '#featureSection',
+          text: 'Leistungen',
         },
         {
           id: 2,
-          url: '#blogSection',
-          text: 'Projekte',
+          url: '#AboutUsSection',
+          text: 'Unser Know-How',
         },
         {
           id: 3,
+          url: '#workHistorySection',
+          text: 'Work smart, not hard',
+        },
+        {
+          id: 4,
+          url: '#blogSection',
+          text: 'Portfolio',
+        },
+        // {
+        //   id: 5,
+        //   url: '#videoSection',
+        //   text: 'Wie wir arbeiten',
+        // },
+        {
+          id: 6,
           url: '#teamSection',
           text: 'Team',
         },
         {
-          id: 4,
-          url: '#featureSection',
-          text: 'Leistungen',
+          id: 7,
+          url: '#faqSection',
+          text: 'FAQ',
         },
       ],
     },
-    {
-      id: 2,
-      title: 'Our Information',
-      menuItems: [
-        // {
-        //   id: 1,
-        //   url: '#1',
-        //   text: 'Return Policy',
-        // },
-        {
-          id: 2,
-          url: '#2',
-          text: 'Privacy Policy',
-        },
-        // {
-        //   id: 3,
-        //   url: '#2',
-        //   text: 'Terms & Conditions',
-        // },
-        // {
-        //   id: 4,
-        //   url: '#4',
-        //   text: 'Site Map',
-        // },
-        // {
-        //   id: 5,
-        //   url: '#5',
-        //   text: 'Store Hours',
-        // },
-      ],
-    },
+    // {
+    //   id: 2,
+    //   title: 'Our Information',
+    //   menuItems: [
+    //     // {
+    //     //   id: 1,
+    //     //   url: '#1',
+    //     //   text: 'Return Policy',
+    //     // },
+    //     {
+    //       id: 2,
+    //       url: '#2',
+    //       text: 'Privacy Policy',
+    //     },
+    //     // {
+    //     //   id: 3,
+    //     //   url: '#2',
+    //     //   text: 'Terms & Conditions',
+    //     // },
+    //     // {
+    //     //   id: 4,
+    //     //   url: '#4',
+    //     //   text: 'Site Map',
+    //     // },
+    //     // {
+    //     //   id: 5,
+    //     //   url: '#5',
+    //     //   text: 'Store Hours',
+    //     // },
+    //   ],
+    // },
     // {
     //   id: 3,
     //   title: 'My Account',
@@ -400,17 +410,17 @@ const data = {
       menuItems: [
         {
           id: 1,
-          url: 'https://www.iubenda.com/privacy-policy/47420556',
+          url: 'policy',
           text: 'Datenschutzbestimmungen',
         },
-        {
-          id: 2,
-          url: 'https://www.iubenda.com/privacy-policy/47420556/cookie-policy',
-          text: 'Cookies',
-        },
+        // {
+        //   id: 2,
+        //   url: '#',
+        //   text: 'Cookies',
+        // },
         {
           id: 3,
-          url: '#3',
+          url: 'imprint',
           text: 'Impressum',
         },
         // {

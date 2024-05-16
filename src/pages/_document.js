@@ -72,7 +72,7 @@ export default class CustomDocument extends Document {
             `,
             }}
           />
-          <script
+          {/* <script
             src="https://cs.iubenda.com/autoblocking/3614080.js"
             type="text/javascript"
           ></script>
@@ -81,7 +81,7 @@ export default class CustomDocument extends Document {
             type="text/javascript"
             async
             charSet="UTF-8"
-          ></script>
+          ></script> */}
         </Head>
         <body>
           <Main />

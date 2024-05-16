@@ -53,8 +53,37 @@ const Footer = ({
                 twylo
               </span>
             </div>
-            <Text content="mail@twylo.net" {...textStyle} />
-            <Text content="+49171 9796 775" {...textStyle} />
+            <Link cursor legacyBehavior href={'mailto:mail@twylo.net'}>
+              <Text
+                content="mail@twylo.net"
+                {...textStyle}
+                style={{ cursor: 'pointer' }}
+              />
+            </Link>
+            <Link legacyBehavior href={'tel:+491719796775'}>
+              <Text
+                content="+49171 9796 775"
+                {...textStyle}
+                style={{ cursor: 'pointer' }}
+              />
+            </Link>
+            <Link
+              legacyBehavior
+              href={'https://maps.app.goo.gl/AgGZKgNa3iV9MDXV8'}
+            >
+              <a target="_blank" rel="noopener noreferrer">
+                <Text
+                  content="Kaldenkerkerweg 20"
+                  {...textStyle}
+                  style={{ cursor: 'pointer' }}
+                />
+                <Text
+                  content="5913 AE Venlo, Niederlande"
+                  {...textStyle}
+                  style={{ cursor: 'pointer' }}
+                />
+              </a>
+            </Link>
           </Box>
           <Box {...colTwo}>
             {data.menuWidget.map((widget) => (
@@ -67,20 +96,30 @@ const Footer = ({
                   {...titleStyle}
                 />
                 <List>
-                  {widget.menuItems.map((item) => (
-                    <ListItem key={`list__item-${item.id}`}>
-                      <Link legacyBehavior href={item.url}>
-                        <a
-                          className="ListItem"
-                          style={{
-                            whiteSpace: 'nowrap',
-                          }}
-                        >
-                          {item.text}
-                        </a>
-                      </Link>
-                    </ListItem>
-                  ))}
+                  {widget.menuItems.map((item) => {
+                    return (
+                      <>
+                        <ListItem key={`list__item-${item.id}`}>
+                          <Link legacyBehavior href={item.url}>
+                            {item.url.startsWith('https:/') ? (
+                              <a
+                                className="ListItem"
+                                style={{
+                                  whiteSpace: 'nowrap',
+                                }}
+                              >
+                                {item.text}
+                              </a>
+                            ) : (
+                              <div style={{ cursor: 'pointer' }}>
+                                {item.text}
+                              </div>
+                            )}
+                          </Link>
+                        </ListItem>
+                      </>
+                    )
+                  })}
                 </List>
               </Box>
             ))}

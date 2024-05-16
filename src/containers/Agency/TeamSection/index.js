@@ -29,7 +29,7 @@ const TeamSection = ({
   return (
     <TeamSectionWrapper
       style={{
-        background: 'linear-gradient(to left, transparent, #e0e0e0)',
+        background: 'linear-gradient(to right, transparent, #e0e0e0)',
       }}
       id="teamSection"
     >

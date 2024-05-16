@@ -3,22 +3,25 @@ import Link from 'next/link'
 import Text from 'common/components/Text'
 import CopyrightWrapper from './copyrightSection.style'
 import data from 'common/data/Agency/'
+import Button55 from 'common/components/Button55'
+import { useRouter } from 'next/router'
 
 const CopyrightSection = () => {
+  const router = useRouter()
   return (
-    <CopyrightWrapper className="copyright_section">
-      <ul>
-        {data.social_profile.map((profile, index) => (
-          <li key={`profile_key_${index}`}>
-            <Link legacyBehavior href="#1">
-              <a>
-                <i className={profile.icon} />
-              </a>
-            </Link>
-          </li>
-        ))}
-      </ul>
-      <Text content="Copyrights 2019 @RedQ Inc" />
+    <CopyrightWrapper
+      className="copyright_section"
+      style={{ marginLeft: '20px' }}
+    >
+      <Button55
+        offset={200}
+        onClick={() => {
+          router.push('imprint')
+        }}
+      >
+        Impressum
+      </Button55>
+      <Text content="Copyrights 2014 Twylo" />
     </CopyrightWrapper>
   )
 }

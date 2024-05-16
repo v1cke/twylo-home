@@ -9,19 +9,15 @@ import Navbar from 'containers/Agency/Navbar'
 import Footer from 'containers/Agency/Footer'
 import { DrawerProvider } from 'common/contexts/DrawerContext'
 import BackgroundParticles from 'containers/Agency/BackgroundParticles'
-import PhoneHeader from 'containers/Agency/PhoneHeader'
-import CloudPhonePbx from 'containers/Agency/PhoneFeatures'
+import { ImprintContent } from 'containers/Agency/Imprint'
 
-export const Phone = () => {
+export const Imprint = () => {
   return (
     <ThemeProvider theme={agencyTheme}>
       <Fragment>
         <Head>
-          <title>twylo phone - cloud pbx Telefonanlage</title>
-          <meta
-            name="Description"
-            content="twylo phone - cloud pbx Telefonanlage"
-          />
+          <title>twylo - Impressum</title>
+          <meta name="Description" content="twylo Impressum" />
           <meta name="theme-color" content="#0092CA" />
         </Head>
         <ResetCSS />
@@ -33,12 +29,11 @@ export const Phone = () => {
             </DrawerProvider>
           </Sticky>
           <BackgroundParticles />
-          <PhoneHeader />
-          <CloudPhonePbx />
+          <ImprintContent />
           <Footer />
         </AgencyWrapper>
       </Fragment>
     </ThemeProvider>
   )
 }
-export default Phone
+export default Imprint
