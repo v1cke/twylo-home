@@ -52,13 +52,13 @@ const TeamSection = ({
                 className="team__member"
                 icon={
                   <Flip left delay={200 + index * 250}>
-                    <NextImage
+                    <img
                       style={{
                         objectFit: 'cover',
                         height: 500,
                         boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px',
                       }}
-                      src={member.thumbnail_url}
+                      src={member.img}
                       alt={`Team member photo ${member.id}`}
                       className="member__photo"
                     />

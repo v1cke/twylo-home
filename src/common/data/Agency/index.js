@@ -1,9 +1,6 @@
 import Ref1 from '../../../../public/images/wee_start.png'
 import Ref2 from '../../../../public/images/tc_screenshot.png'
 import Ref3 from '../../../../public/images/sl_screenshot.png'
-import Daniel from '../../../../public/images/DanielFounder2.png'
-import Viktor from '../../../../public/images/ViKCeo2.png'
-import Tony from '../../../../public/images/TonyDev2.png'
 import Denny from '../../assets/image/agency/client/denny.png'
 import Menny from '../../assets/image/agency/client/menny.png'
 
@@ -173,7 +170,7 @@ const data = {
     {
       id: 1,
       name: 'Daniel Wulfing',
-      thumbnail_url: Daniel,
+      img: 'images/Daniel.png',
       designation: 'Founder / Developer',
       social_links: [
         // {
@@ -201,7 +198,7 @@ const data = {
     {
       id: 2,
       name: 'Viktor Grünwald',
-      thumbnail_url: Viktor,
+      img: 'images/Viktor.png',
       designation: 'CEO / Developer',
       social_links: [
         {
@@ -219,7 +216,7 @@ const data = {
     {
       id: 3,
       name: 'Tony Schroeder',
-      thumbnail_url: Tony,
+      img: 'images/Tony.png',
       designation: 'Developer / Ui-UX Designer',
       social_links: [
         {
