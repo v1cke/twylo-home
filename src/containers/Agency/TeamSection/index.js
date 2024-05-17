@@ -3,18 +3,13 @@ import PropTypes from 'prop-types'
 import Box from 'common/components/Box'
 import Text from 'common/components/Text'
 import Heading from 'common/components/Heading'
-import NextImage from 'common/components/NextImage'
 import FeatureBlock from 'common/components/FeatureBlock'
 import data from 'common/data/Agency'
 import Container from 'common/components/UI/Container'
 import TeamSectionWrapper, { SocialLinks } from './teamSection.style'
-import {
-  IconArrowLeft,
-  IconBrandLinkedin,
-  IconBrandX,
-  IconBrandXing,
-} from '@tabler/icons-react'
+import { IconBrandLinkedin, IconBrandXing } from '@tabler/icons-react'
 import { JackInTheBox } from 'react-awesome-reveal'
+import { useMediaQuery } from '@material-ui/core'
 
 const TeamSection = ({
   row,
@@ -26,6 +21,8 @@ const TeamSection = ({
   designation,
   contentStyle,
 }) => {
+  const matches = useMediaQuery('(min-width:770px)')
+
   return (
     <TeamSectionWrapper
       style={{
@@ -51,7 +48,10 @@ const TeamSection = ({
                 id={`member-${member.id}`}
                 className="team__member"
                 icon={
-                  <JackInTheBox left delay={200 + index * 250}>
+                  <JackInTheBox
+                    left
+                    delay={(matches ? 200 : 100) + index * (matches ? 250 : 0)}
+                  >
                     <img
                       style={{
                         objectFit: 'cover',

@@ -3,7 +3,7 @@ import PolicyWrapper from './policy.module'
 
 export const PolicyContent = ({}) => (
   <PolicyWrapper>
-    <Box className="col">
+    <Box classNameName="col">
       <h2>
         Datenschutzerklärung von <strong>twylo.com</strong>
       </h2>
@@ -13,7 +13,7 @@ export const PolicyContent = ({}) => (
         kontaktieren Sie den Eigentümer
       </p>
 
-      <div class="contact-info">
+      <div className="contact-info">
         <h3>Anbieter und Verantwortlicher</h3>
         <p>
           <strong>twylobv</strong>
@@ -25,7 +25,7 @@ export const PolicyContent = ({}) => (
         </p>
       </div>
 
-      <div class="data-types">
+      <div className="data-types">
         <h3>Arten der erhobenen Daten</h3>
         <p>
           Der Eigentümer stellt keine Auflistung der erhobenen personenbezogenen
@@ -62,7 +62,7 @@ export const PolicyContent = ({}) => (
         </p>
       </div>
 
-      <div class="data-processing">
+      <div className="data-processing">
         <h3>Art und Ort der Datenverarbeitung</h3>
         <h4>Verarbeitungsmethoden</h4>
         <p>
@@ -111,7 +111,7 @@ export const PolicyContent = ({}) => (
         </p>
       </div>
 
-      <div class="additional-info">
+      <div className="additional-info">
         <h3>Weitere Informationen für Nutzer</h3>
         <h4>Rechtsgrundlagen der Verarbeitung</h4>
         <p>
@@ -190,7 +190,7 @@ export const PolicyContent = ({}) => (
         </p>
       </div>
 
-      <div class="user-rights">
+      <div className="user-rights">
         <h3>
           Die Rechte der Nutzer nach der Datenschutz-Grundverordnung (DSGVO)
         </h3>
@@ -281,7 +281,7 @@ export const PolicyContent = ({}) => (
         </p>
       </div>
 
-      <div class="additional-info">
+      <div className="additional-info">
         <h3>
           Weitere Informationen über die Erhebung und Verarbeitung von Daten
         </h3>
@@ -343,7 +343,7 @@ export const PolicyContent = ({}) => (
           Daten, die unbedingt erforderlich sind, um sie zur Verfügung zu
           stellen.
         </p>
-        <div class="footer-link">
+        <div className="footer-link">
           <a href="#">Vereinfachte Datenschutzerklärung anzeigen</a>
         </div>
       </div>

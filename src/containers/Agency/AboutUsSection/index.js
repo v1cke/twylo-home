@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Fade } from 'react-awesome-reveal'
+import { Fade, Zoom, Reveal } from 'react-awesome-reveal'
 import Box from 'common/components/Box'
 import Text from 'common/components/Text'
 import Heading from 'common/components/Heading'
@@ -51,7 +51,7 @@ const AboutUsSection = ({
           <Box className="col" {...col}>
             <Card className="group-gallery">
               <Box className="col1">
-                <Fade top delay={30}>
+                <Reveal top delay={30}>
                   <NextImage
                     src={HumanAI}
                     alt="Human&AI"
@@ -61,8 +61,8 @@ const AboutUsSection = ({
                       boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px',
                     }}
                   />
-                </Fade>
-                <Fade left delay={60}>
+                </Reveal>
+                <Reveal left delay={60}>
                   <NextImage
                     src={SmartPhone}
                     alt="Digital World"
@@ -72,10 +72,10 @@ const AboutUsSection = ({
                       boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px',
                     }}
                   />
-                </Fade>
+                </Reveal>
               </Box>
               <Box className="col2">
-                <Fade bottom delay={90}>
+                <Zoom bottom delay={90}>
                   <NextImage
                     src={Codehacker}
                     alt="Code Hacker"
@@ -84,7 +84,7 @@ const AboutUsSection = ({
                       boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px',
                     }}
                   />
-                </Fade>
+                </Zoom>
               </Box>
             </Card>
           </Box>

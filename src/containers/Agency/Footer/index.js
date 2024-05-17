@@ -102,7 +102,7 @@ const Footer = ({
                         <div
                           style={{ cursor: 'pointer' }}
                           onClick={() => {
-                            router.push('/' + item.url)
+                            router.push(item.url)
                           }}
                         >
                           {item.text}

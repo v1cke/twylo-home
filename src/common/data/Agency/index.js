@@ -304,22 +304,22 @@ const data = {
       menuItems: [
         {
           id: 1,
-          url: '#featureSection',
+          url: '/#featureSection',
           text: 'Leistungen',
         },
         {
           id: 2,
-          url: '#AboutUsSection',
+          url: '/#AboutUsSection',
           text: 'Unser Know-How',
         },
         {
           id: 3,
-          url: '#workHistorySection',
+          url: '/#workHistorySection',
           text: 'Work smart, not hard',
         },
         {
           id: 4,
-          url: '#blogSection',
+          url: '/#blogSection',
           text: 'Portfolio',
         },
         // {
@@ -329,12 +329,12 @@ const data = {
         // },
         {
           id: 6,
-          url: '#teamSection',
+          url: '/#teamSection',
           text: 'Team',
         },
         {
           id: 7,
-          url: '#faqSection',
+          url: '/#faqSection',
           text: 'FAQ',
         },
       ],
