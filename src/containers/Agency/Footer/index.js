@@ -41,7 +41,7 @@ const Footer = ({
                 router.push('/')
               }}
             >
-              <img src={LogoImage} style={logoStyle} alt='Logo' />
+              <img src={LogoImage} style={logoStyle} alt="Logo" />
               <span
                 className="logoFont"
                 style={{
@@ -98,26 +98,16 @@ const Footer = ({
                 <List>
                   {widget.menuItems.map((item) => {
                     return (
-                      <>
-                        <ListItem key={`list__item-${item.id}`}>
-                          <Link legacyBehavior href={item.url}>
-                            {item.url.startsWith('https:/') ? (
-                              <a
-                                className="ListItem"
-                                style={{
-                                  whiteSpace: 'nowrap',
-                                }}
-                              >
-                                {item.text}
-                              </a>
-                            ) : (
-                              <div style={{ cursor: 'pointer' }}>
-                                {item.text}
-                              </div>
-                            )}
-                          </Link>
-                        </ListItem>
-                      </>
+                      <ListItem key={`list__item-${item.id}`}>
+                        <div
+                          style={{ cursor: 'pointer' }}
+                          onClick={() => {
+                            router.push('/' + item.url)
+                          }}
+                        >
+                          {item.text}
+                        </div>
+                      </ListItem>
                     )
                   })}
                 </List>

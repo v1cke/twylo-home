@@ -1,4 +1,4 @@
-import { Box } from '@material-ui/core'
+import Box from 'common/components/Box'
 import ImprintWrapper from './imprint.module'
 
 export const ImprintContent = ({}) => (

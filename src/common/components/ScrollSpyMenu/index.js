@@ -70,7 +70,7 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
                 if (drawerClose) {
                   toggleDrawer()
                 }
-                router.push('/' + menu.path.slice(1))
+                router.push('/' + menu.path)
               }}
             >
               {menu.label}
