@@ -1,13 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Fade from 'react-reveal/Fade'
+import { Fade } from 'react-awesome-reveal'
 import Box from 'common/components/Box'
 import Text from 'common/components/Text'
 import Heading from 'common/components/Heading'
 import FeatureBlock from 'common/components/FeatureBlock'
 import Container from 'common/components/UI/Container'
 import CloudTelephonyWrapper from './cloudTelephony.style'
-
 
 const CloudTelephony = ({
   row,
@@ -22,64 +21,78 @@ const CloudTelephony = ({
 }) => {
   const cloudTelephony = [
     {
-      title: "Zeitbasiertes Routing:",
-      description: "Legen Sie fest, wann und wo Sie erreichbar sind."
+      title: 'Zeitbasiertes Routing:',
+      description: 'Legen Sie fest, wann und wo Sie erreichbar sind.',
     },
     {
-      title: "Gruppenruf:",
-      description: "Optimieren Sie die Erreichbarkeit durch Anrufgruppen für Teams oder Abteilungen."
+      title: 'Gruppenruf:',
+      description:
+        'Optimieren Sie die Erreichbarkeit durch Anrufgruppen für Teams oder Abteilungen.',
     },
     {
-      title: "Sprachmenü (IVR):",
-      description: "Kunden wählen per Sprachmenü die gewünschte Abteilung."
+      title: 'Sprachmenü (IVR):',
+      description: 'Kunden wählen per Sprachmenü die gewünschte Abteilung.',
     },
     {
-      title: "Besetztlampenfeld:",
-      description: "Überblick, wer gerade telefoniert."
+      title: 'Besetztlampenfeld:',
+      description: 'Überblick, wer gerade telefoniert.',
     },
     {
-      title: "Voicemail:",
-      description: "Nachrichten zu bestimmten Anlässen und Benachrichtigung via E-Mail."
+      title: 'Voicemail:',
+      description:
+        'Nachrichten zu bestimmten Anlässen und Benachrichtigung via E-Mail.',
     },
   ]
 
-  const featureBox = { background: '#fff', opacity: '0.9', padding: '10px', borderRadius: '10px', marginBottom: '20px', boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px', }
+  const featureBox = {
+    background: '#fff',
+    opacity: '0.9',
+    padding: '10px',
+    borderRadius: '10px',
+    marginBottom: '20px',
+    boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px',
+  }
   return (
     <CloudTelephonyWrapper id="qualitySection">
-      <div style={{
-        position: 'absolute',
-        top: '2px',
-        right: '50%',
-        height: '100px',
-        width: 'calc(50% - 200px)',
-        borderRight: '2px solid rgba(202, 55, 0, 1)',
-        borderBottom: '2px solid rgba(202, 55, 0, 1)',
-        borderBottomRightRadius: '75px'
-      }} />
-      <div style={{
-        position: 'absolute',
-        top: '100px',
-        left: '100px',
-        height: 'calc(100% - 200px)',
-        width: 'calc(50% - 200px)',
-        borderLeft: '2px solid rgba(202, 55, 0, 1)',
-        borderTop: '2px solid rgba(202, 55, 0, 1)',
-        borderBottom: '2px solid rgba(202, 55, 0, 1)',
-        borderTopLeftRadius: '75px',
-        borderBottomLeftRadius: '75px'
-      }} />
-      <div style={{
-        position: 'absolute',
-        bottom: '2px',
-        right: '100px',
-        height: '100px',
-        width: 'calc(50% + 200px)',
-        borderRight: '2px solid rgba(202, 55, 0, 1)',
-        borderTop: '2px solid rgba(202, 55, 0, 1)',
-        borderTopRightRadius: '75px'
-      }} />
+      <div
+        style={{
+          position: 'absolute',
+          top: '2px',
+          right: '50%',
+          height: '100px',
+          width: 'calc(50% - 200px)',
+          borderRight: '2px solid rgba(202, 55, 0, 1)',
+          borderBottom: '2px solid rgba(202, 55, 0, 1)',
+          borderBottomRightRadius: '75px',
+        }}
+      />
+      <div
+        style={{
+          position: 'absolute',
+          top: '100px',
+          left: '100px',
+          height: 'calc(100% - 200px)',
+          width: 'calc(50% - 200px)',
+          borderLeft: '2px solid rgba(202, 55, 0, 1)',
+          borderTop: '2px solid rgba(202, 55, 0, 1)',
+          borderBottom: '2px solid rgba(202, 55, 0, 1)',
+          borderTopLeftRadius: '75px',
+          borderBottomLeftRadius: '75px',
+        }}
+      />
+      <div
+        style={{
+          position: 'absolute',
+          bottom: '2px',
+          right: '100px',
+          height: '100px',
+          width: 'calc(50% + 200px)',
+          borderRight: '2px solid rgba(202, 55, 0, 1)',
+          borderTop: '2px solid rgba(202, 55, 0, 1)',
+          borderTopRightRadius: '75px',
+        }}
+      />
       <Container>
-
         {/* TODO: Header auslagern!!  */}
         {/* <Box className="row" {...row}>
           <Box className="col" {...col} {...textArea}>
@@ -100,17 +113,17 @@ const CloudTelephony = ({
           </Box>
         </Box> */}
 
-        <Box className="row" {...col} {...textArea} style={{ gap: '20px', paddingTop: '50px', paddingBottom: '100px' }}>
+        <Box
+          className="row"
+          {...col}
+          {...textArea}
+          style={{ gap: '20px', paddingTop: '50px', paddingBottom: '100px' }}
+        >
           <h3>Cloud-Telefonie:</h3>
 
-          {cloudTelephony.map((item, index) =>
+          {cloudTelephony.map((item, index) => (
             <Fade right delay={90 + index * 90} key={item.title}>
-              <Box
-                className="col"
-                {...featureCol}
-                style={featureBox}
-
-              >
+              <Box className="col" {...featureCol} style={featureBox}>
                 <FeatureBlock
                   // icon={<i className={feature.icon} />}
                   iconPosition="left"
@@ -120,14 +133,12 @@ const CloudTelephony = ({
                     <Text content={item.description} {...featureDescription} />
                   }
                 />
-              </Box>  </Fade>
-          )}
-
-
+              </Box>{' '}
+            </Fade>
+          ))}
         </Box>
       </Container>
-
-    </CloudTelephonyWrapper >
+    </CloudTelephonyWrapper>
   )
 }
 
@@ -148,21 +159,17 @@ CloudTelephony.defaultProps = {
     flexWrap: 'wrap',
     ml: '-15px',
     mr: '-15px',
-
   },
   // Quality section col default style
   col: {
     pr: '15px',
     pl: '15px',
-
-
   },
   // Quality feature col default style
   featureCol: {
     width: [1, 1, 1 / 2],
     pr: '15px',
     pl: '15px',
-
   },
   featureCol: {
     width: [1, 1, 1 / 2],
@@ -170,7 +177,6 @@ CloudTelephony.defaultProps = {
     padding: '10px',
     pr: '15px',
     pl: '15px',
-
   },
   // Quality section text area default style
   textArea: {

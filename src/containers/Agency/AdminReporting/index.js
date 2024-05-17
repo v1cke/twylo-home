@@ -1,13 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Fade from 'react-reveal/Fade'
+import { Fade } from 'react-awesome-reveal'
 import Box from 'common/components/Box'
 import Text from 'common/components/Text'
 import Heading from 'common/components/Heading'
 import FeatureBlock from 'common/components/FeatureBlock'
 import Container from 'common/components/UI/Container'
 import AdminReportingWrapper from './adminReporting.style'
-
 
 const AdminReporting = ({
   row,
@@ -22,35 +21,37 @@ const AdminReporting = ({
 }) => {
   const adminReportings = [
     {
-      title: "Intuitives Webportal:",
-      description: "Zentrale Verwaltung aller Kommunikationseinstellungen."
+      title: 'Intuitives Webportal:',
+      description: 'Zentrale Verwaltung aller Kommunikationseinstellungen.',
     },
     {
-      title: "Anrufmanagement:",
-      description: "Steuern Sie Telefonie-Einstellungen zentral über eine Benutzeroberfläche."
+      title: 'Anrufmanagement:',
+      description:
+        'Steuern Sie Telefonie-Einstellungen zentral über eine Benutzeroberfläche.',
     },
     {
-      title: "Anrufstatistiken und umfangreiche Analysen:",
-      description: "Bieten Einblicke und Optimierungsmöglichkeiten für Anrufe."
+      title: 'Anrufstatistiken und umfangreiche Analysen:',
+      description: 'Bieten Einblicke und Optimierungsmöglichkeiten für Anrufe.',
     },
-
   ]
 
-  const featureBox = { background: '#fff', opacity: '0.9', padding: '10px', borderRadius: '10px', marginBottom: '20px', boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px', }
+  const featureBox = {
+    background: '#fff',
+    opacity: '0.9',
+    padding: '10px',
+    borderRadius: '10px',
+    marginBottom: '20px',
+    boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px',
+  }
   return (
     <AdminReportingWrapper id="qualitySection">
       <Container>
         <Box className="row" {...col} {...textArea} style={{ gap: '20px' }}>
           <h3>Admin & Reportings:</h3>
 
-          {adminReportings.map((item, index) =>
+          {adminReportings.map((item, index) => (
             <Fade right delay={90 + index * 90} key={item.title}>
-              <Box
-                className="col"
-                {...featureCol}
-                style={featureBox}
-
-              >
+              <Box className="col" {...featureCol} style={featureBox}>
                 <FeatureBlock
                   // icon={<i className={feature.icon} />}
                   iconPosition="left"
@@ -60,13 +61,11 @@ const AdminReporting = ({
                     <Text content={item.description} {...featureDescription} />
                   }
                 />
-              </Box>  </Fade>
-          )}
-
-
+              </Box>{' '}
+            </Fade>
+          ))}
         </Box>
       </Container>
-
     </AdminReportingWrapper>
   )
 }
@@ -88,21 +87,17 @@ AdminReporting.defaultProps = {
     flexWrap: 'wrap',
     ml: '-15px',
     mr: '-15px',
-
   },
   // Quality section col default style
   col: {
     pr: '15px',
     pl: '15px',
-
-
   },
   // Quality feature col default style
   featureCol: {
     width: [1, 1, 1 / 2],
     pr: '15px',
     pl: '15px',
-
   },
   featureCol: {
     width: [1, 1, 1 / 2],
@@ -110,7 +105,6 @@ AdminReporting.defaultProps = {
     padding: '10px',
     pr: '15px',
     pl: '15px',
-
   },
   // Quality section text area default style
   textArea: {

@@ -9,7 +9,7 @@ import 'rc-tabs/assets/index.css'
 import Image from 'common/components/Image'
 import FeatureBlock from 'common/components/FeatureBlock'
 import styles from 'common/components/Button55/button55.module.css'
-import { Fade, Rotate } from 'react-reveal'
+import { Fade, Rotate } from 'react-awesome-reveal'
 import { useMediaQuery } from '@material-ui/core'
 
 const phoneFeatures = [
@@ -222,27 +222,28 @@ const CloudPhonePbx = ({
           alignItems: 'center',
         }}
       >
-        {matches && <Box
-          style={{
-            width: '40%',
-          }}
-          className="col"
-        >
-          <Rotate key={currentContent.image} delay={100}>
-            <Image
-
-              src={currentContent.image}
-              alt={currentContent.tab}
-              style={{
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover',
-                minWidth: '300px',
-                // boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px',
-              }}
-            />
-          </Rotate>
-        </Box>}
+        {matches && (
+          <Box
+            style={{
+              width: '40%',
+            }}
+            className="col"
+          >
+            <Rotate key={currentContent.image} delay={100}>
+              <Image
+                src={currentContent.image}
+                alt={currentContent.tab}
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                  minWidth: '300px',
+                  // boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px',
+                }}
+              />
+            </Rotate>
+          </Box>
+        )}
 
         <Box
           style={{

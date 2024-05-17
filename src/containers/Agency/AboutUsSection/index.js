@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Fade from 'react-reveal/Fade'
+import { Fade } from 'react-awesome-reveal'
 import Box from 'common/components/Box'
 import Text from 'common/components/Text'
 import Heading from 'common/components/Heading'

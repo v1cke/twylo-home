@@ -3,7 +3,6 @@ import React, { useState, useEffect, useRef } from 'react'
 import styles from './chatBot.module.css'
 import axios from 'axios'
 import Button55 from '../Button55'
-import Slide from 'react-reveal/Slide'
 
 export const ChatBot = () => {
   const inputRef = useRef(null)
@@ -93,7 +92,7 @@ export const ChatBot = () => {
                     }
                     height={'40px'}
                     width={'40px'}
-                    alt='Twyli/User-avatar'
+                    alt="Twyli/User-avatar"
                   />
                   <p
                     style={{
@@ -132,7 +131,7 @@ export const ChatBot = () => {
                 src="images/Twyli-avatar.png"
                 height={'40px'}
                 width={'40px'}
-                alt='Twyli-avatar'
+                alt="Twyli-avatar"
               />
               <p
                 style={{
@@ -157,10 +156,20 @@ export const ChatBot = () => {
         }}
       >
         {openChat ? (
-          <img src="images/X-avatar.png" height={'40px'} width={'40px'} alt='X-avatar' />
+          <img
+            src="images/X-avatar.png"
+            height={'40px'}
+            width={'40px'}
+            alt="X-avatar"
+          />
         ) : (
           <>
-            <img src="images/Twyli-avatar.png" height={'40px'} width={'40px'} alt='Twyli-avatar' />
+            <img
+              src="images/Twyli-avatar.png"
+              height={'40px'}
+              width={'40px'}
+              alt="Twyli-avatar"
+            />
             Frag mich
           </>
         )}

@@ -1,13 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Fade from 'react-reveal/Fade'
+import { Fade } from 'react-awesome-reveal'
 import Box from 'common/components/Box'
 import Text from 'common/components/Text'
 import Heading from 'common/components/Heading'
 import FeatureBlock from 'common/components/FeatureBlock'
 import Container from 'common/components/UI/Container'
 import ClientsEndgeraeteWrapper from './clientsEndgeraete.style'
-
 
 const ClientsEndgeraete = ({
   row,
@@ -22,43 +21,48 @@ const ClientsEndgeraete = ({
 }) => {
   const clientsEndgeraetes = [
     {
-      title: "Mobile Apps & Softphone:",
-      description: "Telefonieren und Nachrichten senden mit Apps auf Smartphone, Laptop oder PC."
+      title: 'Mobile Apps & Softphone:',
+      description:
+        'Telefonieren und Nachrichten senden mit Apps auf Smartphone, Laptop oder PC.',
     },
     {
-      title: "Hardware mieten:",
-      description: "Mieten Sie Hardware, um hohe Einmalinvestitionen zu sparen."
+      title: 'Hardware mieten:',
+      description:
+        'Mieten Sie Hardware, um hohe Einmalinvestitionen zu sparen.',
     },
     {
-      title: "Autoprovisionierung:",
-      description: "Einfache und automatische Konfiguration Ihrer Endgeräte."
+      title: 'Autoprovisionierung:',
+      description: 'Einfache und automatische Konfiguration Ihrer Endgeräte.',
     },
-
   ]
 
-  const featureBox = { background: '#fff', opacity: '0.9', padding: '10px', borderRadius: '10px', marginBottom: '20px', boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px', }
+  const featureBox = {
+    background: '#fff',
+    opacity: '0.9',
+    padding: '10px',
+    borderRadius: '10px',
+    marginBottom: '20px',
+    boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px',
+  }
   return (
     <ClientsEndgeraeteWrapper id="qualitySection">
-      <div style={{
-        position: 'absolute',
-        top: '0',
-        left: '100px',
-        height: '100%',
-        width: '2px',
-        background: 'red'
-      }} />
+      <div
+        style={{
+          position: 'absolute',
+          top: '0',
+          left: '100px',
+          height: '100%',
+          width: '2px',
+          background: 'red',
+        }}
+      />
       <Container>
         <Box className="row" {...col} {...textArea} style={{ gap: '20px' }}>
           <h3>Clients & Endgeräte:</h3>
 
-          {clientsEndgeraetes.map((item, index) =>
+          {clientsEndgeraetes.map((item, index) => (
             <Fade right delay={90 + index * 90} key={item.title}>
-              <Box
-                className="col"
-                {...featureCol}
-                style={featureBox}
-
-              >
+              <Box className="col" {...featureCol} style={featureBox}>
                 <FeatureBlock
                   // icon={<i className={feature.icon} />}
                   iconPosition="left"
@@ -68,13 +72,11 @@ const ClientsEndgeraete = ({
                     <Text content={item.description} {...featureDescription} />
                   }
                 />
-              </Box>  </Fade>
-          )}
-
-
+              </Box>{' '}
+            </Fade>
+          ))}
         </Box>
       </Container>
-
     </ClientsEndgeraeteWrapper>
   )
 }
@@ -96,21 +98,17 @@ ClientsEndgeraete.defaultProps = {
     flexWrap: 'wrap',
     ml: '-15px',
     mr: '-15px',
-
   },
   // Quality section col default style
   col: {
     pr: '15px',
     pl: '15px',
-
-
   },
   // Quality feature col default style
   featureCol: {
     width: [1, 1, 1 / 2],
     pr: '15px',
     pl: '15px',
-
   },
   featureCol: {
     width: [1, 1, 1 / 2],
@@ -118,7 +116,6 @@ ClientsEndgeraete.defaultProps = {
     padding: '10px',
     pr: '15px',
     pl: '15px',
-
   },
   // Quality section text area default style
   textArea: {

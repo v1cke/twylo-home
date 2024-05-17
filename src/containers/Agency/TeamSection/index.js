@@ -14,7 +14,7 @@ import {
   IconBrandX,
   IconBrandXing,
 } from '@tabler/icons-react'
-import { Flip } from 'react-reveal'
+import { JackInTheBox } from 'react-awesome-reveal'
 
 const TeamSection = ({
   row,
@@ -51,18 +51,19 @@ const TeamSection = ({
                 id={`member-${member.id}`}
                 className="team__member"
                 icon={
-                  <Flip left delay={200 + index * 250}>
+                  <JackInTheBox left delay={200 + index * 250}>
                     <img
                       style={{
                         objectFit: 'cover',
                         height: 500,
+                        width: 400,
                         boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px',
                       }}
                       src={member.img}
                       alt={`Team member photo ${member.id}`}
                       className="member__photo"
                     />
-                  </Flip>
+                  </JackInTheBox>
                 }
                 contentStyle={contentStyle}
                 title={<Heading content={member.name} {...memberName} />}

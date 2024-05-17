@@ -7,8 +7,7 @@ import Button from 'common/components/Button'
 import FeatureBlock from 'common/components/FeatureBlock'
 import Container from 'common/components/UI/Container'
 import BannerWrapper from './bannerSection.style'
-import Fade from 'react-reveal/Fade'
-import Clock from '../Clock'
+import { Fade } from 'react-awesome-reveal'
 
 const BannerSection = ({
   row,
@@ -66,8 +65,8 @@ const BannerSection = ({
                       <Heading
                         content={
                           headings[
-                          (activeHeading + headings.length - 1) %
-                          headings.length
+                            (activeHeading + headings.length - 1) %
+                              headings.length
                           ]
                         }
                         className="logoFont"
