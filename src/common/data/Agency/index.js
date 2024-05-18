@@ -170,7 +170,7 @@ const data = {
     {
       id: 1,
       name: 'Daniel Wulfing',
-      img: 'images/Daniel.png',
+      img: 'images/daniel.png',
       designation: 'Founder / Developer',
       social_links: [
         // {

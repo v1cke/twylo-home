@@ -54,18 +54,22 @@ const Footer = ({
               </span>
             </div>
             <Link cursor legacyBehavior href={'mailto:mail@twylo.net'}>
-              <Text
-                content="mail@twylo.net"
-                {...textStyle}
-                style={{ cursor: 'pointer' }}
-              />
+              <>
+                <Text
+                  content="mail@twylo.net"
+                  {...textStyle}
+                  style={{ cursor: 'pointer' }}
+                />
+              </>
             </Link>
             <Link legacyBehavior href={'tel:+491719796775'}>
-              <Text
-                content="+49171 9796 775"
-                {...textStyle}
-                style={{ cursor: 'pointer' }}
-              />
+              <>
+                <Text
+                  content="+49171 9796 775"
+                  {...textStyle}
+                  style={{ cursor: 'pointer' }}
+                />
+              </>
             </Link>
             <Link
               legacyBehavior
