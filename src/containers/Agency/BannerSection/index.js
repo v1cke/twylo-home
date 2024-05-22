@@ -65,8 +65,8 @@ const BannerSection = ({
                       <Heading
                         content={
                           headings[
-                            (activeHeading + headings.length - 1) %
-                              headings.length
+                          (activeHeading + headings.length - 1) %
+                          headings.length
                           ]
                         }
                         className="logoFont"
@@ -88,7 +88,7 @@ const BannerSection = ({
               }
               description={
                 <Text
-                  content="Mit künstlicher Intelligenz vorausdenken, mit Sicherheit führen."
+                  content="Webdesign that Thinks, Security that Protects."
                   {...description}
                 />
               }

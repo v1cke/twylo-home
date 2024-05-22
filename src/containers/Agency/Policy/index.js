@@ -2,7 +2,7 @@ import Box from 'common/components/Box'
 import PolicyWrapper from './policy.module'
 import Container from 'common/components/UI/Container'
 
-export const PolicyContent = ({}) => (
+export const PolicyContent = ({ }) => (
   <PolicyWrapper>
     <Container>
       <Box className="col">
@@ -18,7 +18,7 @@ export const PolicyContent = ({}) => (
         <div className="contact-info">
           <h3>Anbieter und Verantwortlicher</h3>
           <p>
-            <strong>twylobv</strong>
+            <strong>twylo B.V.</strong>
           </p>
           <p>Kaldenkerkerweg 20, 5913 AE Venlo, Niederlande</p>
           <p>

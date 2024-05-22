@@ -204,30 +204,30 @@ const data = {
         {
           id: 1,
           icon: 'linkedin',
-          url: '#',
+          url: 'https://www.linkedin.com/in/viktor-gr%C3%BCnwald-76b5b7249/',
         },
         {
           id: 2,
           icon: 'xing',
-          url: '#',
+          url: 'https://www.xing.com/profile/Viktor_Gruenwald022125/web_profiles',
         },
       ],
     },
     {
       id: 3,
       name: 'Tony Schroeder',
-      img: 'images/Tony.png',
+      img: 'images/tony-schroederVB.jpg',
       designation: 'Developer / Ui-UX Designer',
       social_links: [
         {
           id: 1,
           icon: 'linkedin',
-          url: '#',
+          url: 'https://www.linkedin.com/in/tony-schroeder-0804b3249/',
         },
         {
           id: 2,
           icon: 'xing',
-          url: '#',
+          url: 'https://www.xing.com/profile/Tony_Schroeder10/web_profiles',
         },
       ],
     },
