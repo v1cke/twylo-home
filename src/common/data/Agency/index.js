@@ -170,7 +170,7 @@ const data = {
     {
       id: 1,
       name: 'Daniel Wulfing',
-      img: 'images/daniel.png',
+      img: 'images/Daniel.png',
       designation: 'Founder / Developer',
       social_links: [
         // {
@@ -198,7 +198,7 @@ const data = {
     {
       id: 2,
       name: 'Viktor Grünwald',
-      img: 'images/Viktor.png',
+      img: 'images/Viktor.jpg',
       designation: 'CEO / Developer',
       social_links: [
         {
@@ -216,7 +216,7 @@ const data = {
     {
       id: 3,
       name: 'Tony Schroeder',
-      img: 'images/tony-schroederVB.jpg',
+      img: 'images/Tony.jpg',
       designation: 'Developer / Ui-UX Designer',
       social_links: [
         {

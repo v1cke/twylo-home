@@ -55,6 +55,7 @@ const TeamSection = ({
                     <img
                       style={{
                         objectFit: 'cover',
+                        objectPosition: 'top',
                         height: 500,
                         width: 400,
                         boxShadow: 'rgba(0, 146, 202, 1) 10px 20px 30px -10px',
