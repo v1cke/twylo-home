@@ -5,7 +5,6 @@ import axios from 'axios'
 import Button55 from '../Button55'
 
 export const ChatBot = () => {
-  const inputRef = useRef(null)
   const messageArea = useRef(null)
   const [input, setInput] = useState('')
   const [messages, setMessages] = useState([
@@ -21,6 +20,10 @@ export const ChatBot = () => {
       messageArea.current.scrollTop = messageArea.current.scrollHeight
     }
   }
+
+  useEffect(() => {
+    scrollToBottom()
+  }, [messages])
 
   useEffect(() => {
     scrollToBottom()
@@ -92,7 +95,6 @@ export const ChatBot = () => {
                     }
                     height={'40px'}
                     width={'40px'}
-                    alt="Twyli/User-avatar"
                   />
                   <p
                     style={{
@@ -150,8 +152,6 @@ export const ChatBot = () => {
         className={styles.bubbleBottom}
         style={{ paddingLeft: openChat ? '12px' : '8px' }}
         onClick={() => {
-          setPreviewChat(false)
-          setPreviewSet(true)
           setOpenChat(!openChat)
         }}
       >
