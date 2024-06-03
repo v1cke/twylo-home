@@ -7,7 +7,7 @@ import Button from 'common/components/Button'
 import FeatureBlock from 'common/components/FeatureBlock'
 import Container from 'common/components/UI/Container'
 import BannerWrapper from './bannerSection.style'
-import { Fade } from 'react-awesome-reveal'
+import { Fade } from 'react-reveal'
 
 const BannerSection = ({
   row,
@@ -15,8 +15,6 @@ const BannerSection = ({
   title,
   btnStyle,
   description,
-  discountText,
-  discountAmount,
   outlineBtnStyle,
 }) => {
   const [activeHeading, setActiveHeading] = useState(0)
@@ -24,13 +22,8 @@ const BannerSection = ({
 
   const headings = [
     'innovativ.',
-    // 'Kundenorientiert.',
     'agil.',
-    // 'Technisch versiert.',
     'transparent.',
-    // 'Teamorientiert.',
-    // 'qualitätsbewusst.',
-    'lernbereit.',
     'anpassungsfähig.',
     'kreativ.',
   ]
@@ -51,8 +44,6 @@ const BannerSection = ({
 
   return (
     <BannerWrapper style={{ position: 'relative' }}>
-      {/* <Rain /> */}
-      {/* <Clock /> */}
       <Container>
         <Box className="row" {...row} style={{ marginTop: '100px' }}>
           <Box className="col" {...col}>
@@ -65,8 +56,8 @@ const BannerSection = ({
                       <Heading
                         content={
                           headings[
-                          (activeHeading + headings.length - 1) %
-                          headings.length
+                            (activeHeading + headings.length - 1) %
+                              headings.length
                           ]
                         }
                         className="logoFont"
