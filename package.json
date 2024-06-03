@@ -20,6 +20,7 @@
     "@emotion/styled": "^11.11.5",
     "@glidejs/glide": "^3.6.0",
     "@langchain/community": "^0.0.57",
+    "@langchain/openai": "^0.0.34",
     "@material-ui/core": "^4.12.4",
     "@mui/material": "^5.15.18",
     "@mui/styles": "^5.15.18",
