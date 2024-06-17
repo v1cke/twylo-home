@@ -2,18 +2,17 @@ import Box from 'common/components/Box'
 import ImprintWrapper from './imprint.module'
 import Container from 'common/components/UI/Container'
 
-
-export const ImprintContent = ({ }) => (
+export const ImprintContent = ({}) => (
   <ImprintWrapper>
     <Container>
-      <Box className='col'>
+      <Box className="col">
         <h2>Impressum</h2>
 
         <h3>Angaben gem&auml;&szlig; &sect; 5 TMG</h3>
         <p>
           Daniel Wulfing
           <br />
-          twylo B.V.
+          Twylo B.V.
           <br />
           Kaldenkerkerweg 20,
           <br />
@@ -28,7 +27,7 @@ export const ImprintContent = ({ }) => (
         </p>
 
         <h3>BTW-ID</h3>
-        <p>folgt...</p>
+        <p>94158185</p>
 
         <h3>Redaktionell verantwortlich</h3>
         <p>
@@ -71,4 +70,3 @@ export const ImprintContent = ({ }) => (
     </Container>
   </ImprintWrapper>
 )
-
